@@ -1,0 +1,12 @@
+{
+  "model": "google/diffusiongemma-26b-a4b-it",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Reply with exactly OK"
+    }
+  ],
+  "temperature": 0,
+  "max_tokens": 10,
+  "stream": false
+}

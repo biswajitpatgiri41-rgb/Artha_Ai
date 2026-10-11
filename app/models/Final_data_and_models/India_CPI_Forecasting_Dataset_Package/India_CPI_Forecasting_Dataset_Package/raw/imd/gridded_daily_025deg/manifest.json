@@ -1,0 +1,114 @@
+{
+  "source": "India Meteorological Department, 0.25 degree daily rainfall grids",
+  "years": [
+    2012,
+    2024
+  ],
+  "url": "https://www.imdpune.gov.in/cmpg/Griddata/RF25.php",
+  "retrieved_utc": "2026-10-08T14:44:15.357267+00:00",
+  "file_format": "gzip-compressed NetCDF classic annual files (.nc.gz)",
+  "files": [
+    {
+      "year": 2012,
+      "status": "downloaded",
+      "path": "raw/imd/gridded_daily_025deg/RF25_daily_0.25deg_2012.nc.gz",
+      "bytes": 2435179,
+      "source_bytes": 25501500,
+      "source_url": "https://www.imdpune.gov.in/cmpg/Griddata/RF25.php"
+    },
+    {
+      "year": 2013,
+      "status": "downloaded",
+      "path": "raw/imd/gridded_daily_025deg/RF25_daily_0.25deg_2013.nc.gz",
+      "bytes": 2624637,
+      "source_bytes": 25431832,
+      "source_url": "https://www.imdpune.gov.in/cmpg/Griddata/RF25.php"
+    },
+    {
+      "year": 2014,
+      "status": "downloaded",
+      "path": "raw/imd/gridded_daily_025deg/RF25_daily_0.25deg_2014.nc.gz",
+      "bytes": 2434563,
+      "source_bytes": 25431832,
+      "source_url": "https://www.imdpune.gov.in/cmpg/Griddata/RF25.php"
+    },
+    {
+      "year": 2015,
+      "status": "downloaded",
+      "path": "raw/imd/gridded_daily_025deg/RF25_daily_0.25deg_2015.nc.gz",
+      "bytes": 2480256,
+      "source_bytes": 25431832,
+      "source_url": "https://www.imdpune.gov.in/cmpg/Griddata/RF25.php"
+    },
+    {
+      "year": 2016,
+      "status": "downloaded",
+      "path": "raw/imd/gridded_daily_025deg/RF25_daily_0.25deg_2016.nc.gz",
+      "bytes": 2437571,
+      "source_bytes": 25501500,
+      "source_url": "https://www.imdpune.gov.in/cmpg/Griddata/RF25.php"
+    },
+    {
+      "year": 2017,
+      "status": "downloaded",
+      "path": "raw/imd/gridded_daily_025deg/RF25_daily_0.25deg_2017.nc.gz",
+      "bytes": 2507290,
+      "source_bytes": 25431832,
+      "source_url": "https://www.imdpune.gov.in/cmpg/Griddata/RF25.php"
+    },
+    {
+      "year": 2018,
+      "status": "downloaded",
+      "path": "raw/imd/gridded_daily_025deg/RF25_daily_0.25deg_2018.nc.gz",
+      "bytes": 2327524,
+      "source_bytes": 25431832,
+      "source_url": "https://www.imdpune.gov.in/cmpg/Griddata/RF25.php"
+    },
+    {
+      "year": 2019,
+      "status": "downloaded",
+      "path": "raw/imd/gridded_daily_025deg/RF25_daily_0.25deg_2019.nc.gz",
+      "bytes": 2688640,
+      "source_bytes": 25431832,
+      "source_url": "https://www.imdpune.gov.in/cmpg/Griddata/RF25.php"
+    },
+    {
+      "year": 2020,
+      "status": "downloaded",
+      "path": "raw/imd/gridded_daily_025deg/RF25_daily_0.25deg_2020.nc.gz",
+      "bytes": 2797755,
+      "source_bytes": 25501500,
+      "source_url": "https://www.imdpune.gov.in/cmpg/Griddata/RF25.php"
+    },
+    {
+      "year": 2021,
+      "status": "downloaded",
+      "path": "raw/imd/gridded_daily_025deg/RF25_daily_0.25deg_2021.nc.gz",
+      "bytes": 2764341,
+      "source_bytes": 25431832,
+      "source_url": "https://www.imdpune.gov.in/cmpg/Griddata/RF25.php"
+    },
+    {
+      "year": 2022,
+      "status": "downloaded",
+      "path": "raw/imd/gridded_daily_025deg/RF25_daily_0.25deg_2022.nc.gz",
+      "bytes": 2637666,
+      "source_bytes": 25431832,
+      "source_url": "https://www.imdpune.gov.in/cmpg/Griddata/RF25.php"
+    },
+    {
+      "year": 2023,
+      "status": "downloaded",
+      "path": "raw/imd/gridded_daily_025deg/RF25_daily_0.25deg_2023.nc.gz",
+      "bytes": 2717021,
+      "source_bytes": 25431832,
+      "source_url": "https://www.imdpune.gov.in/cmpg/Griddata/RF25.php"
+    },
+    {
+      "year": 2024,
+      "status": "existing",
+      "path": "raw/imd/gridded_daily_025deg/RF25_daily_0.25deg_2024.nc.gz",
+      "bytes": 2619322
+    }
+  ]
+}

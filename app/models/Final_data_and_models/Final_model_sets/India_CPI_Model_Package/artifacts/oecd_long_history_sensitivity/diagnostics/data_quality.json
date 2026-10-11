@@ -1,0 +1,19 @@
+{
+  "series": "oecd_long_history_sensitivity",
+  "n_observations": 440,
+  "first_month": "1990-01",
+  "last_month": "2026-08",
+  "duplicate_months": 0,
+  "missing_months": 0,
+  "missing_y": 0,
+  "nonfinite_y": 0,
+  "macro_missing_by_column": {
+    "brent_yoy": 0,
+    "inr_usd_yoy": 0,
+    "us_cpi_yoy": 0,
+    "fed_funds": 0
+  },
+  "out_of_range_y_months": 0,
+  "target_is_official_mospi_2024_base_yoy_except_2025_index_derived": false,
+  "data_vintage_warning": "No historical release-vintage snapshots; training uses retrieved/revised observations."
+}

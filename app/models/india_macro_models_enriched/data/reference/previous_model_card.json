@@ -1,0 +1,239 @@
+{
+  "package_name": "India headline CPI forecasting model prototypes",
+  "target": "MoSPI India headline CPI year-over-year percent change, derived from 2024-base index",
+  "target_observations": 152,
+  "target_start": "2014-01",
+  "target_end": "2026-08",
+  "forecast_horizons_months": [
+    1,
+    3,
+    6
+  ],
+  "source_file": "/home/ubuntu/india_macro_dataset/data/processed/macro_monthly_available.csv",
+  "source_sha256": "e7d39e7608abec1698a04d942bc30d7366fb08c91c79f292a648fba8b0718ee6",
+  "data_basis": "Observed source observations only. The 10-million synthetic scenario rows were not used for fitting, selection, or evaluation.",
+  "evaluation": "Expanding rolling-origin backtest over the final 24 observed target months; at each forecast origin, training labels are restricted to target months assumed known by the prior month. Hyperparameters fixed in advance; no random split.",
+  "data_vintage_caveat": "Official release dates and historical vintages are not present. One-month lags on predictors are an approximation and do not prove point-in-time availability.",
+  "selected_features": [
+    "cpi_yoy_lag_1",
+    "cpi_yoy_lag_2",
+    "cpi_yoy_lag_3",
+    "cpi_yoy_lag_6",
+    "cpi_yoy_lag_12",
+    "cfpi_yoy_lag_1",
+    "brent_yoy_lag_1",
+    "repo_change_3m_lag_1",
+    "usd_inr_yoy_lag_1",
+    "iip_growth_2022_23_lag_1",
+    "target_month_sin",
+    "target_month_cos"
+  ],
+  "ridge_alpha": 10.0,
+  "xgboost_parameters": {
+    "objective": "reg:squarederror",
+    "eval_metric": "rmse",
+    "tree_method": "hist",
+    "max_depth": 2,
+    "eta": 0.04,
+    "min_child_weight": 5,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "lambda": 10.0,
+    "alpha": 1.0,
+    "seed": 20261005,
+    "nthread": 2
+  },
+  "xgboost_rounds": 50,
+  "arima": {
+    "order": [
+      1,
+      0,
+      0
+    ],
+    "trend": "c",
+    "n_observations": 152,
+    "aic": 336.9495648458121,
+    "bic": 346.0014043562569,
+    "params": {
+      "const": 4.634673868159132,
+      "ar.L1": 0.8839371665677471,
+      "sigma2": 0.524047291167286
+    }
+  },
+  "metrics": [
+    {
+      "model": "persistence",
+      "horizon_months": 1,
+      "n_test": 24,
+      "mae_pp": 1.0157378579459095,
+      "rmse_pp": 1.241220251101262,
+      "bias_pp": -0.08046613072897058,
+      "test_start": "2024-09",
+      "test_end": "2026-08"
+    },
+    {
+      "model": "seasonal_naive",
+      "horizon_months": 1,
+      "n_test": 24,
+      "mae_pp": 1.9194642622236977,
+      "rmse_pp": 2.4835828140520926,
+      "bias_pp": 1.0381228491745376,
+      "test_start": "2024-09",
+      "test_end": "2026-08"
+    },
+    {
+      "model": "ARIMA_1_0_0",
+      "horizon_months": 1,
+      "n_test": 24,
+      "mae_pp": 1.0122840020510095,
+      "rmse_pp": 1.2188132794608348,
+      "bias_pp": 0.24731568234593637,
+      "test_start": "2024-09",
+      "test_end": "2026-08"
+    },
+    {
+      "model": "Ridge",
+      "horizon_months": 1,
+      "n_test": 24,
+      "mae_pp": 1.2366503427504718,
+      "rmse_pp": 1.436550568569229,
+      "bias_pp": 0.8096635234547208,
+      "test_start": "2024-09",
+      "test_end": "2026-08"
+    },
+    {
+      "model": "XGBoost",
+      "horizon_months": 1,
+      "n_test": 24,
+      "mae_pp": 1.353555962239929,
+      "rmse_pp": 1.6659254538820591,
+      "bias_pp": 1.01861913958475,
+      "test_start": "2024-09",
+      "test_end": "2026-08"
+    },
+    {
+      "model": "persistence",
+      "horizon_months": 3,
+      "n_test": 24,
+      "mae_pp": 1.6201235462262886,
+      "rmse_pp": 1.7476086970447955,
+      "bias_pp": -0.009448813950599414,
+      "test_start": "2024-09",
+      "test_end": "2026-08"
+    },
+    {
+      "model": "seasonal_naive",
+      "horizon_months": 3,
+      "n_test": 24,
+      "mae_pp": 1.9194642622236977,
+      "rmse_pp": 2.4835828140520926,
+      "bias_pp": 1.0381228491745376,
+      "test_start": "2024-09",
+      "test_end": "2026-08"
+    },
+    {
+      "model": "ARIMA_1_0_0",
+      "horizon_months": 3,
+      "n_test": 24,
+      "mae_pp": 1.5006489529073284,
+      "rmse_pp": 1.6776109624306432,
+      "bias_pp": 0.5567833905607737,
+      "test_start": "2024-09",
+      "test_end": "2026-08"
+    },
+    {
+      "model": "Ridge",
+      "horizon_months": 3,
+      "n_test": 24,
+      "mae_pp": 1.5918156307173874,
+      "rmse_pp": 1.94955185864508,
+      "bias_pp": 1.085452517206627,
+      "test_start": "2024-09",
+      "test_end": "2026-08"
+    },
+    {
+      "model": "XGBoost",
+      "horizon_months": 3,
+      "n_test": 24,
+      "mae_pp": 1.5028929047400623,
+      "rmse_pp": 1.8477911063817318,
+      "bias_pp": 1.1385916268754501,
+      "test_start": "2024-09",
+      "test_end": "2026-08"
+    },
+    {
+      "model": "persistence",
+      "horizon_months": 6,
+      "n_test": 24,
+      "mae_pp": 1.9662309836970853,
+      "rmse_pp": 2.315306474615988,
+      "bias_pp": 0.19006038674587167,
+      "test_start": "2024-09",
+      "test_end": "2026-08"
+    },
+    {
+      "model": "seasonal_naive",
+      "horizon_months": 6,
+      "n_test": 24,
+      "mae_pp": 1.9194642622236977,
+      "rmse_pp": 2.4835828140520926,
+      "bias_pp": 1.0381228491745376,
+      "test_start": "2024-09",
+      "test_end": "2026-08"
+    },
+    {
+      "model": "ARIMA_1_0_0",
+      "horizon_months": 6,
+      "n_test": 24,
+      "mae_pp": 1.6996208247275428,
+      "rmse_pp": 2.0838754574584644,
+      "bias_pp": 0.9421965440263896,
+      "test_start": "2024-09",
+      "test_end": "2026-08"
+    },
+    {
+      "model": "Ridge",
+      "horizon_months": 6,
+      "n_test": 24,
+      "mae_pp": 1.9774959032141821,
+      "rmse_pp": 2.2940346499714934,
+      "bias_pp": 1.121738544620819,
+      "test_start": "2024-09",
+      "test_end": "2026-08"
+    },
+    {
+      "model": "XGBoost",
+      "horizon_months": 6,
+      "n_test": 24,
+      "mae_pp": 1.6057176623230527,
+      "rmse_pp": 1.9628851309457374,
+      "bias_pp": 1.0300257201918461,
+      "test_start": "2024-09",
+      "test_end": "2026-08"
+    }
+  ],
+  "models_included": [
+    "Persistence benchmark (code/metric only)",
+    "Seasonal-naive benchmark (code/metric only)",
+    "ARIMA(1,0,0) univariate (pickle artifact)",
+    "Ridge direct forecast h=1,3,6 (JSON coefficients/preprocessing)",
+    "XGBoost shallow-tree challenger h=1,3,6 (JSON booster)"
+  ],
+  "not_included": [
+    "VAR deferred: the source plan says to wait for a well-aligned, sufficiently complete multivariate panel."
+  ],
+  "limitations": [
+    "Only 152 headline CPI YoY observations exist in this snapshot; each horizon has fewer training pairs.",
+    "Rolling-origin test sample is small and has no release-vintage alignment; performance is exploratory, not deployment evidence.",
+    "XGBoost is a challenger and should be rejected if it fails to beat simple baselines consistently.",
+    "The illustrative next-period forecast rows are not observations and are not production recommendations.",
+    "RBI rate coefficients from observational data are not causal policy effects."
+  ],
+  "software_versions": {
+    "python": "3.12",
+    "pandas": "3.0.6",
+    "numpy": "2.5.3",
+    "xgboost": "3.4.1",
+    "statsmodels": "0.15.0"
+  }
+}

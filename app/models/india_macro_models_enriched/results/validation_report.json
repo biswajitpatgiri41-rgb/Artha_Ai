@@ -1,0 +1,63 @@
+{
+  "validation_status": "passed",
+  "checks": [
+    "all raw/input source hashes match source_data_manifest.csv",
+    "observed target count and unique monthly panel keys",
+    "WPI base regimes and monthly RBI credit export retain expected row counts",
+    "all rolling-origin model/variant/horizon groups have 24 unique test predictions",
+    "baseline model metrics reproduce the previous package within 1e-8",
+    "42 Ridge/XGBoost artifacts and one ARIMA artifact exist",
+    "packaged scorer successfully emitted three finite sample forecasts"
+  ],
+  "failures": [],
+  "observed_cpi_yoy_labels": 152,
+  "target_period": [
+    "2014-01",
+    "2026-08"
+  ],
+  "rolling_metric_rows": 51,
+  "rolling_forecast_rows": 1224,
+  "max_abs_baseline_metric_difference": 4.440892098500626e-16,
+  "processed_series": {
+    "wpi_all_commodities_2011_12.csv": {
+      "rows": 169,
+      "first_period": "2012-04",
+      "last_period": "2026-04"
+    },
+    "wpi_all_commodities_2022_23.csv": {
+      "rows": 41,
+      "first_period": "2023-04",
+      "last_period": "2026-08"
+    },
+    "rbi_nonfood_credit_monthly.csv": {
+      "rows": 91,
+      "first_period": "2019-01",
+      "last_period": "2026-07"
+    }
+  },
+  "verified_source_hashes": {
+    "data/source/macro_monthly_available.csv": {
+      "expected": "e7d39e7608abec1698a04d942bc30d7366fb08c91c79f292a648fba8b0718ee6",
+      "actual": "e7d39e7608abec1698a04d942bc30d7366fb08c91c79f292a648fba8b0718ee6",
+      "ok": true
+    },
+    "data/raw/wpi_2011_12_monthly_202606.xls": {
+      "expected": "3265d404b82f5911660797d270a4f813e33b3aa48184dae234478b044bc91d59",
+      "actual": "3265d404b82f5911660797d270a4f813e33b3aa48184dae234478b044bc91d59",
+      "ok": true
+    },
+    "data/raw/wpi_2022_23_monthly_202609.xlsx": {
+      "expected": "aea8e605c2a2e761423e490528b382f6feae4504e62190f8cbd87f18bd2d75be",
+      "actual": "aea8e605c2a2e761423e490528b382f6feae4504e62190f8cbd87f18bd2d75be",
+      "ok": true
+    },
+    "data/raw/rbi_credit_new_format.json": {
+      "expected": "68263ddf4133265258fdb4b5acdc8dca87394e27e8d1cbd7206a1d65d1e06b05",
+      "actual": "68263ddf4133265258fdb4b5acdc8dca87394e27e8d1cbd7206a1d65d1e06b05",
+      "ok": true
+    }
+  },
+  "saved_direct_model_count": 42,
+  "arima_artifact_bytes": 141367,
+  "synthetic_rows_used": 0
+}

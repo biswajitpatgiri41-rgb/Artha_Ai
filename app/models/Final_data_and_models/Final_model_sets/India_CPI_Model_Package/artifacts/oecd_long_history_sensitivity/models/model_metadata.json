@@ -1,0 +1,41 @@
+{
+  "series": "oecd_long_history_sensitivity",
+  "target_start": "1990-01",
+  "target_end": "2026-08",
+  "n_months": 440,
+  "forecast_origin": "2026-08",
+  "forecast_origin_note": "latest source CPI observation; final release vintages are not available",
+  "horizons": [
+    1,
+    3,
+    6,
+    12
+  ],
+  "exogenous_columns": [
+    "brent_yoy",
+    "inr_usd_yoy",
+    "us_cpi_yoy",
+    "fed_funds"
+  ],
+  "exogenous_availability": "All external regressors are shifted one month. SARIMAX assumes the last known lagged external vector persists forward; VAR forecasts the macro panel jointly.",
+  "seed": 20261009,
+  "component_fit": [
+    "ARIMA",
+    "ETS",
+    "SARIMA",
+    "SARIMAX",
+    "SeasonalNaive",
+    "VAR",
+    "XGBoost"
+  ],
+  "future_points": [],
+  "target_definition": "OECD monthly India CPI inflation YoY series used as a separate sensitivity target; not blended with the MoSPI 2024-base series.",
+  "validation_note": "Targets >=2024-01 were used as a model-comparison period; feature specifications were compared on the same period, so it is not a final untouched holdout.",
+  "var_columns": [
+    "india_cpi_yoy",
+    "brent_yoy",
+    "inr_usd_yoy",
+    "us_cpi_yoy",
+    "fed_funds"
+  ]
+}

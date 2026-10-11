@@ -1,0 +1,173 @@
+[
+  {
+    "dataset_or_family": "CPI Combined General Group / inflation target",
+    "pdf_priority": "Core target",
+    "preferred_or_actual_sources": "MoSPI / NSO",
+    "local_files": "raw/mospi/cpi_2012_all_india_group_history.csv; raw/mospi/cpi_2012_item_history.csv; raw/mospi/cpi_2024_back_series.csv; raw/mospi/cpi_2024_current_all_india_detailed.csv",
+    "local_file_count": 4,
+    "status": "Downloaded — official files; base-year vintages are kept separate.",
+    "use_and_limitations": "Monthly index/group observations; derive YoY from the index and preserve base year, source release date, and vintage. Do not splice 2012 and 2024 bases casually."
+  },
+  {
+    "dataset_or_family": "Food, fuel, and core CPI groups",
+    "pdf_priority": "Priority / feature group",
+    "preferred_or_actual_sources": "MoSPI / NSO",
+    "local_files": "raw/mospi/cpi_2012_all_india_group_history.csv; raw/mospi/cpi_2012_item_history.csv; raw/mospi/cpi_2024_current_all_india_detailed.csv",
+    "local_file_count": 3,
+    "status": "Downloaded — group/item source observations; analytical group mapping still required.",
+    "use_and_limitations": "These are categories within CPI files, not separate fabricated series. Verify classification and definition before deriving food/core/fuel inflation."
+  },
+  {
+    "dataset_or_family": "IIP general index",
+    "pdf_priority": "Core activity feature",
+    "preferred_or_actual_sources": "MoSPI / NSO preferred; OECD via FRED alternative",
+    "local_files": "raw/fred/INDPROINDMISMEI.csv",
+    "local_file_count": 1,
+    "status": "Proxy downloaded — OECD/FRED India industrial production series only; official MoSPI release vintages not retrieved.",
+    "use_and_limitations": "Validate base, seasonal adjustment, and observation end date. Not a substitute for current official first-release IIP."
+  },
+  {
+    "dataset_or_family": "RBI policy repo rate",
+    "pdf_priority": "Core policy feature",
+    "preferred_or_actual_sources": "RBI / DBIE preferred; OECD via FRED alternative",
+    "local_files": "raw/fred/IRSTCB01INM156N_india_central_bank_rate.csv; raw/rbi/dbie_landing_snapshot.csv",
+    "local_file_count": 2,
+    "status": "Partial — long historical central-bank-rate proxy plus a separate RBI current-indicator snapshot.",
+    "use_and_limitations": "OECD/FRED series through Dec-2023 is not guaranteed to equal the RBI repo rate. Snapshot effective date is not specified. Exact event-dated RBI repo history remains a gap."
+  },
+  {
+    "dataset_or_family": "Brent crude oil",
+    "pdf_priority": "Core external feature",
+    "preferred_or_actual_sources": "EIA; FRED / World Bank cross-checks",
+    "local_files": "raw/eia/brent_daily_official.xls; raw/fred/DCOILBRENTEU.csv; raw/world_bank/pink_sheet_monthly_commodity_prices.xlsx",
+    "local_file_count": 3,
+    "status": "Downloaded — EIA daily workbook, FRED daily mirror, and World Bank monthly commodity panel.",
+    "use_and_limitations": "Keep daily and monthly frequencies distinct; use a documented monthly aggregation. WTI is a separate comparator, not Brent."
+  },
+  {
+    "dataset_or_family": "INR/USD exchange rate",
+    "pdf_priority": "Core external feature",
+    "preferred_or_actual_sources": "RBI preferred; FRED and World Bank alternatives",
+    "local_files": "raw/fred/DEXINUS.csv; raw/world_bank/wdi_selected_all_countries_long.csv.gz",
+    "local_file_count": 2,
+    "status": "Proxy downloaded — daily FRED exchange-rate series and annual WDI official-rate observations.",
+    "use_and_limitations": "RBI reference-rate history was not retrieved. Verify the INR-per-USD quotation, source definition, and aggregation; daily and annual series are not interchangeable."
+  },
+  {
+    "dataset_or_family": "Wholesale Price Index (WPI)",
+    "pdf_priority": "Optional price feature",
+    "preferred_or_actual_sources": "Office of the Economic Adviser (OEA)",
+    "local_files": "raw/wpi/wpi_2011_12_calendar_year_averages.xls; raw/wpi/wpi_2011_12_financial_year_averages.xls; raw/wpi/wpi_2011_12_monthly_from_2012.xls",
+    "local_file_count": 3,
+    "status": "Downloaded — official OEA 2011–12-base workbooks.",
+    "use_and_limitations": "Keep WPI separate from CPI. Different base series require an official bridge; latest observations can be provisional."
+  },
+  {
+    "dataset_or_family": "GDP / GVA / activity aggregates",
+    "pdf_priority": "Extended macro context",
+    "preferred_or_actual_sources": "World Bank WDI; IMF WEO",
+    "local_files": "raw/imf/WEOApr2026all.xlsx; raw/world_bank/wdi_selected_all_countries_long.csv.gz",
+    "local_file_count": 2,
+    "status": "Downloaded — annual global panels and WEO vintage.",
+    "use_and_limitations": "Annual/quarterly aggregates are low-frequency and released with lags; WEO projected values must remain distinguishable from realized data."
+  },
+  {
+    "dataset_or_family": "Purchasing Managers’ Index (PMI)",
+    "pdf_priority": "Optional if licensed",
+    "preferred_or_actual_sources": "S&P Global / HSBC licensed; open activity proxies",
+    "local_files": "—",
+    "local_file_count": 0,
+    "status": "Not retrieved — no redistribution-cleared bulk series found.",
+    "use_and_limitations": "Use official IIP as an open monthly activity alternative; WDI consumption and payment statistics are imperfect, low-frequency/high-frequency proxies, not PMI."
+  },
+  {
+    "dataset_or_family": "Policy rates / SDF / MSF / CRR / SLR / liquidity",
+    "pdf_priority": "Extended monetary-policy features",
+    "preferred_or_actual_sources": "RBI / DBIE",
+    "local_files": "raw/fred/IRSTCB01INM156N_india_central_bank_rate.csv; raw/rbi/dbie_landing_snapshot.csv",
+    "local_file_count": 2,
+    "status": "Partial — RBI current snapshot includes repo, reverse repo, SDF, CRR, and SLR; historical event series and MSF are absent.",
+    "use_and_limitations": "The FRED/OECD central-bank-rate proxy is not the event-dated RBI policy history. Do not infer dates not printed in the source snapshot."
+  },
+  {
+    "dataset_or_family": "Credit growth and broad money (M3)",
+    "pdf_priority": "Extended financial features",
+    "preferred_or_actual_sources": "RBI / DBIE preferred; WDI/FRED alternatives",
+    "local_files": "raw/fred/M2SL.csv; raw/world_bank/wdi_selected_all_countries_long.csv.gz",
+    "local_file_count": 2,
+    "status": "Proxy downloaded — WDI annual India credit/broad-money ratios and US M2; RBI monthly India aggregates not retrieved.",
+    "use_and_limitations": "Do not substitute US M2 for Indian M3. Frequency and denominator differ; RBI Handbook/DBIE is the preferred monthly/fortnightly source."
+  },
+  {
+    "dataset_or_family": "Bond yields / financial conditions",
+    "pdf_priority": "Extended global feature family",
+    "preferred_or_actual_sources": "RBI / Indian market sources preferred; FRED alternatives",
+    "local_files": "raw/fred/DFF.csv; raw/fred/DGS10.csv; raw/fred/DGS2.csv; raw/fred/DTWEXBGS.csv",
+    "local_file_count": 4,
+    "status": "Partial proxy — US Treasury yields, dollar index, and effective Federal Funds rate downloaded; Indian bond-yield series not retrieved.",
+    "use_and_limitations": "Identify country and tenor explicitly. US rates are external/global context, not Indian sovereign yields or a complete India financial-conditions index."
+  },
+  {
+    "dataset_or_family": "US CPI and Federal Funds rate",
+    "pdf_priority": "Global context",
+    "preferred_or_actual_sources": "FRED",
+    "local_files": "raw/fred/CPIAUCSL.csv; raw/fred/CPILFESL.csv; raw/fred/DFF.csv; raw/fred/FEDFUNDS.csv",
+    "local_file_count": 4,
+    "status": "Downloaded — US CPI, core CPI, monthly effective and daily Federal Funds series.",
+    "use_and_limitations": "External controls only; preserve source frequency and FRED series citation/rights."
+  },
+  {
+    "dataset_or_family": "Global commodity price indices",
+    "pdf_priority": "External supply/cost context",
+    "preferred_or_actual_sources": "World Bank Pink Sheet; EIA",
+    "local_files": "raw/eia/brent_daily_official.xls; raw/eia/wti_daily_official.xls; raw/world_bank/pink_sheet_monthly_commodity_prices.xlsx",
+    "local_file_count": 3,
+    "status": "Downloaded — monthly multi-commodity workbook plus official daily oil workbooks.",
+    "use_and_limitations": "Global USD benchmark prices do not equal Indian retail or landed prices; document transformations and units."
+  },
+  {
+    "dataset_or_family": "Rainfall / weather",
+    "pdf_priority": "Extended supply feature",
+    "preferred_or_actual_sources": "India Meteorological Department (IMD)",
+    "local_files": "raw/imd/gridded_daily_025deg/RF25_daily_0.25deg_2012.nc.gz; raw/imd/gridded_daily_025deg/RF25_daily_0.25deg_2013.nc.gz; raw/imd/gridded_daily_025deg/RF25_daily_0.25deg_2014.nc.gz; raw/imd/gridded_daily_025deg/RF25_daily_0.25deg_2015.nc.gz; raw/imd/gridded_daily_025deg/RF25_daily_0.25deg_2016.nc.gz; raw/imd/gridded_daily_025deg/RF25_daily_0.25deg_2017.nc.gz; raw/imd/gridded_daily_025deg/RF25_daily_0.25deg_2018.nc.gz; raw/imd/gridded_daily_025deg/RF25_daily_0.25deg_2019.nc.gz; raw/imd/gridded_daily_025deg/RF25_daily_0.25deg_2020.nc.gz; raw/imd/gridded_daily_025deg/RF25_daily_0.25deg_2021.nc.gz; raw/imd/gridded_daily_025deg/RF25_daily_0.25deg_2022.nc.gz; raw/imd/gridded_daily_025deg/RF25_daily_0.25deg_2023.nc.gz; raw/imd/gridded_daily_025deg/RF25_daily_0.25deg_2024.nc.gz; raw/imd/imd_regional_monthly_seasonal_rainfall_1901_2024.csv",
+    "local_file_count": 14,
+    "status": "Downloaded — five-region annual/monthly/seasonal summary; daily 0.25-degree files cover only successful CPI-aligned years recorded in the IMD manifest.",
+    "use_and_limitations": "Aggregate grid cells to India/crop-region masks before modeling. Long weather history does not extend the CPI target history."
+  },
+  {
+    "dataset_or_family": "IMF monthly CPI dataset",
+    "pdf_priority": "Optional CPI cross-check",
+    "preferred_or_actual_sources": "IMF Statistics CPI; OECD SDMX alternative",
+    "local_files": "—",
+    "local_file_count": 0,
+    "status": "Not retrieved in this run — the official IMF CPI dataset/API is documented, but no raw IMF monthly CPI extract is in the ZIP; OECD monthly India CPI files are included as the related alternative.",
+    "use_and_limitations": "Use the OECD/FRED monthly series only as a cross-check, not as a replacement for MoSPI release vintages. Obtain a dated IMF extract through the current API route if it is required."
+  },
+  {
+    "dataset_or_family": "India monthly CPI alternative / cross-check",
+    "pdf_priority": "Validation alternative",
+    "preferred_or_actual_sources": "OECD SDMX via public API; FRED mirror",
+    "local_files": "raw/fred/INDCPALTT01IXNBM.csv; raw/oecd/india_monthly_cpi_index.csv; raw/oecd/india_monthly_cpi_yoy.csv",
+    "local_file_count": 3,
+    "status": "Downloaded — OECD monthly India CPI index and YoY, plus an OECD/FRED mirror.",
+    "use_and_limitations": "Definitions, vintages, and end dates can differ from MoSPI; retain metadata and use as cross-check/proxy only."
+  },
+  {
+    "dataset_or_family": "Consumption / high-frequency activity proxies",
+    "pdf_priority": "Optional extended features",
+    "preferred_or_actual_sources": "WDI; NPCI/Dataful route",
+    "local_files": "raw/world_bank/wdi_selected_all_countries_long.csv.gz",
+    "local_file_count": 1,
+    "status": "Partial proxy — annual household/private-consumption ratio in WDI; UPI monthly file not retrieved.",
+    "use_and_limitations": "UPI activity is not household consumption. Dataful describes an NPCI mirror (124 rows, FY2016–17 to FY2026–27), but its export was client/account-gated in this run."
+  },
+  {
+    "dataset_or_family": "Global macro panel / country controls",
+    "pdf_priority": "Optional data expansion",
+    "preferred_or_actual_sources": "World Bank WDI; IMF WEO",
+    "local_files": "raw/imf/WEOApr2026all.xlsx; raw/world_bank/wdi_selected_all_countries_long.csv.gz",
+    "local_file_count": 2,
+    "status": "Downloaded — all-country annual WDI selected-indicator panel plus April-2026 WEO workbook.",
+    "use_and_limitations": "WDI is annual; WEO includes estimates/projections. The acquisition manifest gives the exact recovered indicator count and failed/deleted code note."
+  }
+]

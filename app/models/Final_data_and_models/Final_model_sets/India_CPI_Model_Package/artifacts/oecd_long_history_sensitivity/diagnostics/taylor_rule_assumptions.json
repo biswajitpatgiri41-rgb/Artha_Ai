@@ -1,0 +1,9 @@
+{
+  "neutral_real_rate_pct": 1.5,
+  "inflation_target_pct": 4.0,
+  "phi_inflation": 0.5,
+  "phi_output_gap": 0.5,
+  "output_gap_assumption_pct": 0.0,
+  "formula": "i = r* + pi + phi_pi*(pi-pi*) + phi_y*output_gap",
+  "warning": "Illustrative rule benchmark only, not an RBI recommendation or identified policy response."
+}

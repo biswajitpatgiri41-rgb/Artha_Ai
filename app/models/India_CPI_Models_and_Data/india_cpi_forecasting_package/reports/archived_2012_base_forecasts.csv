@@ -1,0 +1,4 @@
+model_family,forecast_origin_last_observed_month,forecast_issue_month,horizon_months,forecast_target_month,forecast_yoy_pct_old_2012_base,target_base,comparable_to_2024_base_series,model_target_cutoff
+"ARIMA(1,0,0)",2025-12,2026-01,1,2026-01,1.6109212773141701,2012=100 (discontinued after 2025-12),False,2025-12
+"ARIMA(1,0,0)",2025-12,2026-01,3,2026-03,2.108303717079312,2012=100 (discontinued after 2025-12),False,2025-12
+"ARIMA(1,0,0)",2025-12,2026-01,6,2026-06,2.717243668255173,2012=100 (discontinued after 2025-12),False,2025-12

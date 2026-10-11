@@ -1,0 +1,6 @@
+indicator,value,unit,retrieved_on,effective_date,source_url,note
+policy_repo_rate,5.25,percent,2026-10-08,not stated on captured landing page,https://data.rbi.org.in/,RBI DBIE landing-page snapshot only; not a historical series.
+reverse_repo_rate,3.35,percent,2026-10-08,not stated on captured landing page,https://data.rbi.org.in/,RBI DBIE landing-page snapshot only; not a historical series.
+cash_reserve_ratio,3.00,percent,2026-10-08,not stated on captured landing page,https://data.rbi.org.in/,RBI DBIE landing-page snapshot only; not a historical series.
+statutory_liquidity_ratio,18.00,percent,2026-10-08,not stated on captured landing page,https://data.rbi.org.in/,RBI DBIE landing-page snapshot only; not a historical series.
+standing_deposit_facility_rate,5.00,percent,2026-10-08,not stated on captured landing page,https://data.rbi.org.in/,RBI DBIE landing-page snapshot only; not a historical series.

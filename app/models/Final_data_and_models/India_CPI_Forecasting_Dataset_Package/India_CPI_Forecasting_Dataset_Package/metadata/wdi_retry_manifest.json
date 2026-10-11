@@ -1,0 +1,91 @@
+{
+  "source": "World Bank WDI API",
+  "retrieved_utc": "2026-10-08T14:41:16.598890+00:00",
+  "range": "1960-2025",
+  "added_rows": 157410,
+  "indicators_present_before_retry": [
+    "AG.LND.AGRI.ZS",
+    "AG.LND.CROP.ZS",
+    "BN.CAB.XOKA.GD.ZS",
+    "FI.RES.TOTL.CD",
+    "FM.LBL.BMNY.GD.ZS",
+    "FP.CPI.TOTL",
+    "FP.CPI.TOTL.ZG",
+    "FR.INR.DPST",
+    "FR.INR.LEND",
+    "FR.INR.RINR",
+    "FS.AST.PRVT.GD.ZS",
+    "GC.DOD.TOTL.GD.ZS",
+    "GC.TAX.TOTL.GD.ZS",
+    "NE.CON.PRVT.ZS",
+    "NV.AGR.TOTL.KD.ZG",
+    "NV.AGR.TOTL.ZS",
+    "NY.GDP.DEFL.KD.ZG",
+    "NY.GDP.MKTP.CD",
+    "NY.GDP.MKTP.KD.ZG",
+    "NY.GDP.PCAP.KD.ZG",
+    "PA.NUS.FCRF",
+    "SL.TLF.CACT.ZS",
+    "SL.UEM.TOTL.ZS",
+    "SP.POP.GROW",
+    "SP.POP.TOTL",
+    "SP.URB.TOTL.IN.ZS"
+  ],
+  "results": [
+    {
+      "indicator_code": "NE.CON.GOVT.ZS",
+      "status": "downloaded",
+      "row_count": 17490,
+      "source_url": "https://api.worldbank.org/v2/country/all/indicator/NE.CON.GOVT.ZS?date=1960%3A2025&format=json&per_page=20000"
+    },
+    {
+      "indicator_code": "NE.GDI.TOTL.ZS",
+      "status": "downloaded",
+      "row_count": 17490,
+      "source_url": "https://api.worldbank.org/v2/country/all/indicator/NE.GDI.TOTL.ZS?date=1960%3A2025&format=json&per_page=20000"
+    },
+    {
+      "indicator_code": "NE.EXP.GNFS.ZS",
+      "status": "downloaded",
+      "row_count": 17490,
+      "source_url": "https://api.worldbank.org/v2/country/all/indicator/NE.EXP.GNFS.ZS?date=1960%3A2025&format=json&per_page=20000"
+    },
+    {
+      "indicator_code": "NE.IMP.GNFS.ZS",
+      "status": "downloaded",
+      "row_count": 17490,
+      "source_url": "https://api.worldbank.org/v2/country/all/indicator/NE.IMP.GNFS.ZS?date=1960%3A2025&format=json&per_page=20000"
+    },
+    {
+      "indicator_code": "NV.IND.MANF.KD.ZG",
+      "status": "downloaded",
+      "row_count": 17490,
+      "source_url": "https://api.worldbank.org/v2/country/all/indicator/NV.IND.MANF.KD.ZG?date=1960%3A2025&format=json&per_page=20000"
+    },
+    {
+      "indicator_code": "NV.SRV.TOTL.ZS",
+      "status": "downloaded",
+      "row_count": 17490,
+      "source_url": "https://api.worldbank.org/v2/country/all/indicator/NV.SRV.TOTL.ZS?date=1960%3A2025&format=json&per_page=20000"
+    },
+    {
+      "indicator_code": "AG.PRD.FOOD.XD",
+      "status": "downloaded",
+      "row_count": 17490,
+      "source_url": "https://api.worldbank.org/v2/country/all/indicator/AG.PRD.FOOD.XD?date=1960%3A2025&format=json&per_page=20000"
+    },
+    {
+      "indicator_code": "AG.PRD.CROP.XD",
+      "status": "downloaded",
+      "row_count": 17490,
+      "source_url": "https://api.worldbank.org/v2/country/all/indicator/AG.PRD.CROP.XD?date=1960%3A2025&format=json&per_page=20000"
+    },
+    {
+      "indicator_code": "NV.IND.TOTL.ZS",
+      "status": "downloaded",
+      "row_count": 17490,
+      "source_url": "https://api.worldbank.org/v2/country/all/indicator/NV.IND.TOTL.ZS?date=1960%3A2025&format=json&per_page=20000"
+    }
+  ],
+  "note": "The failed/deleted indicator PA.NUS.PPPC.RF is intentionally not substituted or imputed."
+}

@@ -1,0 +1,2 @@
+@echo off
+curl.exe -v --max-time 60 -H "Authorization: Bearer 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" -H "Content-Type: application/json" -d @test_payload.json https://integrate.api.nvidia.com/v1/chat/completions 2>&1

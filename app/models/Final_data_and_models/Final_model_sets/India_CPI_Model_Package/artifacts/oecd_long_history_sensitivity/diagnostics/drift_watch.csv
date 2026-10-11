@@ -1,0 +1,5 @@
+horizon_months,development_selected_model,recent_test_window_n,recent_mae_pp,development_rolling12_mae_p95,status,note
+1,Ensemble,12,0.24057285514171178,0.6765688239967198,no current trigger,low-power monitoring rule; review source vintages and input drift before action
+3,Ensemble,12,0.34132782227269165,1.4841434864144514,no current trigger,low-power monitoring rule; review source vintages and input drift before action
+6,Ensemble,12,0.6885232579280968,2.453275575812367,no current trigger,low-power monitoring rule; review source vintages and input drift before action
+12,Ensemble,12,1.085709966013158,3.7275743843649836,no current trigger,low-power monitoring rule; review source vintages and input drift before action

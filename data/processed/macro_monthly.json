@@ -1,0 +1,30 @@
+{
+  "built_at": "2026-10-03T09:27:48.423838",
+  "series_sources": {
+    "cpi_yoy": "MISSING",
+    "food_inflation_yoy": "MISSING",
+    "brent_price": "EIA",
+    "inr_usd": "MISSING",
+    "repo_rate": "MISSING",
+    "iip_yoy": "MISSING"
+  },
+  "warnings": [
+    "cpi_yoy (cpi_headline): No normalized data file found",
+    "food_inflation_yoy (food_inflation): No normalized data file found",
+    "inr_usd (inr_usd): No normalized data file found",
+    "repo_rate (repo_rate): No normalized data file found",
+    "iip_yoy (iip): No normalized data file found"
+  ],
+  "row_count": 472,
+  "date_range": {
+    "start": "1987-05-31",
+    "end": "2026-08-31"
+  },
+  "missing_data": {
+    "brent_price": {
+      "missing_count": 0,
+      "total_count": 472,
+      "missing_pct": 0.0
+    }
+  }
+}

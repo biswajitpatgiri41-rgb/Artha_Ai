@@ -1,0 +1,118 @@
+{
+  "project": "India monthly headline CPI forecasting \u2014 Kaggle features + final official target",
+  "target": "MoSPI-published All-India General CPI YoY inflation rate, 2012=100 series",
+  "target_source": "https://www.mospi.gov.in/uploads/latestReleases/latest_release_1768213461321_53cd35fd-1bbc-4b43-b92d-8fb67474ee74_Press_Release_of_CPI_for_December_2025.pdf",
+  "target_formula_check": "Published YoY compared with 100 * (final index_t / final index_t-12 - 1); published rate is the model label.",
+  "model_calendar_start": "2013-01",
+  "model_calendar_end": "2025-12",
+  "model_calendar_month_count": 156,
+  "published_yoy_observed_count": 142,
+  "published_yoy_missing_periods": [
+    "2013-01",
+    "2013-02",
+    "2013-03",
+    "2013-04",
+    "2013-05",
+    "2013-06",
+    "2013-07",
+    "2013-08",
+    "2013-09",
+    "2013-10",
+    "2013-11",
+    "2013-12",
+    "2020-04",
+    "2020-05"
+  ],
+  "synthetic_data_used": false,
+  "missing_values_interpolated": false,
+  "sources": {
+    "kaggle_listing": "https://www.kaggle.com/datasets/yatharthgupta18/all-india-consumer-price-index20132023",
+    "kaggle_download_api": "https://www.kaggle.com/api/v1/datasets/download/yatharthgupta18/all-india-consumer-price-index20132023",
+    "official_catalog": "https://www.data.gov.in/catalog/all-india-consumer-price-index-ruralurban-0",
+    "official_archive_resource": "https://www.data.gov.in/resource/all-india-consumer-price-index-ruralurban-upto-august-2025",
+    "official_archive_csv": "https://www.data.gov.in/files/ogdpv2dms/s3fs-public/All_India_Index_Upto_Aug25.csv",
+    "official_december_2025_release": "https://www.mospi.gov.in/uploads/latestReleases/latest_release_1768213461321_53cd35fd-1bbc-4b43-b92d-8fb67474ee74_Press_Release_of_CPI_for_December_2025.pdf",
+    "official_january_2026_final_release": "https://www.mospi.gov.in/uploads/latestReleases/latest_release_1770891893893_6b458c0a-c327-4fef-a554-41131ea67273_Press_Relase_of_CPI_for_Jan26.pdf"
+  },
+  "source_files": {
+    "data/raw/kaggle/kaggle_india_cpi_2013_2023.zip": {
+      "sha256": "586ed80b16185822b6f48132449881b47f34ee4b434d0b6db63cdf33acbc50b3",
+      "bytes": 20870
+    },
+    "data/raw/kaggle/datafile.csv": {
+      "sha256": "c568cd2d9464d41e44dcfbc86e9bc104961c1e466ed2a3bf09c0a4ce702ea6fa",
+      "bytes": 87790
+    },
+    "data/raw/official/All_India_Index_Upto_Aug25.csv": {
+      "sha256": "8fc14c9029d51c6baa5ca946282d10b1d7bf3b8817923e1020748384415bd520",
+      "bytes": 80304
+    },
+    "data/raw/official/mospi_cpi_december_2025_release.pdf": {
+      "sha256": "e00e487b37b100055014a59929d3ecff13e461c13d009b022e0402c23d05c61e",
+      "bytes": 947686
+    },
+    "data/raw/official/mospi_cpi_december_2025_release.txt": {
+      "sha256": "3f37ee65fa8c1dee3d8f769f5b1d3244234576844c6ce357cf5f87bd99c7aeb4",
+      "bytes": 54077
+    },
+    "data/raw/official/mospi_cpi_january_2026_release.pdf": {
+      "sha256": "cd4d8fd861a43f4467237813bc6e9a943bf56b471d1baefae9ba1d3d240a00bb",
+      "bytes": 720906
+    },
+    "data/raw/official/mospi_cpi_january_2026_release.txt": {
+      "sha256": "08e626f646eda7b3be88bf7108ddcaeb3e7637f7f06422207ec404dd975fc797",
+      "bytes": 61857
+    }
+  },
+  "kaggle_rows": 371,
+  "kaggle_rows_by_sector": {
+    "Rural": 124,
+    "Rural+Urban": 123,
+    "Urban": 124
+  },
+  "official_archive_rows": 453,
+  "official_archive_rows_by_sector": {
+    "Rural": 151,
+    "Rural+Urban": 151,
+    "Urban": 151
+  },
+  "kaggle_last_period_by_sector": {
+    "Rural": "2023-05",
+    "Rural+Urban": "2023-04",
+    "Urban": "2023-05"
+  },
+  "official_archive_last_period_by_sector": {
+    "Rural": "2025-08",
+    "Rural+Urban": "2025-08",
+    "Urban": "2025-08"
+  },
+  "overlap_sector_month_rows": 371,
+  "overlap_measurement_cells_compared": 10017,
+  "kaggle_vs_official_archive_mismatched_cells": 0,
+  "final_pdf_index_month_count": 156,
+  "final_pdf_yoy_month_count": 144,
+  "official_published_yoy_vs_final_index_mae_pp": 0.0024483020396096292,
+  "official_published_yoy_vs_final_index_max_abs_diff_pp": 0.004959742351045016,
+  "archive_general_index_nonmissing_overlap": 149,
+  "final_pdf_index_vs_archive_index_mismatches": 10,
+  "final_pdf_index_vs_archive_max_abs_diff_points": 2.0999999999999943,
+  "official_published_yoy_vs_archive_derived_yoy_overlap": 135,
+  "official_published_yoy_vs_archive_derived_yoy_mae_pp": 0.10725351212413001,
+  "official_published_yoy_vs_archive_derived_yoy_max_abs_diff_pp": 1.459542302357817,
+  "official_published_yoy_vs_archive_derived_yoy_diffs_over_0_02_pp": 19,
+  "validation": {
+    "kaggle_values_and_missingness_match_archived_official_overlap": true,
+    "final_pdf_december_2025_index_and_yoy_match_february_2026_final_release": true,
+    "official_pdf_published_yoy_consistent_with_its_rounded_index_within_0_01_pp": true
+  },
+  "method_and_caveats": [
+    "The downloaded Kaggle file does not reach the October 2023 endpoint claimed in its listing: it ends May 2023 for Rural/Urban and April 2023 for Rural+Urban.",
+    "Kaggle and the August 2025 official archived CSV match exactly across 10,017 overlapping sector-measure cells, including missingness.",
+    "The final MoSPI 2012-base index table differs from the older archived combined General index in 10 of 149 available overlapping values, by up to 2.1 index points; use the final published YoY series as the target.",
+    "The final MoSPI published YoY target differs from YoY derived from the archived combined index in 135 overlapping months (MAE 0.14 pp; maximum 1.46 pp). Vintage differences are retained and reported, not silently blended.",
+    "MoSPI's published target has '-' for April and May 2020; those targets remain missing even though the later final index table has index values for those months.",
+    "MoSPI introduced the new 2024=100 CPI in February 2026. This package uses only the old 2012-base series and ends December 2025; do not treat it as a model trained on the current 2024-base CPI.",
+    "The Kaggle/data.gov.in category indices are available through August 2025; category-derived exogenous features after that month remain missing. No values are filled or interpolated.",
+    "Historical publication dates/vintages are not reconstructed. CPI category features are lagged to the last observation month, but release-timing leakage cannot be ruled out."
+  ]
+}

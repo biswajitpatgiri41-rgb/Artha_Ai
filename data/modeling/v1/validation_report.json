@@ -1,0 +1,384 @@
+{
+  "created_at": "2026-10-05T10:54:01.305569+00:00",
+  "status": "PASS",
+  "checks": {
+    "monthly_dates_unique": {
+      "status": "PASS"
+    },
+    "monthly_dates_chronologically_ordered": {
+      "status": "PASS"
+    },
+    "monthly_dates_are_consecutive_month_starts": {
+      "status": "PASS"
+    },
+    "cpi_has_164_observations": {
+      "status": "PASS"
+    },
+    "cpi_has_no_duplicates": {
+      "status": "PASS"
+    },
+    "cpi_target_is_numeric": {
+      "status": "PASS"
+    },
+    "cpi_target_has_no_gaps": {
+      "status": "PASS"
+    },
+    "predictor_missingness_measured": {
+      "status": "PASS"
+    },
+    "iip_base_columns_remain_separate": {
+      "status": "PASS"
+    },
+    "iip_series_match_separate_source": {
+      "status": "PASS"
+    },
+    "cfpi_is_a_distinct_column_from_cpi": {
+      "status": "PASS"
+    },
+    "cfpi_did_not_fill_cpi_gaps": {
+      "status": "PASS"
+    },
+    "inr_usd_gap_preserved_aug2018_mar2022": {
+      "status": "PASS"
+    },
+    "rainfall_ends_december_2024": {
+      "status": "PASS"
+    },
+    "rainfall_has_144_months": {
+      "status": "PASS"
+    }
+  },
+  "details": {
+    "source_input": "data/india_macro_dataset_snapshot (1)/data/processed/macro_monthly_available.csv",
+    "source_input_sha256": "e7d39e7608abec1698a04d942bc30d7366fb08c91c79f292a648fba8b0718ee6",
+    "source_file_shape": [
+      1510,
+      43
+    ],
+    "source_columns": [
+      "obs_date",
+      "brent_price",
+      "cfpi_index_2012",
+      "cfpi_rural_index_2012",
+      "cfpi_rural_yoy_2012",
+      "cfpi_urban_index_2012",
+      "cfpi_urban_yoy_2012",
+      "cfpi_yoy_2012",
+      "cpi_index_2024",
+      "cpi_rural_index_2024",
+      "cpi_rural_yoy_2024",
+      "cpi_urban_index_2024",
+      "cpi_urban_yoy_2024",
+      "cpi_yoy_2024",
+      "iip_general_growth_2011_12",
+      "iip_general_growth_2022_23",
+      "iip_general_index_2011_12",
+      "iip_general_index_2022_23",
+      "rainfall_actual",
+      "us_cpi_index",
+      "us_policy_rate",
+      "usd_inr_monthly_average",
+      "us_10y_yield_monthly_average",
+      "us_2y_yield_monthly_average",
+      "us_3m_yield_monthly_average",
+      "bank_rate",
+      "repo_rate",
+      "reverse_repo_rate",
+      "sdf_rate",
+      "msf_rate",
+      "crr",
+      "slr",
+      "oil_yoy",
+      "us_cpi_yoy",
+      "cpi_yoy_2024_derived",
+      "cpi_rural_yoy_2024_derived",
+      "cpi_urban_yoy_2024_derived",
+      "us_yield_curve_10y_minus_2y",
+      "repo_change_1m",
+      "repo_change_3m",
+      "month_sin",
+      "month_cos",
+      "rainfall_anomaly_1991_2020_mm"
+    ],
+    "source_dtypes": {
+      "obs_date": "object",
+      "brent_price": "float64",
+      "cfpi_index_2012": "float64",
+      "cfpi_rural_index_2012": "float64",
+      "cfpi_rural_yoy_2012": "float64",
+      "cfpi_urban_index_2012": "float64",
+      "cfpi_urban_yoy_2012": "float64",
+      "cfpi_yoy_2012": "float64",
+      "cpi_index_2024": "float64",
+      "cpi_rural_index_2024": "float64",
+      "cpi_rural_yoy_2024": "float64",
+      "cpi_urban_index_2024": "float64",
+      "cpi_urban_yoy_2024": "float64",
+      "cpi_yoy_2024": "float64",
+      "iip_general_growth_2011_12": "float64",
+      "iip_general_growth_2022_23": "float64",
+      "iip_general_index_2011_12": "float64",
+      "iip_general_index_2022_23": "float64",
+      "rainfall_actual": "float64",
+      "us_cpi_index": "float64",
+      "us_policy_rate": "float64",
+      "usd_inr_monthly_average": "float64",
+      "us_10y_yield_monthly_average": "float64",
+      "us_2y_yield_monthly_average": "float64",
+      "us_3m_yield_monthly_average": "float64",
+      "bank_rate": "float64",
+      "repo_rate": "float64",
+      "reverse_repo_rate": "float64",
+      "sdf_rate": "float64",
+      "msf_rate": "float64",
+      "crr": "float64",
+      "slr": "float64",
+      "oil_yoy": "float64",
+      "us_cpi_yoy": "float64",
+      "cpi_yoy_2024_derived": "float64",
+      "cpi_rural_yoy_2024_derived": "float64",
+      "cpi_urban_yoy_2024_derived": "float64",
+      "us_yield_curve_10y_minus_2y": "float64",
+      "repo_change_1m": "float64",
+      "repo_change_3m": "float64",
+      "month_sin": "float64",
+      "month_cos": "float64",
+      "rainfall_anomaly_1991_2020_mm": "float64"
+    },
+    "source_date_representation": "ISO-8601 date string YYYY-MM-DD, parsed as monthly period start",
+    "modeling_observation_count": 164,
+    "modeling_start_date": "2013-01-01",
+    "modeling_end_date": "2026-08-01",
+    "target_column": "cpi_index_2024",
+    "target_missing_count": 0,
+    "predictor_missingness": {
+      "brent_price": {
+        "missing_count": 0,
+        "available_count": 164,
+        "missing_percent": 0.0
+      },
+      "cfpi_index_2012": {
+        "missing_count": 8,
+        "available_count": 156,
+        "missing_percent": 4.878
+      },
+      "cfpi_rural_index_2012": {
+        "missing_count": 8,
+        "available_count": 156,
+        "missing_percent": 4.878
+      },
+      "cfpi_rural_yoy_2012": {
+        "missing_count": 21,
+        "available_count": 143,
+        "missing_percent": 12.8049
+      },
+      "cfpi_urban_index_2012": {
+        "missing_count": 8,
+        "available_count": 156,
+        "missing_percent": 4.878
+      },
+      "cfpi_urban_yoy_2012": {
+        "missing_count": 21,
+        "available_count": 143,
+        "missing_percent": 12.8049
+      },
+      "cfpi_yoy_2012": {
+        "missing_count": 21,
+        "available_count": 143,
+        "missing_percent": 12.8049
+      },
+      "cpi_index_2024": {
+        "missing_count": 0,
+        "available_count": 164,
+        "missing_percent": 0.0
+      },
+      "cpi_rural_index_2024": {
+        "missing_count": 0,
+        "available_count": 164,
+        "missing_percent": 0.0
+      },
+      "cpi_rural_yoy_2024": {
+        "missing_count": 24,
+        "available_count": 140,
+        "missing_percent": 14.6341
+      },
+      "cpi_urban_index_2024": {
+        "missing_count": 0,
+        "available_count": 164,
+        "missing_percent": 0.0
+      },
+      "cpi_urban_yoy_2024": {
+        "missing_count": 24,
+        "available_count": 140,
+        "missing_percent": 14.6341
+      },
+      "cpi_yoy_2024": {
+        "missing_count": 24,
+        "available_count": 140,
+        "missing_percent": 14.6341
+      },
+      "iip_general_growth_2011_12": {
+        "missing_count": 6,
+        "available_count": 158,
+        "missing_percent": 3.6585
+      },
+      "iip_general_growth_2022_23": {
+        "missing_count": 123,
+        "available_count": 41,
+        "missing_percent": 75.0
+      },
+      "iip_general_index_2011_12": {
+        "missing_count": 5,
+        "available_count": 159,
+        "missing_percent": 3.0488
+      },
+      "iip_general_index_2022_23": {
+        "missing_count": 123,
+        "available_count": 41,
+        "missing_percent": 75.0
+      },
+      "rainfall_actual": {
+        "missing_count": 20,
+        "available_count": 144,
+        "missing_percent": 12.1951
+      },
+      "us_cpi_index": {
+        "missing_count": 1,
+        "available_count": 163,
+        "missing_percent": 0.6098
+      },
+      "us_policy_rate": {
+        "missing_count": 0,
+        "available_count": 164,
+        "missing_percent": 0.0
+      },
+      "usd_inr_monthly_average": {
+        "missing_count": 44,
+        "available_count": 120,
+        "missing_percent": 26.8293
+      },
+      "us_10y_yield_monthly_average": {
+        "missing_count": 0,
+        "available_count": 164,
+        "missing_percent": 0.0
+      },
+      "us_2y_yield_monthly_average": {
+        "missing_count": 0,
+        "available_count": 164,
+        "missing_percent": 0.0
+      },
+      "us_3m_yield_monthly_average": {
+        "missing_count": 0,
+        "available_count": 164,
+        "missing_percent": 0.0
+      },
+      "bank_rate": {
+        "missing_count": 9,
+        "available_count": 155,
+        "missing_percent": 5.4878
+      },
+      "repo_rate": {
+        "missing_count": 9,
+        "available_count": 155,
+        "missing_percent": 5.4878
+      },
+      "reverse_repo_rate": {
+        "missing_count": 9,
+        "available_count": 155,
+        "missing_percent": 5.4878
+      },
+      "sdf_rate": {
+        "missing_count": 9,
+        "available_count": 155,
+        "missing_percent": 5.4878
+      },
+      "msf_rate": {
+        "missing_count": 9,
+        "available_count": 155,
+        "missing_percent": 5.4878
+      },
+      "crr": {
+        "missing_count": 9,
+        "available_count": 155,
+        "missing_percent": 5.4878
+      },
+      "slr": {
+        "missing_count": 9,
+        "available_count": 155,
+        "missing_percent": 5.4878
+      },
+      "oil_yoy": {
+        "missing_count": 0,
+        "available_count": 164,
+        "missing_percent": 0.0
+      },
+      "us_cpi_yoy": {
+        "missing_count": 1,
+        "available_count": 163,
+        "missing_percent": 0.6098
+      },
+      "cpi_yoy_2024_derived": {
+        "missing_count": 12,
+        "available_count": 152,
+        "missing_percent": 7.3171
+      },
+      "cpi_rural_yoy_2024_derived": {
+        "missing_count": 12,
+        "available_count": 152,
+        "missing_percent": 7.3171
+      },
+      "cpi_urban_yoy_2024_derived": {
+        "missing_count": 12,
+        "available_count": 152,
+        "missing_percent": 7.3171
+      },
+      "us_yield_curve_10y_minus_2y": {
+        "missing_count": 0,
+        "available_count": 164,
+        "missing_percent": 0.0
+      },
+      "repo_change_1m": {
+        "missing_count": 9,
+        "available_count": 155,
+        "missing_percent": 5.4878
+      },
+      "repo_change_3m": {
+        "missing_count": 9,
+        "available_count": 155,
+        "missing_percent": 5.4878
+      },
+      "month_sin": {
+        "missing_count": 0,
+        "available_count": 164,
+        "missing_percent": 0.0
+      },
+      "month_cos": {
+        "missing_count": 0,
+        "available_count": 164,
+        "missing_percent": 0.0
+      },
+      "rainfall_anomaly_1991_2020_mm": {
+        "missing_count": 20,
+        "available_count": 144,
+        "missing_percent": 12.1951
+      }
+    },
+    "iip_series_source_match": {
+      "iip_general_index_2011_12": true,
+      "iip_general_index_2022_23": true
+    },
+    "iip_nonmissing_counts_in_modeling_window": {
+      "iip_general_index_2011_12": 159,
+      "iip_general_index_2022_23": 41
+    },
+    "cfpi_column": "cfpi_index_2012",
+    "cfpi_nonmissing_count": 156,
+    "inr_usd_column": "usd_inr_monthly_average",
+    "inr_usd_missing_month_count": 44,
+    "inr_usd_missing_start": "2018-08-01",
+    "inr_usd_missing_end": "2022-03-01",
+    "rainfall_column": "rainfall_actual",
+    "rainfall_last_observation": "2024-12-01",
+    "imputation_performed": false
+  }
+}

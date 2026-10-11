@@ -1,0 +1,25 @@
+priority,requested_area,requested_series,status,available_series_or_file,coverage,limitation
+1,MoSPI headline CPI,cpi_index_2024; cpi_yoy_2024,partial,cpi_index_2024; cpi_yoy_2024,Index 2025-01 to 2026-08; y/y 2026-01 to 2026-08,Aug 2026 provisional; no long historical CPI/2012-base series
+1,MoSPI food inflation,food_cpi_index; food_inflation_yoy,not_obtained,mospi_cpi_aug2026_group_snapshot.csv,Aug 2026 group snapshot only,CPI food group is not CFPI; CFPI history not obtained
+1,MoSPI CPI components,cpi_food_beverages; cpi_clothing_footwear; cpi_housing; cpi_fuel_light,partial,mospi_cpi_aug2026_division_snapshot.csv,Aug 2026 one-period component snapshot,No continuous component history
+1,MoSPI industrial production,iip_index; iip_yoy; iip_manufacturing; iip_mining; iip_electricity,not_obtained,MoSPI IIP catalogue entry,Latest entry visible through Aug 2026; XLSX returned File not found,No IIP observations downloaded
+1,RBI FX,inr_usd; inr_yoy,not_obtained,RBI DBIE/Handbook source URLs in ingestion manifest,Not available,RBI workbook file-host TLS connections closed
+1,RBI policy,repo_rate; repo_change_1m; repo_change_3m,partial,raw/rbi/policy/table40_policy_rates.xlsx; rbi_policy_rate_events.csv,Event history from 1970 through Dec 2025 in retrieved workbook,Event changes normalized; monthly step values stop at source limit
+1,EIA Brent,brent_price; oil_yoy,available,raw/eia; eia_brent_monthly.csv; eia_brent_daily.csv,Daily 1987-05-20 to 2026-09-29; monthly 1987-05 to 2026-08,Official EIA RBRTE; oil_yoy deterministically derived in monthly file
+1,FRED US CPI,us_cpi_index; us_cpi_yoy,available,raw/fred/CPIAUCSL; macro_observations.csv,Monthly 1947-01 to 2026-08,us_cpi_yoy deterministically derived
+1,FRED US policy rate,us_policy_rate,available,raw/fred/FEDFUNDS,Monthly 1954-07 to 2026-09,Official FRED series
+2,RBI WPI,wpi_index; wpi_yoy; components,not_obtained,RBI HSIE table page attempt in ingestion manifest,Not available,RBI workbook file-host TLS connections closed
+2,RBI bank credit,bank_credit; non_food_credit; credit_growth,not_obtained,RBI HSIE table page attempts in ingestion manifest,Not available,RBI workbook file-host TLS connections closed
+2,RBI M3,m3; m3_growth,not_obtained,RBI HSIE table page attempts in ingestion manifest,Not available,RBI workbook file-host TLS connections closed
+2,RBI effective exchange indices,neer; reer,not_obtained,RBI DBIE source not retrieved,Not available,No official raw observations in this package
+2,RBI reserves,forex_reserves; foreign_currency_assets; gold_reserves; sdr_holdings,not_obtained,RBI HSIE table page attempts in ingestion manifest,Not available,RBI workbook file-host TLS connections closed
+2,RBI money-market liquidity,wacr; liquidity_absorption; liquidity_injection,not_obtained,RBI DBIE source not retrieved,Not available,No official raw observations in this package
+2,RBI Government yields,india_10y_gsec_yield; tbill_91d; tbill_182d; tbill_364d,not_obtained,RBI DBIE source not retrieved,Not available,No official raw observations in this package
+2,IMD rainfall,rainfall_actual; rainfall_normal; rainfall_deviation,partial,rainfall_actual; rainfall_anomaly_1991_2020_mm,Actual monthly 1901-01 to 2024-12; derived anomaly uses 1991-2020 climatology,Official normals/departures not obtained; derived anomaly is not official IMD departure
+3,MoSPI GDP/GVA,real_gdp; nominal_gdp; gva; sectoral GVA,raw_document_only,nas_q1_fy2026_27_official_release.pdf,Q1 FY2026-27 release dated 2026-08-31,PDF not parsed into quarterly rows
+3,RBI external accounts,exports; imports; trade_balance; current_account_balance; fdi; fpi,not_obtained,RBI DBIE source not retrieved,Not available,No official raw observations in this package
+3,RBI other policy/liquidity,crr; slr; sdf_rate; msf_rate; bank_rate; reverse_repo_rate,partial,raw/rbi/policy/table40_policy_rates.xlsx; rbi_policy_rate_events.csv,Event histories start 1970; last event varies by rate,Only RBI Table 40 rates available; no monthly extension beyond source events
+3,FRED US yields,us_10y_yield; us_2y_yield; us_3m_yield,available,raw/fred/DGS10; DGS2; DGS3MO,Daily 1962-01-02/1976-06-01/1981-09-01 through 2026-10-01,Monthly arithmetic averages separately named in monthly table
+3,IMF global macro,world_gdp_growth; global_inflation; advanced_economy_growth; emerging_market_growth,available,raw/imf/NGDP_RPCH; PCPIPCH,Annual WEO April 2026 vintage; 1980-2031 where available,Includes forecast years; no monthly upsampling
+3,World Bank context,India/world GDP growth; CPI inflation; trade percent GDP,available,raw/world_bank,Annual WDI coverage mostly 1960-2025,Gaps/nulls retained
+3,Fiscal,fiscal_deficit; government_expenditure; government_revenue; market_borrowing,not_obtained,RBI/MoF/CGA sources not retrieved,Not available,No official fiscal series in this package

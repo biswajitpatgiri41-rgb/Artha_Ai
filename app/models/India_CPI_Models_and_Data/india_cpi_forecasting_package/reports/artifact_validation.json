@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "processed_data_checks": {
+    "monthly_panel_rows": 156,
+    "monthly_panel_start": "2013-01",
+    "monthly_panel_end": "2025-12",
+    "target_observed_count": 142,
+    "long_observation_count": 12948,
+    "expected_checks_passed": true
+  },
+  "model_artifacts_expected": 17,
+  "model_artifacts_loaded": 17,
+  "artifact_errors": [],
+  "selected_model_family": "ARIMA(1,0,0)",
+  "selected_model_prediction_checks_passed": true,
+  "scope_note": "Forecast outputs use the discontinued 2012=100 target and are not comparable to the current 2024=100 series."
+}

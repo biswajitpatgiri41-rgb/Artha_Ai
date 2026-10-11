@@ -1,0 +1,5 @@
+horizon_months,target_month,draws,p05,p50,p95,method
+1,2026-09,10000,3.7816808546276395,4.765000624719868,5.709253549141911,"bootstrap development rolling-origin ensemble errors; empirical uncertainty, not causal scenario probability"
+3,2026-11,10000,3.202783341719795,4.689208790807226,6.8643228137128345,"bootstrap development rolling-origin ensemble errors; empirical uncertainty, not causal scenario probability"
+6,2027-02,10000,2.9591139069304493,4.368466005938198,6.302936121799311,"bootstrap development rolling-origin ensemble errors; empirical uncertainty, not causal scenario probability"
+12,2027-08,10000,2.079974805742266,4.431124903040901,6.129708899053367,"bootstrap development rolling-origin ensemble errors; empirical uncertainty, not causal scenario probability"

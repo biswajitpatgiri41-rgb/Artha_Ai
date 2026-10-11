@@ -1,0 +1,90 @@
+{
+  "created_utc": "2026-10-09T06:58:43.238552+00:00",
+  "series": "oecd_long_history_sensitivity",
+  "target_definition": "OECD monthly India CPI inflation YoY series used as a separate sensitivity target; not blended with the MoSPI 2024-base series.",
+  "test_period_definition": "Rolling-origin comparison period, forecast targets >= 2024-01; the period was examined for feature-specification comparison and is not an untouched final production holdout.",
+  "development_period_definition": "Forecast target months < 2024-01; used for ensemble weights and empirical interval calibration.",
+  "horizons_months": [
+    1,
+    3,
+    6,
+    12
+  ],
+  "min_train_months": 120,
+  "data_quality": {
+    "series": "oecd_long_history_sensitivity",
+    "n_observations": 440,
+    "first_month": "1990-01",
+    "last_month": "2026-08",
+    "duplicate_months": 0,
+    "missing_months": 0,
+    "missing_y": 0,
+    "nonfinite_y": 0,
+    "macro_missing_by_column": {
+      "brent_yoy": 0,
+      "inr_usd_yoy": 0,
+      "us_cpi_yoy": 0,
+      "fed_funds": 0
+    },
+    "out_of_range_y_months": 0,
+    "target_is_official_mospi_2024_base_yoy_except_2025_index_derived": false,
+    "data_vintage_warning": "No historical release-vintage snapshots; training uses retrieved/revised observations."
+  },
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "platform": "Linux-6.18.38+-x86_64-with-glibc2.39",
+  "versions": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scikit_learn": "1.9.1",
+    "statsmodels": "0.15.0",
+    "xgboost": "3.4.1",
+    "scipy": "1.18.1",
+    "joblib": "1.6.0"
+  },
+  "weights": {
+    "1": {
+      "SeasonalNaive": 0.002911908459967397,
+      "ETS": 0.0,
+      "ARIMA": 0.2039956887128919,
+      "SARIMA": 0.0,
+      "SARIMAX": 0.7930924028271408,
+      "VAR": 2.994620436282245e-18,
+      "XGBoost": 6.814299923454007e-17
+    },
+    "3": {
+      "SeasonalNaive": 0.08543137789747843,
+      "ETS": 0.08931568282988327,
+      "ARIMA": 0.0,
+      "SARIMA": 0.13560694779873284,
+      "SARIMAX": 0.6896459914739057,
+      "VAR": 0.0,
+      "XGBoost": 0.0
+    },
+    "6": {
+      "SeasonalNaive": 0.18320084406460518,
+      "ETS": 0.26765158508098064,
+      "ARIMA": 0.0,
+      "SARIMA": 0.07026123469554274,
+      "SARIMAX": 0.47888633615887094,
+      "VAR": 2.9196710918268357e-16,
+      "XGBoost": 3.076342001354759e-16
+    },
+    "12": {
+      "SeasonalNaive": 0.5213669738661842,
+      "ETS": 0.0,
+      "ARIMA": 0.20382863835724394,
+      "SARIMA": 0.06967795718717867,
+      "SARIMAX": 0.20512643058939364,
+      "VAR": 0.0,
+      "XGBoost": 1.4432433966826467e-16
+    }
+  },
+  "known_limitations": [
+    "Only 152 monthly official 2024-base YoY targets; 2025 YoY is derived from same-base rounded index values.",
+    "No historical real-time release vintages; backtests use revised observed values and may overstate what was known at each origin.",
+    "Test forecasts are overlapping and correlated; test sample is modest, especially by regime.",
+    "Forecast intervals are empirical calibration, not guaranteed coverage.",
+    "No claim of production readiness without external prospective monitoring, point-in-time data, and retraining governance.",
+    "The >=2024 comparison period was inspected to compare feature specifications and is not an independent final blind test."
+  ]
+}

@@ -1,0 +1,1902 @@
+{
+  "provider": "MoSPI eSankhyiki",
+  "api_url": "https://api.mospi.gov.in/api/iip/getIIPMonthly",
+  "query": {
+    "base_year": "2011-12",
+    "type": "General",
+    "Format": "JSON"
+  },
+  "retrieved_at_utc": "2026-10-05T10:23:36.048413+00:00",
+  "first_page_metadata": {
+    "page": 1,
+    "totalRecords": 168,
+    "totalPages": 17,
+    "recordPerPage": 10
+  },
+  "pages": [
+    {
+      "data": [
+        {
+          "base_year": "2011-12",
+          "year": 2026,
+          "month": "March",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "173.2",
+          "growth_rate": "4.1"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2026,
+          "month": "February",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "158.8",
+          "growth_rate": "5.1"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2026,
+          "month": "January",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "169.9",
+          "growth_rate": "5.1"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2025,
+          "month": "December",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "170.7",
+          "growth_rate": "8.0"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2025,
+          "month": "November",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "158.7",
+          "growth_rate": "7.2"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2025,
+          "month": "October",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "151.1",
+          "growth_rate": "0.5"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2025,
+          "month": "September",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "153.7",
+          "growth_rate": "4.6"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2025,
+          "month": "August",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "151.7",
+          "growth_rate": "4.0"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2025,
+          "month": "July",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "156.2",
+          "growth_rate": "4.3"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2025,
+          "month": "June",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "153.3",
+          "growth_rate": "1.5"
+        }
+      ],
+      "meta_data": {
+        "page": 1,
+        "totalRecords": 168,
+        "totalPages": 17,
+        "recordPerPage": 10
+      },
+      "msg": "Data fetched successfully",
+      "statusCode": true
+    },
+    {
+      "data": [
+        {
+          "base_year": "2011-12",
+          "year": 2025,
+          "month": "May",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "157.6",
+          "growth_rate": "1.9"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2025,
+          "month": "April",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "151.8",
+          "growth_rate": "2.6"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2025,
+          "month": "March",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "166.3",
+          "growth_rate": "3.9"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2025,
+          "month": "February",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "151.1",
+          "growth_rate": "2.7"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2025,
+          "month": "January",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "161.6",
+          "growth_rate": "5.2"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2024,
+          "month": "December",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "158.0",
+          "growth_rate": "3.7"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2024,
+          "month": "November",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "148.1",
+          "growth_rate": "5.0"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2024,
+          "month": "October",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "150.3",
+          "growth_rate": "3.7"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2024,
+          "month": "September",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "146.9",
+          "growth_rate": "3.2"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2024,
+          "month": "August",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "145.8",
+          "growth_rate": "0.0"
+        }
+      ],
+      "meta_data": {
+        "page": 2,
+        "totalRecords": 168,
+        "totalPages": 17,
+        "recordPerPage": 10
+      },
+      "msg": "Data fetched successfully",
+      "statusCode": true
+    },
+    {
+      "data": [
+        {
+          "base_year": "2011-12",
+          "year": 2024,
+          "month": "July",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "149.8",
+          "growth_rate": "5.0"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2024,
+          "month": "June",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "151.0",
+          "growth_rate": "4.9"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2024,
+          "month": "May",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "154.7",
+          "growth_rate": "6.3"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2024,
+          "month": "April",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "148.0",
+          "growth_rate": "5.2"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2024,
+          "month": "March",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "160.0",
+          "growth_rate": "5.5"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2024,
+          "month": "February",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "147.1",
+          "growth_rate": "5.6"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2024,
+          "month": "January",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "153.6",
+          "growth_rate": "4.2"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2023,
+          "month": "December",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "152.3",
+          "growth_rate": "4.4"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2023,
+          "month": "November",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "141.1",
+          "growth_rate": "2.5"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2023,
+          "month": "October",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "144.9",
+          "growth_rate": "11.9"
+        }
+      ],
+      "meta_data": {
+        "page": 3,
+        "totalRecords": 168,
+        "totalPages": 17,
+        "recordPerPage": 10
+      },
+      "msg": "Data fetched successfully",
+      "statusCode": true
+    },
+    {
+      "data": [
+        {
+          "base_year": "2011-12",
+          "year": 2023,
+          "month": "September",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "142.3",
+          "growth_rate": "6.4"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2023,
+          "month": "August",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "145.8",
+          "growth_rate": "10.9"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2023,
+          "month": "July",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "142.7",
+          "growth_rate": "6.2"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2023,
+          "month": "June",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "143.9",
+          "growth_rate": "4.0"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2023,
+          "month": "May",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "145.6",
+          "growth_rate": "5.7"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2023,
+          "month": "April",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "140.7",
+          "growth_rate": "4.6"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2023,
+          "month": "March",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "151.7",
+          "growth_rate": "1.9"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2023,
+          "month": "February",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "139.3",
+          "growth_rate": "6.0"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2023,
+          "month": "January",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "147.4",
+          "growth_rate": "5.8"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2022,
+          "month": "December",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "145.9",
+          "growth_rate": "5.1"
+        }
+      ],
+      "meta_data": {
+        "page": 4,
+        "totalRecords": 168,
+        "totalPages": 17,
+        "recordPerPage": 10
+      },
+      "msg": "Data fetched successfully",
+      "statusCode": true
+    },
+    {
+      "data": [
+        {
+          "base_year": "2011-12",
+          "year": 2022,
+          "month": "November",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "137.7",
+          "growth_rate": "7.6"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2022,
+          "month": "October",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "129.5",
+          "growth_rate": "-4.1"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2022,
+          "month": "September",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "133.8",
+          "growth_rate": "3.3"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2022,
+          "month": "August",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "131.5",
+          "growth_rate": "-0.7"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2022,
+          "month": "July",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "134.4",
+          "growth_rate": "2.2"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2022,
+          "month": "June",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "138.3",
+          "growth_rate": "12.6"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2022,
+          "month": "May",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "137.8",
+          "growth_rate": "19.7"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2022,
+          "month": "April",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "134.5",
+          "growth_rate": "6.7"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2022,
+          "month": "March",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "148.8",
+          "growth_rate": "2.2"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2022,
+          "month": "February",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "131.4",
+          "growth_rate": "1.2"
+        }
+      ],
+      "meta_data": {
+        "page": 5,
+        "totalRecords": 168,
+        "totalPages": 17,
+        "recordPerPage": 10
+      },
+      "msg": "Data fetched successfully",
+      "statusCode": true
+    },
+    {
+      "data": [
+        {
+          "base_year": "2011-12",
+          "year": 2022,
+          "month": "January",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "139.3",
+          "growth_rate": "2.0"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2021,
+          "month": "December",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "138.8",
+          "growth_rate": "1.0"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2021,
+          "month": "November",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "128.0",
+          "growth_rate": "1.0"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2021,
+          "month": "October",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "135.0",
+          "growth_rate": "4.2"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2021,
+          "month": "September",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "129.5",
+          "growth_rate": "4.4"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2021,
+          "month": "August",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "132.4",
+          "growth_rate": "13.0"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2021,
+          "month": "July",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "131.5",
+          "growth_rate": "11.5"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2021,
+          "month": "June",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "122.8",
+          "growth_rate": "13.8"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2021,
+          "month": "May",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "115.1",
+          "growth_rate": "27.6"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2021,
+          "month": "April",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "126.1",
+          "growth_rate": null
+        }
+      ],
+      "meta_data": {
+        "page": 6,
+        "totalRecords": 168,
+        "totalPages": 17,
+        "recordPerPage": 10
+      },
+      "msg": "Data fetched successfully",
+      "statusCode": true
+    },
+    {
+      "data": [
+        {
+          "base_year": "2011-12",
+          "year": 2021,
+          "month": "March",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "145.6",
+          "growth_rate": "24.2"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2021,
+          "month": "February",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "129.9",
+          "growth_rate": "-3.2"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2021,
+          "month": "January",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "136.6",
+          "growth_rate": "-0.6"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2020,
+          "month": "December",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "137.4",
+          "growth_rate": "2.2"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2020,
+          "month": "November",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "126.7",
+          "growth_rate": "-1.6"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2020,
+          "month": "October",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "129.6",
+          "growth_rate": "4.5"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2020,
+          "month": "September",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "124.1",
+          "growth_rate": "1.0"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2020,
+          "month": "August",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "117.2",
+          "growth_rate": "-7.1"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2020,
+          "month": "July",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "117.9",
+          "growth_rate": "-10.5"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2020,
+          "month": "June",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "107.9",
+          "growth_rate": "-16.6"
+        }
+      ],
+      "meta_data": {
+        "page": 7,
+        "totalRecords": 168,
+        "totalPages": 17,
+        "recordPerPage": 10
+      },
+      "msg": "Data fetched successfully",
+      "statusCode": true
+    },
+    {
+      "data": [
+        {
+          "base_year": "2011-12",
+          "year": 2020,
+          "month": "May",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "90.2",
+          "growth_rate": "-33.4"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2020,
+          "month": "April",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "54.0",
+          "growth_rate": "-57.3"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2020,
+          "month": "March",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "117.2",
+          "growth_rate": "-18.7"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2020,
+          "month": "February",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "134.2",
+          "growth_rate": "5.2"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2020,
+          "month": "January",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "137.4",
+          "growth_rate": "2.2"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2019,
+          "month": "December",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "134.5",
+          "growth_rate": "0.4"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2019,
+          "month": "November",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "128.8",
+          "growth_rate": "2.1"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2019,
+          "month": "October",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "124.0",
+          "growth_rate": "-6.6"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2019,
+          "month": "September",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "122.9",
+          "growth_rate": "-4.6"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2019,
+          "month": "August",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "126.2",
+          "growth_rate": "-1.4"
+        }
+      ],
+      "meta_data": {
+        "page": 8,
+        "totalRecords": 168,
+        "totalPages": 17,
+        "recordPerPage": 10
+      },
+      "msg": "Data fetched successfully",
+      "statusCode": true
+    },
+    {
+      "data": [
+        {
+          "base_year": "2011-12",
+          "year": 2019,
+          "month": "July",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "131.8",
+          "growth_rate": "4.9"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2019,
+          "month": "June",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "129.3",
+          "growth_rate": "1.3"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2019,
+          "month": "May",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "135.4",
+          "growth_rate": "4.5"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2019,
+          "month": "April",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "126.5",
+          "growth_rate": "3.2"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2019,
+          "month": "March",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "144.1",
+          "growth_rate": "2.7"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2019,
+          "month": "February",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "127.6",
+          "growth_rate": "0.2"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2019,
+          "month": "January",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "134.4",
+          "growth_rate": "1.6"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2018,
+          "month": "December",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "133.9",
+          "growth_rate": "2.5"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2018,
+          "month": "November",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "126.1",
+          "growth_rate": "0.2"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2018,
+          "month": "October",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "132.8",
+          "growth_rate": "8.4"
+        }
+      ],
+      "meta_data": {
+        "page": 9,
+        "totalRecords": 168,
+        "totalPages": 17,
+        "recordPerPage": 10
+      },
+      "msg": "Data fetched successfully",
+      "statusCode": true
+    },
+    {
+      "data": [
+        {
+          "base_year": "2011-12",
+          "year": 2018,
+          "month": "September",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "128.8",
+          "growth_rate": "4.6"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2018,
+          "month": "August",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "128.0",
+          "growth_rate": "4.8"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2018,
+          "month": "July",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "125.7",
+          "growth_rate": "6.5"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2018,
+          "month": "June",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "127.7",
+          "growth_rate": "7.0"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2018,
+          "month": "May",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "129.6",
+          "growth_rate": "3.8"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2018,
+          "month": "April",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "122.6",
+          "growth_rate": "4.5"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2018,
+          "month": "March",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "140.3",
+          "growth_rate": "5.3"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2018,
+          "month": "February",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "127.4",
+          "growth_rate": "6.9"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2018,
+          "month": "January",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "132.3",
+          "growth_rate": "7.5"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2017,
+          "month": "December",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "130.6",
+          "growth_rate": "7.3"
+        }
+      ],
+      "meta_data": {
+        "page": 10,
+        "totalRecords": 168,
+        "totalPages": 17,
+        "recordPerPage": 10
+      },
+      "msg": "Data fetched successfully",
+      "statusCode": true
+    },
+    {
+      "data": [
+        {
+          "base_year": "2011-12",
+          "year": 2017,
+          "month": "November",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "125.8",
+          "growth_rate": "8.5"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2017,
+          "month": "October",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "122.5",
+          "growth_rate": "1.8"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2017,
+          "month": "September",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "123.1",
+          "growth_rate": "4.1"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2017,
+          "month": "August",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "122.1",
+          "growth_rate": "4.8"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2017,
+          "month": "July",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "118.0",
+          "growth_rate": "1.0"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2017,
+          "month": "June",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "119.3",
+          "growth_rate": "-0.3"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2017,
+          "month": "May",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "124.8",
+          "growth_rate": "2.9"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2017,
+          "month": "April",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "117.3",
+          "growth_rate": "3.2"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2017,
+          "month": "March",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "133.2",
+          "growth_rate": "4.4"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2017,
+          "month": "February",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "119.2",
+          "growth_rate": "1.2"
+        }
+      ],
+      "meta_data": {
+        "page": 11,
+        "totalRecords": 168,
+        "totalPages": 17,
+        "recordPerPage": 10
+      },
+      "msg": "Data fetched successfully",
+      "statusCode": true
+    },
+    {
+      "data": [
+        {
+          "base_year": "2011-12",
+          "year": 2017,
+          "month": "January",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "123.1",
+          "growth_rate": "3.5"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2016,
+          "month": "December",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "121.7",
+          "growth_rate": "2.4"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2016,
+          "month": "November",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "115.9",
+          "growth_rate": "5.1"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2016,
+          "month": "October",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "120.3",
+          "growth_rate": "4.2"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2016,
+          "month": "September",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "118.2",
+          "growth_rate": "5.0"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2016,
+          "month": "August",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "116.5",
+          "growth_rate": "4.0"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2016,
+          "month": "July",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "116.8",
+          "growth_rate": "4.5"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2016,
+          "month": "June",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "119.7",
+          "growth_rate": "8.0"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2016,
+          "month": "May",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "121.3",
+          "growth_rate": "7.3"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2016,
+          "month": "April",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "113.7",
+          "growth_rate": "6.0"
+        }
+      ],
+      "meta_data": {
+        "page": 12,
+        "totalRecords": 168,
+        "totalPages": 17,
+        "recordPerPage": 10
+      },
+      "msg": "Data fetched successfully",
+      "statusCode": true
+    },
+    {
+      "data": [
+        {
+          "base_year": "2011-12",
+          "year": 2016,
+          "month": "March",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "127.6",
+          "growth_rate": "5.2"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2016,
+          "month": "February",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "117.8",
+          "growth_rate": "7.2"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2016,
+          "month": "January",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "118.9",
+          "growth_rate": "4.0"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2015,
+          "month": "December",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "118.9",
+          "growth_rate": "3.1"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2015,
+          "month": "November",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "110.3",
+          "growth_rate": "0.8"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2015,
+          "month": "October",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "115.5",
+          "growth_rate": "9.0"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2015,
+          "month": "September",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "112.6",
+          "growth_rate": "2.2"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2015,
+          "month": "August",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "112.0",
+          "growth_rate": "3.7"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2015,
+          "month": "July",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "111.8",
+          "growth_rate": "1.3"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2015,
+          "month": "June",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "110.8",
+          "growth_rate": "1.0"
+        }
+      ],
+      "meta_data": {
+        "page": 13,
+        "totalRecords": 168,
+        "totalPages": 17,
+        "recordPerPage": 10
+      },
+      "msg": "Data fetched successfully",
+      "statusCode": true
+    },
+    {
+      "data": [
+        {
+          "base_year": "2011-12",
+          "year": 2015,
+          "month": "May",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "113.0",
+          "growth_rate": "1.8"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2015,
+          "month": "April",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "107.3",
+          "growth_rate": "0.7"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2015,
+          "month": "March",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "121.3",
+          "growth_rate": "2.4"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2015,
+          "month": "February",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "109.9",
+          "growth_rate": "3.0"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2015,
+          "month": "January",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "114.3",
+          "growth_rate": "1.8"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2014,
+          "month": "December",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "115.3",
+          "growth_rate": "4.0"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2014,
+          "month": "November",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "109.4",
+          "growth_rate": "7.4"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2014,
+          "month": "October",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "106.0",
+          "growth_rate": "0.3"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2014,
+          "month": "September",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "110.2",
+          "growth_rate": "4.3"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2014,
+          "month": "August",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "108.0",
+          "growth_rate": "3.5"
+        }
+      ],
+      "meta_data": {
+        "page": 14,
+        "totalRecords": 168,
+        "totalPages": 17,
+        "recordPerPage": 10
+      },
+      "msg": "Data fetched successfully",
+      "statusCode": true
+    },
+    {
+      "data": [
+        {
+          "base_year": "2011-12",
+          "year": 2014,
+          "month": "July",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "110.4",
+          "growth_rate": "5.4"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2014,
+          "month": "June",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "109.7",
+          "growth_rate": "8.3"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2014,
+          "month": "May",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "111.0",
+          "growth_rate": "4.7"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2014,
+          "month": "April",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "106.6",
+          "growth_rate": "3.9"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2014,
+          "month": "March",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "118.5",
+          "growth_rate": "2.9"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2014,
+          "month": "February",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "106.7",
+          "growth_rate": "5.2"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2014,
+          "month": "January",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "112.3",
+          "growth_rate": "4.8"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2013,
+          "month": "December",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "110.9",
+          "growth_rate": "3.5"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2013,
+          "month": "November",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "101.9",
+          "growth_rate": "3.7"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2013,
+          "month": "October",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "105.7",
+          "growth_rate": "1.9"
+        }
+      ],
+      "meta_data": {
+        "page": 15,
+        "totalRecords": 168,
+        "totalPages": 17,
+        "recordPerPage": 10
+      },
+      "msg": "Data fetched successfully",
+      "statusCode": true
+    },
+    {
+      "data": [
+        {
+          "base_year": "2011-12",
+          "year": 2013,
+          "month": "September",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "105.7",
+          "growth_rate": "6.8"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2013,
+          "month": "August",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "104.3",
+          "growth_rate": "4.4"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2013,
+          "month": "July",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "104.7",
+          "growth_rate": "3.2"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2013,
+          "month": "June",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "101.3",
+          "growth_rate": "-1.0"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2013,
+          "month": "May",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "106.0",
+          "growth_rate": "1.0"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2013,
+          "month": "April",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "102.6",
+          "growth_rate": "3.3"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2013,
+          "month": "March",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "115.2",
+          "growth_rate": "15.2"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2013,
+          "month": "February",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "101.4",
+          "growth_rate": "1.4"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2013,
+          "month": "January",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "107.2",
+          "growth_rate": "7.2"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2012,
+          "month": "December",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "107.1",
+          "growth_rate": "7.1"
+        }
+      ],
+      "meta_data": {
+        "page": 16,
+        "totalRecords": 168,
+        "totalPages": 17,
+        "recordPerPage": 10
+      },
+      "msg": "Data fetched successfully",
+      "statusCode": true
+    },
+    {
+      "data": [
+        {
+          "base_year": "2011-12",
+          "year": 2012,
+          "month": "November",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "98.3",
+          "growth_rate": "-1.7"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2012,
+          "month": "October",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "103.7",
+          "growth_rate": "3.7"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2012,
+          "month": "September",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "99.0",
+          "growth_rate": "-1.0"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2012,
+          "month": "August",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "99.9",
+          "growth_rate": "-0.1"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2012,
+          "month": "July",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "101.5",
+          "growth_rate": "1.5"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2012,
+          "month": "June",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "102.3",
+          "growth_rate": "2.3"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2012,
+          "month": "May",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "105.0",
+          "growth_rate": "5.0"
+        },
+        {
+          "base_year": "2011-12",
+          "year": 2012,
+          "month": "April",
+          "type": "General",
+          "category": "General",
+          "sub_category": "",
+          "index": "99.3",
+          "growth_rate": "-0.7"
+        }
+      ],
+      "meta_data": {
+        "page": 17,
+        "totalRecords": 168,
+        "totalPages": 17,
+        "recordPerPage": 10
+      },
+      "msg": "Data fetched successfully",
+      "statusCode": true
+    }
+  ]
+}

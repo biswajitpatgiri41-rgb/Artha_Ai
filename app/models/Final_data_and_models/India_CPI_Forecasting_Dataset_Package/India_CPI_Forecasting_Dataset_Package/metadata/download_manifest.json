@@ -1,0 +1,324 @@
+{
+  "created_utc": "2026-10-08T14:13:53.233045+00:00",
+  "script": "download_bundle.py",
+  "datasets": [
+    {
+      "name": "2012-base all-India group history",
+      "path": "raw/mospi/cpi_2012_all_india_group_history.csv",
+      "rows": 15150,
+      "filter_count": 1,
+      "page_count": 152
+    },
+    {
+      "name": "2012-base item history",
+      "path": "raw/mospi/cpi_2012_item_history.csv",
+      "rows": 42159,
+      "filter_count": 1,
+      "page_count": 422
+    },
+    {
+      "name": "2024-base current detailed all-India (all sectors)",
+      "path": "raw/mospi/cpi_2024_current_all_india_detailed.csv",
+      "rows": 40080,
+      "filter_count": 72,
+      "page_count": 432
+    },
+    {
+      "name": "2024-base back series",
+      "path": "raw/mospi/cpi_2024_back_series.csv",
+      "rows": 432,
+      "filter_count": 1,
+      "page_count": 5
+    },
+    {
+      "source": "World Bank WDI",
+      "path": "raw/world_bank/wdi_selected_all_countries_long.csv.gz",
+      "rows": 612150,
+      "indicators_requested": 36,
+      "indicators_ok": 35,
+      "indicators_recovered": [
+        "AG.PRD.CROP.XD",
+        "AG.PRD.FOOD.XD",
+        "NE.CON.GOVT.ZS",
+        "NE.EXP.GNFS.ZS",
+        "NE.GDI.TOTL.ZS",
+        "NE.IMP.GNFS.ZS",
+        "NV.IND.MANF.KD.ZG",
+        "NV.IND.TOTL.ZS",
+        "NV.SRV.TOTL.ZS"
+      ],
+      "bytes_after_retry": 5358047
+    },
+    {
+      "status": "downloaded",
+      "path": "raw/world_bank/pink_sheet_monthly_commodity_prices.xlsx",
+      "bytes": 586099,
+      "url": "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Historical-Data-Monthly.xlsx",
+      "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    },
+    {
+      "status": "downloaded",
+      "path": "raw/imf/WEOApr2026all.xlsx",
+      "bytes": 5585205,
+      "url": "https://data.imf.org/-/media/iData/External-Storage/Documents/2F78EE59F79143A7921E5E203D3AAA80/en/WEOApr2026all.xlsx",
+      "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    },
+    {
+      "status": "downloaded",
+      "path": "raw/wpi/wpi_2011_12_monthly_from_2012.xls",
+      "bytes": 1339904,
+      "url": "https://eaindustry.nic.in/indx_download_1112/monthly_index_202606.xls",
+      "content_type": "application/vnd.ms-excel"
+    },
+    {
+      "status": "downloaded",
+      "path": "raw/wpi/wpi_2011_12_calendar_year_averages.xls",
+      "bytes": 230400,
+      "url": "https://eaindustry.nic.in/indx_download_1112/cal_year_index.xls",
+      "content_type": "application/vnd.ms-excel"
+    },
+    {
+      "status": "downloaded",
+      "path": "raw/wpi/wpi_2011_12_financial_year_averages.xls",
+      "bytes": 243200,
+      "url": "https://eaindustry.nic.in/indx_download_1112/fin_year_index.xls",
+      "content_type": "application/vnd.ms-excel"
+    },
+    {
+      "status": "downloaded",
+      "path": "raw/eia/brent_daily_official.xls",
+      "bytes": 452096,
+      "url": "https://www.eia.gov/dnav/pet/hist_xls/RBRTEd.xls",
+      "content_type": "application/vnd.ms-excel"
+    },
+    {
+      "status": "downloaded",
+      "path": "raw/eia/wti_daily_official.xls",
+      "bytes": 471040,
+      "url": "https://www.eia.gov/dnav/pet/hist_xls/RWTCd.xls",
+      "content_type": "application/vnd.ms-excel"
+    },
+    {
+      "source": "FRED",
+      "series": "FEDFUNDS",
+      "status": "downloaded",
+      "path": "raw/fred/FEDFUNDS.csv",
+      "bytes": 13959,
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=FEDFUNDS",
+      "content_type": "application/csv"
+    },
+    {
+      "source": "FRED",
+      "series": "CPILFESL",
+      "status": "downloaded",
+      "path": "raw/fred/CPILFESL.csv",
+      "bytes": 15584,
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=CPILFESL",
+      "content_type": "application/csv"
+    },
+    {
+      "source": "FRED",
+      "series": "CPIAUCSL",
+      "status": "downloaded",
+      "path": "raw/fred/CPIAUCSL.csv",
+      "bytes": 17744,
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=CPIAUCSL",
+      "content_type": "application/csv"
+    },
+    {
+      "source": "FRED",
+      "series": "DGS10",
+      "status": "downloaded",
+      "path": "raw/fred/DGS10.csv",
+      "bytes": 268967,
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS10",
+      "content_type": "application/csv"
+    },
+    {
+      "source": "FRED",
+      "series": "DFF",
+      "status": "downloaded",
+      "path": "raw/fred/DFF.csv",
+      "bytes": 424171,
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DFF",
+      "content_type": "application/csv"
+    },
+    {
+      "source": "FRED",
+      "series": "UNRATE",
+      "status": "downloaded",
+      "path": "raw/fred/UNRATE.csv",
+      "bytes": 14211,
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=UNRATE",
+      "content_type": "application/csv"
+    },
+    {
+      "source": "FRED",
+      "series": "DCOILWTICO",
+      "status": "downloaded",
+      "path": "raw/fred/DCOILWTICO.csv",
+      "bytes": 175782,
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DCOILWTICO",
+      "content_type": "application/csv"
+    },
+    {
+      "source": "FRED",
+      "series": "DTWEXBGS",
+      "status": "downloaded",
+      "path": "raw/fred/DTWEXBGS.csv",
+      "bytes": 104537,
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DTWEXBGS",
+      "content_type": "application/csv"
+    },
+    {
+      "source": "FRED",
+      "series": "M2SL",
+      "status": "downloaded",
+      "path": "raw/fred/M2SL.csv",
+      "bytes": 14607,
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=M2SL",
+      "content_type": "application/csv"
+    },
+    {
+      "source": "FRED",
+      "series": "INDPROINDMISMEI",
+      "status": "downloaded",
+      "path": "raw/fred/INDPROINDMISMEI.csv",
+      "bytes": 7041,
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=INDPROINDMISMEI",
+      "content_type": "application/csv"
+    },
+    {
+      "source": "FRED",
+      "series": "DEXINUS",
+      "status": "downloaded",
+      "path": "raw/fred/DEXINUS.csv",
+      "bytes": 260037,
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXINUS",
+      "content_type": "application/csv"
+    },
+    {
+      "source": "FRED",
+      "series": "DGS2",
+      "status": "downloaded",
+      "path": "raw/fred/DGS2.csv",
+      "bytes": 209140,
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS2",
+      "content_type": "application/csv"
+    },
+    {
+      "source": "FRED",
+      "series": "INDCPALTT01IXNBM",
+      "status": "downloaded",
+      "path": "raw/fred/INDCPALTT01IXNBM.csv",
+      "bytes": 22027,
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=INDCPALTT01IXNBM",
+      "content_type": "application/csv"
+    },
+    {
+      "source": "FRED",
+      "series": "DCOILBRENTEU",
+      "status": "downloaded",
+      "path": "raw/fred/DCOILBRENTEU.csv",
+      "bytes": 170003,
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DCOILBRENTEU",
+      "content_type": "application/csv"
+    },
+    {
+      "source": "FRED",
+      "series": "IR3TIB01INM156N",
+      "status": "failed",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=IR3TIB01INM156N",
+      "error": "404 Client Error: Not Found for url: https://fred.stlouisfed.org/graph/fredgraph.csv?id=IR3TIB01INM156N"
+    },
+    {
+      "source": "FRED",
+      "series": "IRLTLT01INM156N",
+      "status": "failed",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=IRLTLT01INM156N",
+      "error": "404 Client Error: Not Found for url: https://fred.stlouisfed.org/graph/fredgraph.csv?id=IRLTLT01INM156N"
+    },
+    {
+      "status": "downloaded",
+      "path": "raw/oecd/india_monthly_cpi_yoy.csv",
+      "bytes": 141553,
+      "url": "https://sdmx.oecd.org/public/rest/data/OECD.SDD.TPS,DSD_PRICES@DF_PRICES_ALL,1.0/IND.M.N.CPI.PA._T.N.GY?startPeriod=1990-01&dimensionAtObservation=AllDimensions&format=csvfilewithlabels",
+      "content_type": "application/vnd.sdmx.data+csv; labels=name; version=2; charset=utf-8"
+    },
+    {
+      "status": "downloaded",
+      "path": "raw/oecd/india_monthly_cpi_index.csv",
+      "bytes": 132802,
+      "url": "https://sdmx.oecd.org/public/rest/data/OECD.SDD.TPS,DSD_PRICES@DF_PRICES_ALL,1.0/IND.M.N.CPI.IX._T.N._Z?startPeriod=1990-01&dimensionAtObservation=AllDimensions&format=csvfilewithlabels",
+      "content_type": "application/vnd.sdmx.data+csv; labels=name; version=2; charset=utf-8"
+    },
+    {
+      "source": "IMD OGD regional rainfall",
+      "status": "downloaded",
+      "rows": 620,
+      "path": "raw/imd/imd_regional_monthly_seasonal_rainfall_1901_2024.csv",
+      "regions": [
+        "WHI",
+        "NEI",
+        "NWI",
+        "PNI",
+        "CNI"
+      ],
+      "years": [
+        1901,
+        2024
+      ],
+      "note": "124 observations per region; monthly, annual, and seasonal fields."
+    },
+    {
+      "source": "FRED / OECD",
+      "series": "IRSTCB01INM156N",
+      "status": "downloaded_proxy",
+      "path": "raw/fred/IRSTCB01INM156N_india_central_bank_rate.csv",
+      "rows": 672,
+      "url": "https://fred.stlouisfed.org/series/IRSTCB01INM156N",
+      "note": "Monthly central-bank rate proxy, not asserted to equal RBI repo; through 2023-12."
+    },
+    {
+      "source": "RBI DBIE landing page",
+      "status": "partial_snapshot",
+      "path": "raw/rbi/dbie_landing_snapshot.csv",
+      "rows": 5,
+      "retrieved_on": "2026-10-08",
+      "url": "https://data.rbi.org.in/",
+      "note": "Current indicator snapshot only; effective dates not stated."
+    },
+    {
+      "source": "IMD 0.25-degree daily gridded rainfall",
+      "status": "downloaded",
+      "path": "raw/imd/gridded_daily_025deg",
+      "files_count": 13,
+      "years_downloaded": [
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "year_window": [
+        2012,
+        2024
+      ],
+      "compressed_bytes": 33471765,
+      "format": "gzip-compressed NetCDF classic annual files",
+      "url": "https://www.imdpune.gov.in/cmpg/Griddata/RF25.php",
+      "note": "CPI-aligned subset; full 1901–2024 gridded archive not included. See per-year raw manifest."
+    }
+  ],
+  "completed_utc": "2026-10-08T14:35:11.638176+00:00",
+  "log_path": "acquisition.log",
+  "supplemental_updated_utc": "2026-10-08T14:44:56.191835+00:00"
+}

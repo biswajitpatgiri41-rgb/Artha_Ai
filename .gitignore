@@ -1,0 +1,57 @@
+# Ignore environment files
+.env
+.env.*
+!.env.example
+
+# Python environments and generated files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node/Next build output
+node_modules/
+**/node_modules/
+.next/
+**/.next/
+out/
+coverage/
+
+# Local runtime state and generated uploads
+data/chroma/
+data/uploads/
+data/raw/
+data/interim/
+data/manifests/
+*.sqlite3
+*.sqlite3-*
+
+# Large local datasets, archives, and model caches
+*.zip
+*.tar
+*.tar.gz
+*.parquet
+*.onnx
+*.pt
+*.pth
+*.bin
+*.safetensors
+**/.cache/
+
+# Keep the small, prebuilt runtime panels used by the API.
+!data/processed/
+!data/processed/*.parquet
+!data/modeling/
+!data/modeling/*.parquet
+
+# Logs and editor/OS files
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+.vscode/*.code-workspace

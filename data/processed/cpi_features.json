@@ -1,0 +1,137 @@
+{
+  "created_at": "2026-10-03T09:36:40.691124",
+  "source_table": "macro_monthly",
+  "transformations": [
+    {
+      "feature": "oil_yoy",
+      "formula": "100 * brent_price.pct_change(12)",
+      "description": "Brent crude year-over-year percentage change",
+      "dependencies": [
+        "brent_price"
+      ]
+    },
+    {
+      "feature": "month_sin",
+      "formula": "sin(2*pi*month/12)",
+      "description": "Seasonal sine encoding",
+      "dependencies": [
+        "date"
+      ]
+    },
+    {
+      "feature": "month_cos",
+      "formula": "cos(2*pi*month/12)",
+      "description": "Seasonal cosine encoding",
+      "dependencies": [
+        "date"
+      ]
+    },
+    {
+      "feature": "oil_yoy_lag_1",
+      "formula": "oil_yoy.shift(1)",
+      "description": "1-month lag of oil_yoy",
+      "dependencies": [
+        "oil_yoy"
+      ]
+    },
+    {
+      "feature": "oil_yoy_lag_2",
+      "formula": "oil_yoy.shift(2)",
+      "description": "2-month lag of oil_yoy",
+      "dependencies": [
+        "oil_yoy"
+      ]
+    },
+    {
+      "feature": "oil_yoy_lag_3",
+      "formula": "oil_yoy.shift(3)",
+      "description": "3-month lag of oil_yoy",
+      "dependencies": [
+        "oil_yoy"
+      ]
+    },
+    {
+      "feature": "oil_yoy_lag_6",
+      "formula": "oil_yoy.shift(6)",
+      "description": "6-month lag of oil_yoy",
+      "dependencies": [
+        "oil_yoy"
+      ]
+    },
+    {
+      "feature": "oil_yoy_lag_12",
+      "formula": "oil_yoy.shift(12)",
+      "description": "12-month lag of oil_yoy",
+      "dependencies": [
+        "oil_yoy"
+      ]
+    },
+    {
+      "feature": "oil_vol_6",
+      "formula": "oil_yoy.rolling(6).std()",
+      "description": "6-month rolling volatility of oil YoY",
+      "dependencies": [
+        "oil_yoy"
+      ]
+    }
+  ],
+  "features": {
+    "oil_yoy": {
+      "type": "derived",
+      "formula": "100 * brent_price.pct_change(12)",
+      "unit": "percent"
+    },
+    "month_sin": {
+      "type": "seasonal",
+      "formula": "sin(2*pi*month/12)",
+      "unit": "dimensionless"
+    },
+    "month_cos": {
+      "type": "seasonal",
+      "formula": "cos(2*pi*month/12)",
+      "unit": "dimensionless"
+    },
+    "oil_yoy_lag_1": {
+      "type": "lag",
+      "base_feature": "oil_yoy",
+      "lag": 1,
+      "formula": "oil_yoy.shift(1)",
+      "unit": "percent"
+    },
+    "oil_yoy_lag_2": {
+      "type": "lag",
+      "base_feature": "oil_yoy",
+      "lag": 2,
+      "formula": "oil_yoy.shift(2)",
+      "unit": "percent"
+    },
+    "oil_yoy_lag_3": {
+      "type": "lag",
+      "base_feature": "oil_yoy",
+      "lag": 3,
+      "formula": "oil_yoy.shift(3)",
+      "unit": "percent"
+    },
+    "oil_yoy_lag_6": {
+      "type": "lag",
+      "base_feature": "oil_yoy",
+      "lag": 6,
+      "formula": "oil_yoy.shift(6)",
+      "unit": "percent"
+    },
+    "oil_yoy_lag_12": {
+      "type": "lag",
+      "base_feature": "oil_yoy",
+      "lag": 12,
+      "formula": "oil_yoy.shift(12)",
+      "unit": "percent"
+    },
+    "oil_vol_6": {
+      "type": "rolling",
+      "formula": "oil_yoy.rolling(6).std()",
+      "unit": "percent"
+    }
+  },
+  "targets": {},
+  "leakage_warnings": []
+}

@@ -1,0 +1,608 @@
+{
+  "package": "India_CPI_Model_Package",
+  "purpose": "Trained India CPI forecast model families, model registries, reproducible code, validation scorecards, diagnostics, and exact raw inputs used.",
+  "created_utc": "2026-10-09T07:18:24.165865+00:00",
+  "file_count_excluding_manifests": 120,
+  "files": [
+    {
+      "path": "MODEL_VALIDATION.md",
+      "bytes": 9827,
+      "sha256": "73ea1c164553541b234afcb653f0fd8073e1bddce5420b1e206bf052d71bc059"
+    },
+    {
+      "path": "README.md",
+      "bytes": 10678,
+      "sha256": "d6a666c84b2b32a46e74f2a559b3e186d65fffc153c29e2fc0870c014442af6c"
+    },
+    {
+      "path": "artifacts/ALL_MOSPI_TEST_METRICS.csv",
+      "bytes": 5062,
+      "sha256": "472dca4fd07414b522167e4ab3fb6e8047090d707b2e9a67618f1dfef47e9064"
+    },
+    {
+      "path": "artifacts/ALL_OECD_TEST_METRICS.csv",
+      "bytes": 5444,
+      "sha256": "017ebe3afb56064a82de2601ceb7ae8648bda1be2a877e4a6ea9091604f048cc"
+    },
+    {
+      "path": "artifacts/external_macro_monthly_source_panel.csv",
+      "bytes": 11181,
+      "sha256": "b39516feaa40f0197790b24078a219d93c2d46c4c4d83ca08e6296e42340b0f8"
+    },
+    {
+      "path": "artifacts/macro_predictors_one_month_lag.csv",
+      "bytes": 10557,
+      "sha256": "a98760c721d838c59b2bec3218abd7f9865b99d2947c88e59d918bc963329e1d"
+    },
+    {
+      "path": "artifacts/mospi_2024_base/backtest_predictions.csv",
+      "bytes": 47966,
+      "sha256": "1b3514e672097a95d553870937a7b862115b63ab90c3e2946d9c2fc35dc8d940"
+    },
+    {
+      "path": "artifacts/mospi_2024_base/diagnostics/data_quality.json",
+      "bytes": 539,
+      "sha256": "a1a7b590e0e0e676d6154d35766ef95ca3ad8d99d4f2a70d4c23a5deea8d1f86"
+    },
+    {
+      "path": "artifacts/mospi_2024_base/diagnostics/drift_watch.csv",
+      "bytes": 695,
+      "sha256": "d08426511737d23ccfb2fac9ce831b76bc57e40090b01e30b9f9600c6a309f2d"
+    },
+    {
+      "path": "artifacts/mospi_2024_base/diagnostics/local_projection_associations.csv",
+      "bytes": 1186,
+      "sha256": "ffead7af2b86c958b1376b537fbe671cf03843d5c6f13d28377562ffa6a64ba1"
+    },
+    {
+      "path": "artifacts/mospi_2024_base/diagnostics/monte_carlo_uncertainty.csv",
+      "bytes": 781,
+      "sha256": "f714346a604f561f8c6604a6dae4dff6bbcf6f2db0401e71ea72e50104e47731"
+    },
+    {
+      "path": "artifacts/mospi_2024_base/diagnostics/regime_hmm.joblib",
+      "bytes": 1155,
+      "sha256": "95fee8e8a64d3b2eafceae808ed7f8f4bd33f4857888da72e96130cefe15fee3"
+    },
+    {
+      "path": "artifacts/mospi_2024_base/diagnostics/regime_model_metadata.json",
+      "bytes": 578,
+      "sha256": "0bc608667096cb4e710fe7a337a1a6b6c1cca75e830468e798bf304e18b04472"
+    },
+    {
+      "path": "artifacts/mospi_2024_base/diagnostics/regime_probabilities.csv",
+      "bytes": 11310,
+      "sha256": "d0a79c4fbcad9624f8ada13f712a38dd0b83a1e458d11bed8a146ee272304cd1"
+    },
+    {
+      "path": "artifacts/mospi_2024_base/diagnostics/roadmap_status.json",
+      "bytes": 988,
+      "sha256": "1eb01e976191e70c5f798439955e5c2b599557d07a3cb57a25d5db0b6f190594"
+    },
+    {
+      "path": "artifacts/mospi_2024_base/diagnostics/shap_latest_origin.csv",
+      "bytes": 2261,
+      "sha256": "73edbec4cb1cb431b10282f9d204f09da90b79c9a679b87cbbd60feb91767cb4"
+    },
+    {
+      "path": "artifacts/mospi_2024_base/diagnostics/taylor_rule_assumptions.json",
+      "bytes": 322,
+      "sha256": "3a0d12fd0ba6a2167495d05c79bfc6b872426e5af14e26618d79303566526662"
+    },
+    {
+      "path": "artifacts/mospi_2024_base/diagnostics/taylor_rule_reference.csv",
+      "bytes": 247,
+      "sha256": "164454addfd1844d54a1e2d57b74e62da8c90417978f765e0a75e280c25decba"
+    },
+    {
+      "path": "artifacts/mospi_2024_base/diagnostics/xgboost_gain_importance.csv",
+      "bytes": 2085,
+      "sha256": "cde2fc0c7bb9422c68055af853ca3f9805036d94957b8fff490cdbba34440291"
+    },
+    {
+      "path": "artifacts/mospi_2024_base/ensemble_weights.csv",
+      "bytes": 778,
+      "sha256": "513a6230232590d78d340e1c99da45a528f4983677599a6c73699b5536b52cc6"
+    },
+    {
+      "path": "artifacts/mospi_2024_base/forecasts.csv",
+      "bytes": 2812,
+      "sha256": "ddfc761a6ae1095c30e6c2da1a79b6a2a162350d965a10f1fe88aaf2c1b2d199"
+    },
+    {
+      "path": "artifacts/mospi_2024_base/interval_calibration.json",
+      "bytes": 3371,
+      "sha256": "4502e1d6df3d2587d2fc9d4a1d2ad17ec6258595f78846f1f0a95c9b9eff5605"
+    },
+    {
+      "path": "artifacts/mospi_2024_base/metadata.json",
+      "bytes": 3374,
+      "sha256": "7270a3b414ddb0d0f6b6ab443fdaebd925d26c42de690abaa5ae29044737fb81"
+    },
+    {
+      "path": "artifacts/mospi_2024_base/models/ARIMA.joblib",
+      "bytes": 73717,
+      "sha256": "90cae21e3f074de5346f8175b1816b1712dadbf310d6f61b6c57585e82da0013"
+    },
+    {
+      "path": "artifacts/mospi_2024_base/models/ETS.joblib",
+      "bytes": 11486,
+      "sha256": "ab7df26ba9d65fb5f8b6a0ba7c23c6a7379c436ab58b6110d8dac164585352aa"
+    },
+    {
+      "path": "artifacts/mospi_2024_base/models/SARIMA.joblib",
+      "bytes": 147975,
+      "sha256": "b2d89444507a34d3334cb903350e2a7b0919ef211c5f156d77adca3d4e4c063d"
+    },
+    {
+      "path": "artifacts/mospi_2024_base/models/SARIMAX.joblib",
+      "bytes": 952414,
+      "sha256": "b38b47849b52e21f6fb7ce287af4594b15e0a0188d55b2fde8c86541a348c7d7"
+    },
+    {
+      "path": "artifacts/mospi_2024_base/models/SeasonalNaive.joblib",
+      "bytes": 836,
+      "sha256": "d9061b649fee85f8da2e2d0c551cff8f14d2bcec1342dd0124eca02b7d152cc1"
+    },
+    {
+      "path": "artifacts/mospi_2024_base/models/VAR.joblib",
+      "bytes": 13201,
+      "sha256": "db101424fbe5de6f813a48f513854071ec2f91c117187cc981eb7a77b7d5da8a"
+    },
+    {
+      "path": "artifacts/mospi_2024_base/models/XGBoost_direct_h1.joblib",
+      "bytes": 17250,
+      "sha256": "576a3887f0b1e4d6757c8a37c10427c1a281d95fbf09947d5fc5d0fbeebc0a24"
+    },
+    {
+      "path": "artifacts/mospi_2024_base/models/XGBoost_direct_h12.joblib",
+      "bytes": 17571,
+      "sha256": "42062d69ac42ef6d7bc223bd01006297018aaee443c93e1310ff1b25b5cea00f"
+    },
+    {
+      "path": "artifacts/mospi_2024_base/models/XGBoost_direct_h3.joblib",
+      "bytes": 17604,
+      "sha256": "7d4b27c904709627455e69a40e7c818ce349a83b68af3ea071bb685b98cb4afa"
+    },
+    {
+      "path": "artifacts/mospi_2024_base/models/XGBoost_direct_h6.joblib",
+      "bytes": 17313,
+      "sha256": "bbee10a6f688d5d3326b950457debe3a9f12084c01b7079a9686c592798d3dd3"
+    },
+    {
+      "path": "artifacts/mospi_2024_base/models/model_metadata.json",
+      "bytes": 1208,
+      "sha256": "8fcf18f0730df61eea38faff0a5a0acf0d88081c60ad0c1a512d2e2a32430bb7"
+    },
+    {
+      "path": "artifacts/mospi_2024_base/models/model_registry.joblib",
+      "bytes": 1260872,
+      "sha256": "7e51005a3b155060f899a11d0ee9348172b217cbe58e82a213ed0fb3c4d6ecc5"
+    },
+    {
+      "path": "artifacts/mospi_2024_base/test_metrics.csv",
+      "bytes": 6487,
+      "sha256": "fdf72ec0c98ca9aa07f155ccb342f090cf02a7d7d759259a3e61f0b0c7136d0d"
+    },
+    {
+      "path": "artifacts/mospi_2024_base_extended/backtest_predictions.csv",
+      "bytes": 50190,
+      "sha256": "e24ab8696094d89b2e57f09b4cc6555912215d8810b59e8f5c9a9c2fe5194b34"
+    },
+    {
+      "path": "artifacts/mospi_2024_base_extended/diagnostics/data_quality.json",
+      "bytes": 793,
+      "sha256": "5968815167b2d145c156d59393f2ad9944c93a11650b8ba82a1d532d631bd0e1"
+    },
+    {
+      "path": "artifacts/mospi_2024_base_extended/diagnostics/drift_watch.csv",
+      "bytes": 697,
+      "sha256": "310117ae7da9c9a853f8bfd2426792296d7f11747053a6da2ee00671c7401291"
+    },
+    {
+      "path": "artifacts/mospi_2024_base_extended/diagnostics/local_projection_associations.csv",
+      "bytes": 1186,
+      "sha256": "ffead7af2b86c958b1376b537fbe671cf03843d5c6f13d28377562ffa6a64ba1"
+    },
+    {
+      "path": "artifacts/mospi_2024_base_extended/diagnostics/monte_carlo_uncertainty.csv",
+      "bytes": 780,
+      "sha256": "b2c4d9bbd597f258683c4e4ae40adeb58f922d1298ae28878277ab70dd9d6ed9"
+    },
+    {
+      "path": "artifacts/mospi_2024_base_extended/diagnostics/regime_hmm.joblib",
+      "bytes": 1155,
+      "sha256": "95fee8e8a64d3b2eafceae808ed7f8f4bd33f4857888da72e96130cefe15fee3"
+    },
+    {
+      "path": "artifacts/mospi_2024_base_extended/diagnostics/regime_model_metadata.json",
+      "bytes": 578,
+      "sha256": "8325b3a844646e169f3070c1e2cf5db65eed631ffb333aa99c85bd3846e47fe0"
+    },
+    {
+      "path": "artifacts/mospi_2024_base_extended/diagnostics/regime_probabilities.csv",
+      "bytes": 11310,
+      "sha256": "d0a79c4fbcad9624f8ada13f712a38dd0b83a1e458d11bed8a146ee272304cd1"
+    },
+    {
+      "path": "artifacts/mospi_2024_base_extended/diagnostics/roadmap_status.json",
+      "bytes": 988,
+      "sha256": "1eb01e976191e70c5f798439955e5c2b599557d07a3cb57a25d5db0b6f190594"
+    },
+    {
+      "path": "artifacts/mospi_2024_base_extended/diagnostics/shap_latest_origin.csv",
+      "bytes": 3640,
+      "sha256": "cbba112842fba5548ded00dd0d92e9299e42dce0a502554eb4d785604549aef8"
+    },
+    {
+      "path": "artifacts/mospi_2024_base_extended/diagnostics/taylor_rule_assumptions.json",
+      "bytes": 322,
+      "sha256": "3a0d12fd0ba6a2167495d05c79bfc6b872426e5af14e26618d79303566526662"
+    },
+    {
+      "path": "artifacts/mospi_2024_base_extended/diagnostics/taylor_rule_reference.csv",
+      "bytes": 246,
+      "sha256": "ff03a64fce3a7ebdb5f0845f5eed9abb15439662f8175a97cb99b7d96736ece4"
+    },
+    {
+      "path": "artifacts/mospi_2024_base_extended/diagnostics/xgboost_gain_importance.csv",
+      "bytes": 3357,
+      "sha256": "441e87c2fd280740839dd2e3b86564819f2cbf8fae85a496f35d3501763076c9"
+    },
+    {
+      "path": "artifacts/mospi_2024_base_extended/ensemble_weights.csv",
+      "bytes": 774,
+      "sha256": "097837fd1f63d26cdec034ad14ed1023473fd10127fd53091aabd9f35053e153"
+    },
+    {
+      "path": "artifacts/mospi_2024_base_extended/external_macro_monthly_source_panel.csv",
+      "bytes": 38379,
+      "sha256": "ae980f829172c311a4cbed010e2e7855fa69606a65784350743b886e3f73e358"
+    },
+    {
+      "path": "artifacts/mospi_2024_base_extended/forecasts.csv",
+      "bytes": 2797,
+      "sha256": "162b332323900c159355eb53d381db07475098099d52d26285023a380d7ad64f"
+    },
+    {
+      "path": "artifacts/mospi_2024_base_extended/interval_calibration.json",
+      "bytes": 3352,
+      "sha256": "4b7b062ece7ae5069b3f71cc2c5989872070bee2db46159b885c9ca9383b1dcb"
+    },
+    {
+      "path": "artifacts/mospi_2024_base_extended/macro_predictors_one_month_lag.csv",
+      "bytes": 35898,
+      "sha256": "b006a0eddde27edeff9a9f81f319d9535bc7c2b8e13bccd90b6ca8f66227d012"
+    },
+    {
+      "path": "artifacts/mospi_2024_base_extended/metadata.json",
+      "bytes": 3651,
+      "sha256": "1dd76445f35f677b85b9e71f09b4ed0fbb041bacf822afde339357b8940aafe2"
+    },
+    {
+      "path": "artifacts/mospi_2024_base_extended/models/ARIMA.joblib",
+      "bytes": 73719,
+      "sha256": "d3f475957ac164e92026f00125007687834f62f9543e92822ac19cc4a1390be3"
+    },
+    {
+      "path": "artifacts/mospi_2024_base_extended/models/ETS.joblib",
+      "bytes": 11486,
+      "sha256": "ab7df26ba9d65fb5f8b6a0ba7c23c6a7379c436ab58b6110d8dac164585352aa"
+    },
+    {
+      "path": "artifacts/mospi_2024_base_extended/models/SARIMA.joblib",
+      "bytes": 147975,
+      "sha256": "b2d89444507a34d3334cb903350e2a7b0919ef211c5f156d77adca3d4e4c063d"
+    },
+    {
+      "path": "artifacts/mospi_2024_base_extended/models/SARIMAX.joblib",
+      "bytes": 1043905,
+      "sha256": "dd5b31f9a43b4b480c68befd592325d68594a9ab8bfa8ee55cabf190d412bb02"
+    },
+    {
+      "path": "artifacts/mospi_2024_base_extended/models/SeasonalNaive.joblib",
+      "bytes": 836,
+      "sha256": "d9061b649fee85f8da2e2d0c551cff8f14d2bcec1342dd0124eca02b7d152cc1"
+    },
+    {
+      "path": "artifacts/mospi_2024_base_extended/models/VAR.joblib",
+      "bytes": 16937,
+      "sha256": "645efa5e3c55dc81689059c84c9e3d8260054eb199d1bdec45cf33bbe8dcf90c"
+    },
+    {
+      "path": "artifacts/mospi_2024_base_extended/models/XGBoost_direct_h1.joblib",
+      "bytes": 17572,
+      "sha256": "e7cc5f14a8299259b5a52948185531094746f27d92555041d334bf280ea5c470"
+    },
+    {
+      "path": "artifacts/mospi_2024_base_extended/models/XGBoost_direct_h12.joblib",
+      "bytes": 17784,
+      "sha256": "423f4e933ecf0e840665b14996dc5197ce6eec850365bb754a0bc49b594c4785"
+    },
+    {
+      "path": "artifacts/mospi_2024_base_extended/models/XGBoost_direct_h3.joblib",
+      "bytes": 17671,
+      "sha256": "5c519b6d2b524bbf0eb4b2752a279e8969a18c0440ed976ecf22e449843a34d9"
+    },
+    {
+      "path": "artifacts/mospi_2024_base_extended/models/XGBoost_direct_h6.joblib",
+      "bytes": 17663,
+      "sha256": "34addf9d6a72911b882a7c37eb3f6ac14edbf40a95a5459e56e2e815d900800b"
+    },
+    {
+      "path": "artifacts/mospi_2024_base_extended/models/model_metadata.json",
+      "bytes": 1548,
+      "sha256": "b3daeb8bcc96ae755e13d85e934729d7c47efedf9d120e55e8a1c7d22eca4170"
+    },
+    {
+      "path": "artifacts/mospi_2024_base_extended/models/model_registry.joblib",
+      "bytes": 1358999,
+      "sha256": "523cef8b9d89ee366a4d41c371799b2071ce3c4d68deb5b5634aebbdff29e212"
+    },
+    {
+      "path": "artifacts/mospi_2024_base_extended/mospi_2024_base_target.csv",
+      "bytes": 7377,
+      "sha256": "f8346e070bf71e7235db011ac0fc89fd46837002f69f13b1bc150cda1c939d13"
+    },
+    {
+      "path": "artifacts/mospi_2024_base_extended/source_data_checksums.json",
+      "bytes": 2451,
+      "sha256": "c2a19c639b99dc7483e85f45ffc3f5d6cfd969bf45cafd44cb9550e29df7cf36"
+    },
+    {
+      "path": "artifacts/mospi_2024_base_extended/test_metrics.csv",
+      "bytes": 6488,
+      "sha256": "aa5b74116505c575a5dd00d9ad3d020a924eba98191eafc8e3c6bdede075d97d"
+    },
+    {
+      "path": "artifacts/mospi_2024_base_target.csv",
+      "bytes": 7377,
+      "sha256": "f8346e070bf71e7235db011ac0fc89fd46837002f69f13b1bc150cda1c939d13"
+    },
+    {
+      "path": "artifacts/oecd_long_history_sensitivity/backtest_predictions.csv",
+      "bytes": 267792,
+      "sha256": "a9f4945d50183f3c0444b3101e7e17954bdd76af94f189a04f6d80b1d09ac120"
+    },
+    {
+      "path": "artifacts/oecd_long_history_sensitivity/diagnostics/data_quality.json",
+      "bytes": 554,
+      "sha256": "0619e5b05a4b769af8eea5556e7d673f5ba17bbaf63b3a87503ba5a95fa59029"
+    },
+    {
+      "path": "artifacts/oecd_long_history_sensitivity/diagnostics/drift_watch.csv",
+      "bytes": 724,
+      "sha256": "7f3e5841578071fedf73a96dccf5f9933ae5e18ed0a4c3e32d013f1d1ec7a172"
+    },
+    {
+      "path": "artifacts/oecd_long_history_sensitivity/diagnostics/local_projection_associations.csv",
+      "bytes": 1191,
+      "sha256": "6a5d806221d549e1f66b1c8abe5fa3d876feaf0db793fe941dfb15767d02cbb9"
+    },
+    {
+      "path": "artifacts/oecd_long_history_sensitivity/diagnostics/monte_carlo_uncertainty.csv",
+      "bytes": 781,
+      "sha256": "4b2cbaeddb1acd24b76b9ed871f2c38adfac987db730ee85d4953bb19245b655"
+    },
+    {
+      "path": "artifacts/oecd_long_history_sensitivity/diagnostics/regime_hmm.joblib",
+      "bytes": 1259,
+      "sha256": "06e7136e4a0b088be83af3ce93e6e4c4ed0fffae654f4aa39a06de50650891d3"
+    },
+    {
+      "path": "artifacts/oecd_long_history_sensitivity/diagnostics/regime_model_metadata.json",
+      "bytes": 578,
+      "sha256": "70d2bcd0ec92b9142bf8c638432136c3f6e8970cad994d920ddcc4e8264422df"
+    },
+    {
+      "path": "artifacts/oecd_long_history_sensitivity/diagnostics/regime_probabilities.csv",
+      "bytes": 34960,
+      "sha256": "c58c3329aae338d57d53bd00cf084ba7180821652448375f87041ee08df7ca98"
+    },
+    {
+      "path": "artifacts/oecd_long_history_sensitivity/diagnostics/roadmap_status.json",
+      "bytes": 988,
+      "sha256": "1eb01e976191e70c5f798439955e5c2b599557d07a3cb57a25d5db0b6f190594"
+    },
+    {
+      "path": "artifacts/oecd_long_history_sensitivity/diagnostics/shap_latest_origin.csv",
+      "bytes": 2136,
+      "sha256": "a3c88f94b7d12fd2cfe53ba973f4e206fc3018cad3a10ebb6964a3921a577db9"
+    },
+    {
+      "path": "artifacts/oecd_long_history_sensitivity/diagnostics/taylor_rule_assumptions.json",
+      "bytes": 322,
+      "sha256": "3a0d12fd0ba6a2167495d05c79bfc6b872426e5af14e26618d79303566526662"
+    },
+    {
+      "path": "artifacts/oecd_long_history_sensitivity/diagnostics/taylor_rule_reference.csv",
+      "bytes": 246,
+      "sha256": "cec79e894be2ea84490cf1b69dd50664376a9a5a7f37a1a36b5439268e60842a"
+    },
+    {
+      "path": "artifacts/oecd_long_history_sensitivity/diagnostics/xgboost_gain_importance.csv",
+      "bytes": 1971,
+      "sha256": "3e2184c6137374d886796b5aecf73dd482bbe5a093805f951130ab06fbbf374b"
+    },
+    {
+      "path": "artifacts/oecd_long_history_sensitivity/ensemble_weights.csv",
+      "bytes": 736,
+      "sha256": "15b066c08404ee61f431e947ddbee69db721ac29ee21e77270c89f4f4dabdc42"
+    },
+    {
+      "path": "artifacts/oecd_long_history_sensitivity/forecasts.csv",
+      "bytes": 2821,
+      "sha256": "23a5dabeb23e989cfed600d2ef11568e56d1372bb54ae7427e95fbd3d9f5b9c5"
+    },
+    {
+      "path": "artifacts/oecd_long_history_sensitivity/interval_calibration.json",
+      "bytes": 30101,
+      "sha256": "dacd4c9ba2f1446e22ce6e7cdb6dd9a4cd3ec824aebdc0cab5cfd4fbc866f8c0"
+    },
+    {
+      "path": "artifacts/oecd_long_history_sensitivity/metadata.json",
+      "bytes": 3323,
+      "sha256": "a2fa4ec3ebf6d155359c32d71430152d1e059859bb7216ff75e15c28251f60d0"
+    },
+    {
+      "path": "artifacts/oecd_long_history_sensitivity/models/ARIMA.joblib",
+      "bytes": 204637,
+      "sha256": "dbc996e2b8f9bd56c145a48f79bcf18189f8c85637b155c2de496ef84a666bfb"
+    },
+    {
+      "path": "artifacts/oecd_long_history_sensitivity/models/ETS.joblib",
+      "bytes": 25467,
+      "sha256": "8c40e1b309125d84d790780280cc872d59da5f93c748e31b3cf09e625fe77884"
+    },
+    {
+      "path": "artifacts/oecd_long_history_sensitivity/models/SARIMA.joblib",
+      "bytes": 412149,
+      "sha256": "4f962862c5e7dddff9bbc685da630efac8371279f193f3fafb0da1763573f170"
+    },
+    {
+      "path": "artifacts/oecd_long_history_sensitivity/models/SARIMAX.joblib",
+      "bytes": 3099015,
+      "sha256": "34cf153d236405e58678e771d034132b02369bcae7b64adfb720e3576921b232"
+    },
+    {
+      "path": "artifacts/oecd_long_history_sensitivity/models/SeasonalNaive.joblib",
+      "bytes": 3360,
+      "sha256": "ee186a703abba11d495bd1fdcaacaa3aac731ac33e90cc08402a57ecb7974c10"
+    },
+    {
+      "path": "artifacts/oecd_long_history_sensitivity/models/VAR.joblib",
+      "bytes": 46428,
+      "sha256": "c7bf92d61030eb5b77c6589bf80f58062199c982954c9ed8034948943701376e"
+    },
+    {
+      "path": "artifacts/oecd_long_history_sensitivity/models/XGBoost_direct_h1.joblib",
+      "bytes": 17034,
+      "sha256": "27977cf2904a986fc7dd3e49ed8385daddaa5f42fc7b271f781e000b19a38750"
+    },
+    {
+      "path": "artifacts/oecd_long_history_sensitivity/models/XGBoost_direct_h12.joblib",
+      "bytes": 17697,
+      "sha256": "aa2da009420aca0a5a2335777cb8786139891c81fded42b03fe5918e786f708a"
+    },
+    {
+      "path": "artifacts/oecd_long_history_sensitivity/models/XGBoost_direct_h3.joblib",
+      "bytes": 17585,
+      "sha256": "1b5ef6347f5d54bee9806d120bc6742bbf0180d19c62973848191cf7cb21c18a"
+    },
+    {
+      "path": "artifacts/oecd_long_history_sensitivity/models/XGBoost_direct_h6.joblib",
+      "bytes": 17604,
+      "sha256": "d01a9cf60c47d55c6befbc050ea0c57acaf617f491a562490c9a56538b873870"
+    },
+    {
+      "path": "artifacts/oecd_long_history_sensitivity/models/model_metadata.json",
+      "bytes": 1210,
+      "sha256": "a08c6023b51d33f306ea0cbb693185dce1d3ec37d9f87206ec8556e6d95d489f"
+    },
+    {
+      "path": "artifacts/oecd_long_history_sensitivity/models/model_registry.joblib",
+      "bytes": 3860127,
+      "sha256": "7b88c5a5d37ecd3e4fbf1ab66c8829c6266a1801270104304447ee4b67b3c503"
+    },
+    {
+      "path": "artifacts/oecd_long_history_sensitivity/test_metrics.csv",
+      "bytes": 6393,
+      "sha256": "17dea152127cb2c3ae901f42a2113e6bb2555a22e0ed4f3a6dcb1567f272ad5a"
+    },
+    {
+      "path": "artifacts/source_data_checksums.json",
+      "bytes": 1367,
+      "sha256": "f3a0e87cc0a40d860d4c1a810ab3d1cc20c41d61aaddd582906939f249fb35d9"
+    },
+    {
+      "path": "data/README.md",
+      "bytes": 2563,
+      "sha256": "41242ec859d1631a6c7b8569c3db6977546efe1ff08e70dc26f03e04435fe56b"
+    },
+    {
+      "path": "data/raw/fred/CPIAUCSL.csv",
+      "bytes": 17744,
+      "sha256": "f8ecddf53a9a9a74dda92c2c4204e6039466fcb744bc74171b73b5f6aac48119"
+    },
+    {
+      "path": "data/raw/fred/CPILFESL.csv",
+      "bytes": 15584,
+      "sha256": "cec76bf4c38dc062c63ccd3b576c21a54709ae3e3bf73ddbccb44e04384c559a"
+    },
+    {
+      "path": "data/raw/fred/DCOILBRENTEU.csv",
+      "bytes": 170003,
+      "sha256": "ed1eaa6fd4a95178f922ac8673890d4b39029681be8ad498087545a8accdaaba"
+    },
+    {
+      "path": "data/raw/fred/DCOILWTICO.csv",
+      "bytes": 175782,
+      "sha256": "0440ec6862dccc8c753a91d63d287808e086e4b4f1267515b9e90209f3f2e061"
+    },
+    {
+      "path": "data/raw/fred/DEXINUS.csv",
+      "bytes": 260037,
+      "sha256": "0980a29b146a0243db93517c697d0f6f20af13816d63bedfda82b30b659a3115"
+    },
+    {
+      "path": "data/raw/fred/DGS10.csv",
+      "bytes": 268967,
+      "sha256": "422b1048a3b3eebec2e9cdd0847893112e96f266b85b29314df950a85b942232"
+    },
+    {
+      "path": "data/raw/fred/DTWEXBGS.csv",
+      "bytes": 104537,
+      "sha256": "75edd28ba1eceade938fa6621edfebc4d4e9cbcc846c6f07be27f8aef0ead321"
+    },
+    {
+      "path": "data/raw/fred/FEDFUNDS.csv",
+      "bytes": 13959,
+      "sha256": "74680b2d09bb28f90fb30c1c09e93ac2d443de1b7345ba5a9112b3eca9be0a25"
+    },
+    {
+      "path": "data/raw/mospi/cpi_2024_back_series.csv",
+      "bytes": 30733,
+      "sha256": "f3faa1f5491268c9ab7af5a65d83bfdb488a0db6b063d906def050cff7f51f1c"
+    },
+    {
+      "path": "data/raw/mospi/cpi_2024_current_all_india_detailed.csv",
+      "bytes": 7452072,
+      "sha256": "2e4843b5c8fbe3f6b2287187144bdb2a8d2789ec886063b82263f4e747ee7a63"
+    },
+    {
+      "path": "data/raw/oecd/india_monthly_cpi_yoy.csv",
+      "bytes": 141553,
+      "sha256": "70e73198292c56649d77e94e418ec4b37d329d79505acfd386fd9fd89d3f4bbd"
+    },
+    {
+      "path": "data/raw/world_bank/pink_sheet_monthly_commodity_prices.xlsx",
+      "bytes": 586099,
+      "sha256": "ea1c350827878ea3bbe30e3cda16a13fd3bd5b409b8458940dc94a36b5a33154"
+    },
+    {
+      "path": "data/raw/wpi/wpi_2011_12_monthly_from_2012.xls",
+      "bytes": 1339904,
+      "sha256": "3265d404b82f5911660797d270a4f813e33b3aa48184dae234478b044bc91d59"
+    },
+    {
+      "path": "predict.py",
+      "bytes": 1630,
+      "sha256": "c244b4197f95b04817d06c80c83a3fdbe14e1e294731700adf0b8289aace49ba"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 139,
+      "sha256": "4d68b543a255f19cfff955a08ab59524e0e51687ad16a75691e47116b63e4f2c"
+    },
+    {
+      "path": "train_extended_models.py",
+      "bytes": 6117,
+      "sha256": "2bed9a84014e376970f8c62f48da8c0094a643c2b7b6acf153dedb94c0ae8413"
+    },
+    {
+      "path": "train_models.py",
+      "bytes": 40275,
+      "sha256": "c906b7df358d172db3d3819ecf1643090fa5acbffbb16014867fbe7475f9a168"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+path = 'c:/Users/LOQ/Downloads/Python_programs/agentic-monetary-policy-india/frontend/components/RecentMacroSignals.tsx'
+
+with open(path, 'a') as f:
+    f.write('      {/* Section 4: Data Status Footer */}\n')
+    f.write('      <div className="relative mt-6 border-t border-slate-200/40 pt-4">\n')
+    f.write('        <div className="flex flex-wrap items-center justify-between gap-3">\n')
+    f.write('          <p className="text-[10px] text-slate-400">Research signals \u00b7 Demo/Mock context</p>\n')
+    f.write('          <div className="flex items-center gap-2">\n')
+    f.write('            <Database size={10} className="text-slate-400" />\n')
+    f.write('            <span className="text-[9px] text-slate-400">Sources:</span>\n')
+    f.write('            <span className="text-[9px] font-medium text-slate-500">\n')
+    f.write('              {mockSources.filter(s => [\'mospi\', \'rbi-dbie\', \'eia\', \'fred\'].includes(s.id)).map(s => s.name).join(\' \u00b7 \')}\n')
+    f.write('            </span>\n')
+    f.write('            <span className="text-[9px] text-slate-300">(mock)</span>\n')
+    f.write('          </div>\n')
+    f.write('        </div>\n')
+    f.write('      </div>\n')
+    f.write('    </section>\n')
+    f.write('  );\n')
+    f.write('}\n')
+print('Part 9 done')

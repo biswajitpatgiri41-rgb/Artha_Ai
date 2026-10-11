@@ -1,0 +1,621 @@
+year,period,rainfall_mm,source,source_url
+1901,Annual,1027.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1901,Winter Season Jan-Feb,70.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1901,Pre-Monsoon Season Mar-May,108.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1901,Monsoon Season Jun-Sep,748.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1901,Post-Monsoon Season Oct-Dec,99.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1902,Annual,1034.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1902,Winter Season Jan-Feb,11.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1902,Pre-Monsoon Season Mar-May,110.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1902,Monsoon Season Jun-Sep,795.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1902,Post-Monsoon Season Oct-Dec,117.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1903,Annual,1192.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1903,Winter Season Jan-Feb,25.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1903,Pre-Monsoon Season Mar-May,107.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1903,Monsoon Season Jun-Sep,881.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1903,Post-Monsoon Season Oct-Dec,178.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1904,Annual,1019.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1904,Winter Season Jan-Feb,24.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1904,Pre-Monsoon Season Mar-May,137.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1904,Monsoon Season Jun-Sep,760.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1904,Post-Monsoon Season Oct-Dec,96.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1905,Annual,972.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1905,Winter Season Jan-Feb,46.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1905,Pre-Monsoon Season Mar-May,130.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1905,Monsoon Season Jun-Sep,722.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1905,Post-Monsoon Season Oct-Dec,73.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1906,Annual,1146.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1906,Winter Season Jan-Feb,71.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1906,Pre-Monsoon Season Mar-May,84.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1906,Monsoon Season Jun-Sep,895.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1906,Post-Monsoon Season Oct-Dec,95.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1907,Annual,1035.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1907,Winter Season Jan-Feb,61.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1907,Pre-Monsoon Season Mar-May,132.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1907,Monsoon Season Jun-Sep,781.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1907,Post-Monsoon Season Oct-Dec,59.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1908,Annual,1098.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1908,Winter Season Jan-Feb,38.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1908,Pre-Monsoon Season Mar-May,86.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1908,Monsoon Season Jun-Sep,919.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1908,Post-Monsoon Season Oct-Dec,54.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1909,Annual,1152.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1909,Winter Season Jan-Feb,41.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1909,Pre-Monsoon Season Mar-May,122.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1909,Monsoon Season Jun-Sep,911.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1909,Post-Monsoon Season Oct-Dec,77.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1910,Annual,1193.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1910,Winter Season Jan-Feb,26.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1910,Pre-Monsoon Season Mar-May,83.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1910,Monsoon Season Jun-Sep,934.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1910,Post-Monsoon Season Oct-Dec,149.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1911,Annual,1045.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1911,Winter Season Jan-Feb,50.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1911,Pre-Monsoon Season Mar-May,118.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1911,Monsoon Season Jun-Sep,748.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1911,Post-Monsoon Season Oct-Dec,127.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1912,Annual,1081.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1912,Winter Season Jan-Feb,44.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1912,Pre-Monsoon Season Mar-May,103.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1912,Monsoon Season Jun-Sep,818.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1912,Post-Monsoon Season Oct-Dec,115.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1913,Annual,1065.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1913,Winter Season Jan-Feb,46.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1913,Pre-Monsoon Season Mar-May,123.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1913,Monsoon Season Jun-Sep,785.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1913,Post-Monsoon Season Oct-Dec,110.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1914,Annual,1216.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1914,Winter Season Jan-Feb,35.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1914,Pre-Monsoon Season Mar-May,141.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1914,Monsoon Season Jun-Sep,945.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1914,Post-Monsoon Season Oct-Dec,93.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1915,Annual,1138.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1915,Winter Season Jan-Feb,62.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1915,Pre-Monsoon Season Mar-May,142.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1915,Monsoon Season Jun-Sep,789.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1915,Post-Monsoon Season Oct-Dec,144.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1916,Annual,1342.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1916,Winter Season Jan-Feb,27.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1916,Pre-Monsoon Season Mar-May,107.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1916,Monsoon Season Jun-Sep,1018.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1916,Post-Monsoon Season Oct-Dec,188.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1917,Annual,1488.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1917,Winter Season Jan-Feb,47.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1917,Pre-Monsoon Season Mar-May,139.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1917,Monsoon Season Jun-Sep,1099.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1917,Post-Monsoon Season Oct-Dec,202.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1918,Annual,1035.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1918,Winter Season Jan-Feb,16.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1918,Pre-Monsoon Season Mar-May,182.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1918,Monsoon Season Jun-Sep,755.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1918,Post-Monsoon Season Oct-Dec,80.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1919,Annual,1304.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1919,Winter Season Jan-Feb,72.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1919,Pre-Monsoon Season Mar-May,113.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1919,Monsoon Season Jun-Sep,957.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1919,Post-Monsoon Season Oct-Dec,160.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1920,Annual,1048.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1920,Winter Season Jan-Feb,48.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1920,Pre-Monsoon Season Mar-May,149.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1920,Monsoon Season Jun-Sep,776.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1920,Post-Monsoon Season Oct-Dec,73.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1921,Annual,1234.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1921,Winter Season Jan-Feb,48.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1921,Pre-Monsoon Season Mar-May,110.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1921,Monsoon Season Jun-Sep,971.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1921,Post-Monsoon Season Oct-Dec,104.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1922,Annual,1215.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1922,Winter Season Jan-Feb,40.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1922,Pre-Monsoon Season Mar-May,94.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1922,Monsoon Season Jun-Sep,948.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1922,Post-Monsoon Season Oct-Dec,132.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1923,Annual,1169.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1923,Winter Season Jan-Feb,65.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1923,Pre-Monsoon Season Mar-May,114.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1923,Monsoon Season Jun-Sep,895.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1923,Post-Monsoon Season Oct-Dec,94.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1924,Annual,1257.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1924,Winter Season Jan-Feb,47.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1924,Pre-Monsoon Season Mar-May,108.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1924,Monsoon Season Jun-Sep,962.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1924,Post-Monsoon Season Oct-Dec,139.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1925,Annual,1202.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1925,Winter Season Jan-Feb,26.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1925,Pre-Monsoon Season Mar-May,160.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1925,Monsoon Season Jun-Sep,889.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1925,Post-Monsoon Season Oct-Dec,125.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1926,Annual,1245.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1926,Winter Season Jan-Feb,40.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1926,Pre-Monsoon Season Mar-May,159.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1926,Monsoon Season Jun-Sep,967.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1926,Post-Monsoon Season Oct-Dec,78.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1927,Annual,1260.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1927,Winter Season Jan-Feb,50.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1927,Pre-Monsoon Season Mar-May,112.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1927,Monsoon Season Jun-Sep,959.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1927,Post-Monsoon Season Oct-Dec,138.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1928,Annual,1216.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1928,Winter Season Jan-Feb,64.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1928,Pre-Monsoon Season Mar-May,109.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1928,Monsoon Season Jun-Sep,863.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1928,Post-Monsoon Season Oct-Dec,177.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1929,Annual,1204.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1929,Winter Season Jan-Feb,50.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1929,Pre-Monsoon Season Mar-May,135.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1929,Monsoon Season Jun-Sep,862.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1929,Post-Monsoon Season Oct-Dec,155.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1930,Annual,1202.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1930,Winter Season Jan-Feb,48.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1930,Pre-Monsoon Season Mar-May,134.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1930,Monsoon Season Jun-Sep,860.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1930,Post-Monsoon Season Oct-Dec,159.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1931,Annual,1301.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1931,Winter Season Jan-Feb,48.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1931,Pre-Monsoon Season Mar-May,115.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1931,Monsoon Season Jun-Sep,953.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1931,Post-Monsoon Season Oct-Dec,184.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1932,Annual,1216.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1932,Winter Season Jan-Feb,34.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1932,Pre-Monsoon Season Mar-May,138.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1932,Monsoon Season Jun-Sep,897.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1932,Post-Monsoon Season Oct-Dec,145.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1933,Annual,1389.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1933,Winter Season Jan-Feb,48.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1933,Pre-Monsoon Season Mar-May,179.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1933,Monsoon Season Jun-Sep,1030.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1933,Post-Monsoon Season Oct-Dec,131.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1934,Annual,1221.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1934,Winter Season Jan-Feb,36.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1934,Pre-Monsoon Season Mar-May,112.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1934,Monsoon Season Jun-Sep,963.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1934,Post-Monsoon Season Oct-Dec,108.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1935,Annual,1143.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1935,Winter Season Jan-Feb,51.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1935,Pre-Monsoon Season Mar-May,101.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1935,Monsoon Season Jun-Sep,912.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1935,Post-Monsoon Season Oct-Dec,78.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1936,Annual,1333.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1936,Winter Season Jan-Feb,56.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1936,Pre-Monsoon Season Mar-May,155.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1936,Monsoon Season Jun-Sep,975.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1936,Post-Monsoon Season Oct-Dec,145.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1937,Annual,1216.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1937,Winter Season Jan-Feb,59.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1937,Pre-Monsoon Season Mar-May,133.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1937,Monsoon Season Jun-Sep,886.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1937,Post-Monsoon Season Oct-Dec,136.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1938,Annual,1298.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1938,Winter Season Jan-Feb,64.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1938,Pre-Monsoon Season Mar-May,138.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1938,Monsoon Season Jun-Sep,998.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1938,Post-Monsoon Season Oct-Dec,97.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1939,Annual,1119.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1939,Winter Season Jan-Feb,48.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1939,Pre-Monsoon Season Mar-May,114.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1939,Monsoon Season Jun-Sep,833.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1939,Post-Monsoon Season Oct-Dec,123.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1940,Annual,1211.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1940,Winter Season Jan-Feb,41.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1940,Pre-Monsoon Season Mar-May,157.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1940,Monsoon Season Jun-Sep,891.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1940,Post-Monsoon Season Oct-Dec,121.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1941,Annual,1077.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1941,Winter Season Jan-Feb,40.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1941,Pre-Monsoon Season Mar-May,129.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1941,Monsoon Season Jun-Sep,798.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1941,Post-Monsoon Season Oct-Dec,108.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1942,Annual,1286.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1942,Winter Season Jan-Feb,67.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1942,Pre-Monsoon Season Mar-May,131.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1942,Monsoon Season Jun-Sep,1009.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1942,Post-Monsoon Season Oct-Dec,77.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1943,Annual,1277.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1943,Winter Season Jan-Feb,67.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1943,Pre-Monsoon Season Mar-May,175.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1943,Monsoon Season Jun-Sep,923.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1943,Post-Monsoon Season Oct-Dec,111.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1944,Annual,1312.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1944,Winter Season Jan-Feb,68.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1944,Pre-Monsoon Season Mar-May,150.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1944,Monsoon Season Jun-Sep,955.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1944,Post-Monsoon Season Oct-Dec,137.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1945,Annual,1218.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1945,Winter Season Jan-Feb,44.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1945,Pre-Monsoon Season Mar-May,119.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1945,Monsoon Season Jun-Sep,951.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1945,Post-Monsoon Season Oct-Dec,102.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1946,Annual,1332.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1946,Winter Season Jan-Feb,23.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1946,Pre-Monsoon Season Mar-May,143.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1946,Monsoon Season Jun-Sep,972.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1946,Post-Monsoon Season Oct-Dec,194.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1947,Annual,1233.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1947,Winter Season Jan-Feb,40.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1947,Pre-Monsoon Season Mar-May,119.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1947,Monsoon Season Jun-Sep,974.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1947,Post-Monsoon Season Oct-Dec,98.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1948,Annual,1334.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1948,Winter Season Jan-Feb,54.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1948,Pre-Monsoon Season Mar-May,171.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1948,Monsoon Season Jun-Sep,967.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1948,Post-Monsoon Season Oct-Dec,141.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1949,Annual,1263.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1949,Winter Season Jan-Feb,41.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1949,Pre-Monsoon Season Mar-May,164.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1949,Monsoon Season Jun-Sep,946.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1949,Post-Monsoon Season Oct-Dec,110.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1950,Annual,1173.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1950,Winter Season Jan-Feb,61.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1950,Pre-Monsoon Season Mar-May,115.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1950,Monsoon Season Jun-Sep,904.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1950,Post-Monsoon Season Oct-Dec,92.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1951,Annual,1050.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1951,Winter Season Jan-Feb,27.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1951,Pre-Monsoon Season Mar-May,157.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1951,Monsoon Season Jun-Sep,754.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1951,Post-Monsoon Season Oct-Dec,110.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1952,Annual,1101.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1952,Winter Season Jan-Feb,30.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1952,Pre-Monsoon Season Mar-May,137.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1952,Monsoon Season Jun-Sep,822.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1952,Post-Monsoon Season Oct-Dec,110.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1953,Annual,1217.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1953,Winter Season Jan-Feb,40.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1953,Pre-Monsoon Season Mar-May,109.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1953,Monsoon Season Jun-Sep,961.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1953,Post-Monsoon Season Oct-Dec,105.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1954,Annual,1171.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1954,Winter Season Jan-Feb,75.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1954,Pre-Monsoon Season Mar-May,92.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1954,Monsoon Season Jun-Sep,912.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1954,Post-Monsoon Season Oct-Dec,91.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1955,Annual,1288.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1955,Winter Season Jan-Feb,26.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1955,Pre-Monsoon Season Mar-May,127.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1955,Monsoon Season Jun-Sep,947.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1955,Post-Monsoon Season Oct-Dec,186.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1956,Annual,1385.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1956,Winter Season Jan-Feb,30.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1956,Pre-Monsoon Season Mar-May,145.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1956,Monsoon Season Jun-Sep,998.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1956,Post-Monsoon Season Oct-Dec,210.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1957,Annual,1171.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1957,Winter Season Jan-Feb,57.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1957,Pre-Monsoon Season Mar-May,142.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1957,Monsoon Season Jun-Sep,864.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1957,Post-Monsoon Season Oct-Dec,107.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1958,Annual,1318.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1958,Winter Season Jan-Feb,31.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1958,Pre-Monsoon Season Mar-May,134.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1958,Monsoon Season Jun-Sep,990.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1958,Post-Monsoon Season Oct-Dec,160.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1959,Annual,1372.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1959,Winter Season Jan-Feb,56.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1959,Pre-Monsoon Season Mar-May,122.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1959,Monsoon Season Jun-Sep,1043.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1959,Post-Monsoon Season Oct-Dec,150.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1960,Annual,1146.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1960,Winter Season Jan-Feb,16.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1960,Pre-Monsoon Season Mar-May,111.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1960,Monsoon Season Jun-Sep,908.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1960,Post-Monsoon Season Oct-Dec,110.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1961,Annual,1396.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1961,Winter Season Jan-Feb,60.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1961,Pre-Monsoon Season Mar-May,132.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1961,Monsoon Season Jun-Sep,1051.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1961,Post-Monsoon Season Oct-Dec,152.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1962,Annual,1192.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1962,Winter Season Jan-Feb,33.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1962,Pre-Monsoon Season Mar-May,129.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1962,Monsoon Season Jun-Sep,902.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1962,Post-Monsoon Season Oct-Dec,126.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1963,Annual,1214.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1963,Winter Season Jan-Feb,15.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1963,Pre-Monsoon Season Mar-May,149.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1963,Monsoon Season Jun-Sep,906.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1963,Post-Monsoon Season Oct-Dec,142.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1964,Annual,1233.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1964,Winter Season Jan-Feb,29.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1964,Pre-Monsoon Season Mar-May,110.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1964,Monsoon Season Jun-Sep,991.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1964,Post-Monsoon Season Oct-Dec,101.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1965,Annual,937.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1965,Winter Season Jan-Feb,36.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1965,Pre-Monsoon Season Mar-May,120.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1965,Monsoon Season Jun-Sep,707.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1965,Post-Monsoon Season Oct-Dec,73.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1966,Annual,1062.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1966,Winter Season Jan-Feb,36.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1966,Pre-Monsoon Season Mar-May,109.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1966,Monsoon Season Jun-Sep,791.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1966,Post-Monsoon Season Oct-Dec,125.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1967,Annual,1148.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1967,Winter Season Jan-Feb,24.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1967,Pre-Monsoon Season Mar-May,134.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1967,Monsoon Season Jun-Sep,882.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1967,Post-Monsoon Season Oct-Dec,106.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1968,Annual,1051.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1968,Winter Season Jan-Feb,46.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1968,Pre-Monsoon Season Mar-May,106.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1968,Monsoon Season Jun-Sep,799.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1968,Post-Monsoon Season Oct-Dec,100.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1969,Annual,1152.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1969,Winter Season Jan-Feb,25.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1969,Pre-Monsoon Season Mar-May,121.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1969,Monsoon Season Jun-Sep,901.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1969,Post-Monsoon Season Oct-Dec,103.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1970,Annual,1269.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1970,Winter Season Jan-Feb,51.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1970,Pre-Monsoon Season Mar-May,125.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1970,Monsoon Season Jun-Sep,1000.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1970,Post-Monsoon Season Oct-Dec,93.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1971,Annual,1217.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1971,Winter Season Jan-Feb,38.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1971,Pre-Monsoon Season Mar-May,138.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1971,Monsoon Season Jun-Sep,913.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1971,Post-Monsoon Season Oct-Dec,127.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1972,Annual,944.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1972,Winter Season Jan-Feb,36.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1972,Pre-Monsoon Season Mar-May,113.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1972,Monsoon Season Jun-Sep,674.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1972,Post-Monsoon Season Oct-Dec,119.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1973,Annual,1215.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1973,Winter Season Jan-Feb,38.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1973,Pre-Monsoon Season Mar-May,102.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1973,Monsoon Season Jun-Sep,924.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1973,Post-Monsoon Season Oct-Dec,150.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1974,Annual,1041.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1974,Winter Season Jan-Feb,25.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1974,Pre-Monsoon Season Mar-May,115.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1974,Monsoon Season Jun-Sep,778.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1974,Post-Monsoon Season Oct-Dec,122.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1975,Annual,1284.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1975,Winter Season Jan-Feb,33.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1975,Pre-Monsoon Season Mar-May,104.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1975,Monsoon Season Jun-Sep,998.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1975,Post-Monsoon Season Oct-Dec,147.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1976,Annual,1120.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1976,Winter Season Jan-Feb,34.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1976,Pre-Monsoon Season Mar-May,105.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1976,Monsoon Season Jun-Sep,885.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1976,Post-Monsoon Season Oct-Dec,94.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1977,Annual,1260.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1977,Winter Season Jan-Feb,30.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1977,Pre-Monsoon Season Mar-May,165.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1977,Monsoon Season Jun-Sep,898.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1977,Post-Monsoon Season Oct-Dec,166.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1978,Annual,1232.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1978,Winter Season Jan-Feb,38.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1978,Pre-Monsoon Season Mar-May,136.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1978,Monsoon Season Jun-Sep,939.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1978,Post-Monsoon Season Oct-Dec,117.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1979,Annual,1027.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1979,Winter Season Jan-Feb,56.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1979,Pre-Monsoon Season Mar-May,105.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1979,Monsoon Season Jun-Sep,723.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1979,Post-Monsoon Season Oct-Dec,142.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1980,Annual,1183.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1980,Winter Season Jan-Feb,35.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1980,Pre-Monsoon Season Mar-May,120.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1980,Monsoon Season Jun-Sep,934.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1980,Post-Monsoon Season Oct-Dec,92.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1981,Annual,1170.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1981,Winter Season Jan-Feb,49.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1981,Pre-Monsoon Season Mar-May,149.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1981,Monsoon Season Jun-Sep,885.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1981,Post-Monsoon Season Oct-Dec,86.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1982,Annual,1085.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1982,Winter Season Jan-Feb,49.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1982,Pre-Monsoon Season Mar-May,155.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1982,Monsoon Season Jun-Sep,769.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1982,Post-Monsoon Season Oct-Dec,111.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1983,Annual,1323.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1983,Winter Season Jan-Feb,42.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1983,Pre-Monsoon Season Mar-May,172.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1983,Monsoon Season Jun-Sep,990.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1983,Post-Monsoon Season Oct-Dec,119.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1984,Annual,1154.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1984,Winter Season Jan-Feb,55.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1984,Pre-Monsoon Season Mar-May,122.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1984,Monsoon Season Jun-Sep,887.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1984,Post-Monsoon Season Oct-Dec,90.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1985,Annual,1139.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1985,Winter Season Jan-Feb,32.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1985,Pre-Monsoon Season Mar-May,117.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1985,Monsoon Season Jun-Sep,830.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1985,Post-Monsoon Season Oct-Dec,159.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1986,Annual,1116.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1986,Winter Season Jan-Feb,51.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1986,Pre-Monsoon Season Mar-May,123.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1986,Monsoon Season Jun-Sep,795.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1986,Post-Monsoon Season Oct-Dec,146.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1987,Annual,1071.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1987,Winter Season Jan-Feb,35.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1987,Pre-Monsoon Season Mar-May,133.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1987,Monsoon Season Jun-Sep,744.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1987,Post-Monsoon Season Oct-Dec,158.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1988,Annual,1337.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1988,Winter Season Jan-Feb,37.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1988,Pre-Monsoon Season Mar-May,160.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1988,Monsoon Season Jun-Sep,1052.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1988,Post-Monsoon Season Oct-Dec,87.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1989,Annual,1118.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1989,Winter Season Jan-Feb,29.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1989,Pre-Monsoon Season Mar-May,115.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1989,Monsoon Season Jun-Sep,887.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1989,Post-Monsoon Season Oct-Dec,87.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1990,Annual,1386.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1990,Winter Season Jan-Feb,58.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1990,Pre-Monsoon Season Mar-May,203.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1990,Monsoon Season Jun-Sep,963.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1990,Post-Monsoon Season Oct-Dec,161.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1991,Annual,1148.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1991,Winter Season Jan-Feb,39.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1991,Pre-Monsoon Season Mar-May,145.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1991,Monsoon Season Jun-Sep,856.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1991,Post-Monsoon Season Oct-Dec,107.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1992,Annual,1118.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1992,Winter Season Jan-Feb,43.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1992,Pre-Monsoon Season Mar-May,107.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1992,Monsoon Season Jun-Sep,856.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1992,Post-Monsoon Season Oct-Dec,111.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1993,Annual,1192.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1993,Winter Season Jan-Feb,41.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1993,Pre-Monsoon Season Mar-May,133.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1993,Monsoon Season Jun-Sep,885.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1993,Post-Monsoon Season Oct-Dec,132.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1994,Annual,1285.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1994,Winter Season Jan-Feb,50.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1994,Pre-Monsoon Season Mar-May,119.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1994,Monsoon Season Jun-Sep,988.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1994,Post-Monsoon Season Oct-Dec,126.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1995,Annual,1223.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1995,Winter Season Jan-Feb,59.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1995,Pre-Monsoon Season Mar-May,137.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1995,Monsoon Season Jun-Sep,905.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1995,Post-Monsoon Season Oct-Dec,120.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1996,Annual,1191.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1996,Winter Season Jan-Feb,45.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1996,Pre-Monsoon Season Mar-May,118.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1996,Monsoon Season Jun-Sep,897.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1996,Post-Monsoon Season Oct-Dec,129.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1997,Annual,1184.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1997,Winter Season Jan-Feb,24.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1997,Pre-Monsoon Season Mar-May,123.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1997,Monsoon Season Jun-Sep,870.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1997,Post-Monsoon Season Oct-Dec,166.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1998,Annual,1240.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1998,Winter Season Jan-Feb,52.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1998,Pre-Monsoon Season Mar-May,134.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1998,Monsoon Season Jun-Sep,895.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1998,Post-Monsoon Season Oct-Dec,157.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1999,Annual,1138.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1999,Winter Season Jan-Feb,30.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1999,Pre-Monsoon Season Mar-May,122.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1999,Monsoon Season Jun-Sep,845.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+1999,Post-Monsoon Season Oct-Dec,140.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2000,Annual,1054.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2000,Winter Season Jan-Feb,47.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2000,Pre-Monsoon Season Mar-May,126.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2000,Monsoon Season Jun-Sep,815.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2000,Post-Monsoon Season Oct-Dec,65.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2001,Annual,1078.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2001,Winter Season Jan-Feb,17.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2001,Pre-Monsoon Season Mar-May,128.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2001,Monsoon Season Jun-Sep,810.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2001,Post-Monsoon Season Oct-Dec,122.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2002,Annual,923.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2002,Winter Season Jan-Feb,38.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2002,Pre-Monsoon Season Mar-May,119.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2002,Monsoon Season Jun-Sep,687.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2002,Post-Monsoon Season Oct-Dec,79.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2003,Annual,1169.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2003,Winter Season Jan-Feb,48.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2003,Pre-Monsoon Season Mar-May,106.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2003,Monsoon Season Jun-Sep,896.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2003,Post-Monsoon Season Oct-Dec,118.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2004,Annual,1072.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2004,Winter Season Jan-Feb,34.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2004,Pre-Monsoon Season Mar-May,138.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2004,Monsoon Season Jun-Sep,785.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2004,Post-Monsoon Season Oct-Dec,114.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2005,Annual,1213.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2005,Winter Season Jan-Feb,76.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2005,Pre-Monsoon Season Mar-May,129.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2005,Monsoon Season Jun-Sep,871.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2005,Post-Monsoon Season Oct-Dec,135.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2006,Annual,1170.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2006,Winter Season Jan-Feb,27.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2006,Pre-Monsoon Season Mar-May,147.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2006,Monsoon Season Jun-Sep,898.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2006,Post-Monsoon Season Oct-Dec,97.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2007,Annual,1208.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2007,Winter Season Jan-Feb,37.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2007,Pre-Monsoon Season Mar-May,117.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2007,Monsoon Season Jun-Sep,966.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2007,Post-Monsoon Season Oct-Dec,86.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2008,Annual,1141.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2008,Winter Season Jan-Feb,41.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2008,Pre-Monsoon Season Mar-May,115.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2008,Monsoon Season Jun-Sep,897.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2008,Post-Monsoon Season Oct-Dec,87.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2009,Annual,966.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2009,Winter Season Jan-Feb,24.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2009,Pre-Monsoon Season Mar-May,95.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2009,Monsoon Season Jun-Sep,709.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2009,Post-Monsoon Season Oct-Dec,136.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2010,Annual,1220.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2010,Winter Season Jan-Feb,22.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2010,Pre-Monsoon Season Mar-May,136.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2010,Monsoon Season Jun-Sep,911.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2010,Post-Monsoon Season Oct-Dec,149.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2011,Annual,1131.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2011,Winter Season Jan-Feb,33.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2011,Pre-Monsoon Season Mar-May,120.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2011,Monsoon Season Jun-Sep,911.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2011,Post-Monsoon Season Oct-Dec,67.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2012,Annual,1073.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2012,Winter Season Jan-Feb,39.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2012,Pre-Monsoon Season Mar-May,96.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2012,Monsoon Season Jun-Sep,837.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2012,Post-Monsoon Season Oct-Dec,100.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2013,Annual,1252.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2013,Winter Season Jan-Feb,50.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2013,Pre-Monsoon Season Mar-May,110.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2013,Monsoon Season Jun-Sep,943.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2013,Post-Monsoon Season Oct-Dec,147.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2014,Annual,1055.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2014,Winter Season Jan-Feb,46.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2014,Pre-Monsoon Season Mar-May,136.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2014,Monsoon Season Jun-Sep,781.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2014,Post-Monsoon Season Oct-Dec,90.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2015,Annual,1080.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2015,Winter Season Jan-Feb,39.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2015,Pre-Monsoon Season Mar-May,185.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2015,Monsoon Season Jun-Sep,758.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2015,Post-Monsoon Season Oct-Dec,96.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2016,Annual,1083.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2016,Winter Season Jan-Feb,18.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2016,Pre-Monsoon Season Mar-May,129.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2016,Monsoon Season Jun-Sep,865.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2016,Post-Monsoon Season Oct-Dec,70.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2017,Annual,1126.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2017,Winter Season Jan-Feb,39.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2017,Pre-Monsoon Season Mar-May,128.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2017,Monsoon Season Jun-Sep,845.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2017,Post-Monsoon Season Oct-Dec,112.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2018,Annual,1005.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2018,Winter Season Jan-Feb,15.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2018,Pre-Monsoon Season Mar-May,114.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2018,Monsoon Season Jun-Sep,804.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2018,Post-Monsoon Season Oct-Dec,71.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2019,Annual,1286.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2019,Winter Season Jan-Feb,52.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2019,Pre-Monsoon Season Mar-May,102.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2019,Monsoon Season Jun-Sep,970.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2019,Post-Monsoon Season Oct-Dec,161.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2020,Annual,1283.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2020,Winter Season Jan-Feb,40.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2020,Pre-Monsoon Season Mar-May,158.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2020,Monsoon Season Jun-Sep,959.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2020,Post-Monsoon Season Oct-Dec,125.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2021,Annual,1233.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2021,Winter Season Jan-Feb,28.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2021,Pre-Monsoon Season Mar-May,156.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2021,Monsoon Season Jun-Sep,872.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2021,Post-Monsoon Season Oct-Dec,177.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2022,Annual,1257.0,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2022,Winter Season Jan-Feb,58.5,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2022,Pre-Monsoon Season Mar-May,130.2,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2022,Monsoon Season Jun-Sep,924.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2022,Post-Monsoon Season Oct-Dec,144.1,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2023,Annual,1102.8,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2023,Winter Season Jan-Feb,22.4,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2023,Pre-Monsoon Season Mar-May,147.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2023,Monsoon Season Jun-Sep,821.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2023,Post-Monsoon Season Oct-Dec,110.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2024,Annual,1206.6,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2024,Winter Season Jan-Feb,26.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2024,Pre-Monsoon Season Mar-May,126.7,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2024,Monsoon Season Jun-Sep,935.9,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php
+2024,Post-Monsoon Season Oct-Dec,117.3,IMD,https://dsp.imdpune.gov.in/home_ogd_rainfall.php

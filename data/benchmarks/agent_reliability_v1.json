@@ -1,0 +1,12 @@
+{
+  "benchmark_id": "agent_reliability_v1",
+  "status": "SCHEMA_ONLY",
+  "target_question_count": {"minimum": 50, "maximum": 100},
+  "categories": [
+    "Inflation", "Growth", "External Sector", "Forecasting", "Policy",
+    "Missing Data", "Wrong Units", "Stale Observations", "Base-Year Conflicts",
+    "Extreme Scenarios", "Unsupported Causal Claims", "Tool Failures"
+  ],
+  "cases": [],
+  "note": "No benchmark questions or scores are populated. Add reviewed cases before running evaluation."
+}

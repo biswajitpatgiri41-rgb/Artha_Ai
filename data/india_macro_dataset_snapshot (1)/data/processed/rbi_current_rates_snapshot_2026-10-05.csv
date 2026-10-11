@@ -1,0 +1,2 @@
+as_at_date,as_at_time_ist,policy_repo_rate_pct,sdf_rate_pct,msf_rate_pct,bank_rate_pct,fixed_reverse_repo_rate_pct,crr_pct,slr_pct,inr_per_usd,inr_per_gbp,inr_per_eur,inr_per_100_jpy,inr_per_aed,inr_per_10000_idr,source,source_url,raw_file
+2026-10-05,13:00,5.25,5.0,5.5,5.5,3.35,3.0,18.0,96.2831,127.2182,107.7883,61.03,26.2145,53.6868,RBI Current Rates page; listed FX source is FBIL,https://m.rbi.org.in/Scripts/BS_NSDPDisplay.aspx?param=4,data/raw/rbi/policy/rbi_current_rates_snapshot_2026-10-05.html

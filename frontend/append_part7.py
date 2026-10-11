@@ -1,0 +1,20 @@
+path = 'c:/Users/LOQ/Downloads/Python_programs/agentic-monetary-policy-india/frontend/components/RecentMacroSignals.tsx'
+
+with open(path, 'a') as f:
+    f.write('      {/* Section 2: Risk Watch */}\n')
+    f.write('      <div className="relative mt-6 border-t border-slate-200/40 pt-5">\n')
+    f.write('        <h3 className="text-xs font-semibold text-slate-700 mb-3">Risk Watch</h3>\n')
+    f.write('        <div className="space-y-3">\n')
+    f.write('          {riskWatchItems.map((item) => (\n')
+    f.write('            <div key={item.label} className="flex items-center gap-3">\n')
+    f.write('              <span className="w-28 text-[10px] font-medium text-slate-600">{item.label}</span>\n')
+    f.write("              <SeverityBadge severity={item.severity} color={item.color.replace('bg-', 'text-').replace('/10', '')} />\n")
+    f.write('              <div className="flex-1 mr-2">\n')
+    f.write('                <RiskBar intensity={item.intensity} color={item.color} />\n')
+    f.write('              </div>\n')
+    f.write('              <span className="w-36 text-right text-[9px] text-slate-400">{item.detail}</span>\n')
+    f.write('            </div>\n')
+    f.write('          ))}\n')
+    f.write('        </div>\n')
+    f.write('      </div>\n\n')
+print('Part 7 done')

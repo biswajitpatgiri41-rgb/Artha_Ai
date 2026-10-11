@@ -1,0 +1,36 @@
+{
+  "selected_best_learned_family": "ARIMA(1,0,0)",
+  "selected_learned_family_pooled_metrics": {
+    "pooled_mae_pp": 0.9901914395754553,
+    "pooled_rmse_pp": 1.2953529434154116,
+    "forecast_count": 275.0
+  },
+  "selected_candidate_passes_all_prototype_gates": false,
+  "best_backtested_model_by_horizon": {
+    "1": "ARIMA(1,0,0)",
+    "3": "Persistence",
+    "6": "ARIMA(1,0,0)"
+  },
+  "pooled_learned_family_metrics": [
+    {
+      "model": "ARIMA(1,0,0)",
+      "pooled_mae_pp": 0.9901914395754553,
+      "pooled_rmse_pp": 1.2953529434154116,
+      "forecast_count": 275
+    },
+    {
+      "model": "XGBoost",
+      "pooled_mae_pp": 1.1301551207455722,
+      "pooled_rmse_pp": 1.4660720037273014,
+      "forecast_count": 275
+    },
+    {
+      "model": "Ridge",
+      "pooled_mae_pp": 1.208800122525729,
+      "pooled_rmse_pp": 1.5986929356507869,
+      "forecast_count": 275
+    }
+  ],
+  "series_end": "2025-12",
+  "warning": "The 2012-base CPI series has been superseded; the learned candidate is not live-production certified."
+}

@@ -1,0 +1,204 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-sans: 'Geist', 'Inter', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  }
+
+  * {
+    @apply border-admin-border;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-admin-bg text-admin-text-primary font-sans antialiased;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h40v40H0z' fill='none' stroke='rgba(0,255,156,0.03)' stroke-width='1'/%3E%3C/svg%3E");
+    min-height: 100vh;
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-2 h-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-admin-bg-secondary;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-admin-text-muted/30 rounded-full hover:bg-admin-text-muted/50;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-admin-neon-green/30;
+  }
+
+  ::selection {
+    @apply bg-admin-neon-green/20 text-admin-text-primary;
+  }
+
+  *:focus-visible {
+    @apply outline-none ring-2 ring-admin-neon-green ring-offset-2 ring-offset-admin-bg;
+  }
+}
+
+
+@layer components {
+  .admin-card {
+    @apply bg-admin-card/80 backdrop-blur-md border border-admin-border rounded-card 
+           shadow-card transition-all duration-300;
+  }
+
+  .admin-card-hover {
+    @apply hover:shadow-card-hover hover:border-admin-border-hover;
+  }
+
+  .admin-card-inner-glow {
+    @apply relative before:absolute before:inset-0 before:rounded-card 
+           before:border before:border-admin-neon-green/10 before:pointer-events-none;
+  }
+
+  .admin-terminal-heading {
+    @apply text-admin-neon-green font-mono text-xs uppercase tracking-wider mb-4;
+  }
+
+  .admin-terminal-subheading {
+    @apply text-admin-text-secondary font-mono text-xs uppercase tracking-wider;
+  }
+
+  .admin-section-title {
+    @apply text-admin-text-primary font-semibold text-lg flex items-center gap-2;
+  }
+
+  .admin-section-title::before {
+    content: '>';
+    @apply text-admin-neon-green font-mono;
+  }
+
+  .status-healthy { @apply text-admin-neon-green; }
+  .status-degraded { @apply text-admin-amber; }
+  .status-critical { @apply text-admin-red; }
+  .status-unknown { @apply text-admin-text-muted; }
+  .status-pending { @apply text-admin-text-muted; }
+  .status-running { @apply text-admin-neon-cyan animate-pulse; }
+  .status-completed { @apply text-admin-neon-green; }
+  .status-warning { @apply text-admin-amber; }
+  .status-failed { @apply text-admin-red; }
+
+  .btn-admin-primary {
+    @apply bg-admin-neon-green text-admin-bg font-medium px-4 py-2 rounded-lg
+           hover:bg-admin-neon-green/90 hover:shadow-neon-green
+           transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed
+           focus-visible:ring-2 focus-visible:ring-admin-neon-green focus-visible:ring-offset-2 focus-visible:ring-offset-admin-bg;
+  }
+
+  .btn-admin-secondary {
+    @apply bg-admin-card border border-admin-border text-admin-text-primary font-medium px-4 py-2 rounded-lg
+           hover:bg-admin-card/100 hover:border-admin-border-hover
+           transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed
+           focus-visible:ring-2 focus-visible:ring-admin-neon-cyan focus-visible:ring-offset-2 focus-visible:ring-offset-admin-bg;
+  }
+
+  .btn-admin-danger {
+    @apply bg-admin-red/10 border border-admin-red/30 text-admin-red font-medium px-4 py-2 rounded-lg
+           hover:bg-admin-red/20 hover:border-admin-red/50
+           transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed
+           focus-visible:ring-2 focus-visible:ring-admin-red focus-visible:ring-offset-2 focus-visible:ring-offset-admin-bg;
+  }
+
+  .btn-admin-ghost {
+    @apply text-admin-text-secondary hover:text-admin-text-primary hover:bg-admin-card/50
+           font-medium px-4 py-2 rounded-lg transition-all duration-200
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .input-admin {
+    @apply bg-admin-bg-secondary border border-admin-border text-admin-text-primary
+           placeholder-admin-text-muted px-4 py-2.5 rounded-lg
+           focus:border-admin-neon-green focus:ring-2 focus:ring-admin-neon-green/20
+           transition-all duration-200 w-full;
+  }
+
+  .input-admin-error {
+    @apply border-admin-red focus:border-admin-red focus:ring-admin-red/20;
+  }
+
+  .badge-admin {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium font-mono;
+  }
+
+  .badge-healthy { @apply bg-admin-neon-green/10 text-admin-neon-green border border-admin-neon-green/20; }
+  .badge-degraded { @apply bg-admin-amber/10 text-admin-amber border border-admin-amber/20; }
+  .badge-critical { @apply bg-admin-red/10 text-admin-red border border-admin-red/20; }
+  .badge-unknown { @apply bg-admin-text-muted/10 text-admin-text-muted border border-admin-text-muted/20; }
+  .badge-running { @apply bg-admin-neon-cyan/10 text-admin-neon-cyan border border-admin-neon-cyan/20 animate-pulse; }
+  .badge-pending { @apply bg-admin-text-muted/10 text-admin-text-muted border border-admin-text-muted/20; }
+  .badge-completed { @apply bg-admin-neon-green/10 text-admin-neon-green border border-admin-neon-green/20; }
+  .badge-warning { @apply bg-admin-amber/10 text-admin-amber border border-admin-amber/20; }
+  .badge-failed { @apply bg-admin-red/10 text-admin-red border border-admin-red/20; }
+
+  .sidebar-nav-item {
+    @apply flex items-center gap-3 px-3 py-2.5 rounded-lg text-admin-text-secondary
+           hover:text-admin-text-primary hover:bg-admin-card/50
+           transition-all duration-200 cursor-pointer;
+  }
+
+  .sidebar-nav-item-active {
+    @apply bg-admin-neon-green/10 text-admin-neon-green border-l-2 border-admin-neon-green;
+  }
+
+  .sidebar-nav-item-icon { @apply w-5 h-5 flex-shrink-0; }
+
+  .sidebar-nav-section {
+    @apply text-admin-text-muted/60 font-mono text-xs uppercase tracking-wider px-3 py-1 mt-4 mb-1;
+  }
+
+  .topbar-item {
+    @apply flex items-center gap-2 px-3 py-2 rounded-lg text-admin-text-secondary
+           hover:text-admin-text-primary hover:bg-admin-card/50
+           transition-all duration-200 cursor-pointer;
+  }
+
+  .admin-table { @apply w-full text-sm; }
+  .admin-table th { @apply text-left px-4 py-3 font-medium text-admin-text-secondary uppercase tracking-wider text-xs; }
+  .admin-table td { @apply px-4 py-3 border-t border-admin-border text-admin-text-primary; }
+  .admin-table tr { @apply hover:bg-admin-card/50 transition-colors; }
+  .admin-table-container { @apply overflow-x-auto rounded-card border border-admin-border; }
+
+  .metric-card { @apply admin-card admin-card-hover p-5; }
+  .metric-value { @apply text-3xl font-bold font-mono text-admin-text-primary; }
+  .metric-label { @apply text-admin-text-secondary text-sm mt-1; }
+  .metric-change-positive { @apply text-admin-neon-green text-sm font-medium; }
+  .metric-change-negative { @apply text-admin-red text-sm font-medium; }
+
+  .admin-grid { @apply grid gap-4; }
+  .admin-grid-2 { @apply admin-grid grid-cols-1 md:grid-cols-2; }
+  .admin-grid-3 { @apply admin-grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3; }
+  .admin-grid-4 { @apply admin-grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4; }
+
+  .skeleton-admin { @apply bg-admin-card animate-pulse rounded-lg border border-admin-border; }
+
+  .tooltip-admin {
+    @apply absolute z-50 px-3 py-2 text-xs font-mono text-admin-text-primary
+           bg-admin-card border border-admin-border rounded-lg shadow-lg
+           pointer-events-none opacity-0 transition-opacity duration-200;
+  }
+
+  .divider-admin { @apply border-t border-admin-border my-4; }
+
+  .text-terminal { @apply font-mono text-admin-text-secondary text-sm; }
+  .text-terminal-primary { @apply font-mono text-admin-neon-green text-sm; }
+  .text-terminal-cyan { @apply font-mono text-admin-neon-cyan text-sm; }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  .animate-in { animation: fadeIn 0.3s ease-out, slideUp 0.3s ease-out; }
+  .glass { @apply bg-admin-card/60 backdrop-blur-lg; }
+  .glass-strong { @apply bg-admin-card/80 backdrop-blur-xl; }
+}

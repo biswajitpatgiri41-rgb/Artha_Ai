@@ -9,9 +9,6 @@ import numpy as np
 from abc import ABC, abstractmethod
 from typing import Any, Dict, List, Optional
 
-import chromadb
-from chromadb.config import Settings
-
 
 class VectorStore(ABC):
     """Abstract base class for vector stores."""
@@ -57,6 +54,9 @@ class ChromaVectorStore(VectorStore):
     """ChromaDB-based vector store."""
 
     def __init__(self, persist_dir: Optional[str] = None):
+        import chromadb
+        from chromadb.config import Settings
+
         project_root = Path(__file__).resolve().parents[2]
         self.persist_dir = persist_dir or os.getenv("CHROMA_PERSIST_DIR") or str(project_root / "data" / "chroma")
         self.client = chromadb.PersistentClient(
@@ -191,6 +191,79 @@ class ChromaVectorStore(VectorStore):
             return 0
 
 
+class InMemoryVectorStore(VectorStore):
+    """Small process-local vector store for serverless deployments.
+
+    Vercel functions do not provide durable local storage. This fallback keeps
+    evidence retrieval functional within a warm invocation without importing
+    the much larger ChromaDB dependency.
+    """
+
+    def __init__(self) -> None:
+        self._chunks: dict[str, dict[str, dict[str, Any]]] = {}
+
+    def add_chunks(
+        self,
+        run_id: str,
+        chunks: List[Dict[str, Any]],
+        embeddings: List[List[float]],
+    ) -> None:
+        run_chunks = self._chunks.setdefault(run_id, {})
+        for chunk, embedding in zip(chunks, embeddings):
+            run_chunks[chunk["chunk_id"]] = {
+                "chunk": chunk,
+                "embedding": embedding,
+            }
+
+    def search(
+        self,
+        run_id: str,
+        query_embedding: List[float],
+        top_k: int,
+        evidence_ids: Optional[List[str]] = None,
+    ) -> List[Dict[str, Any]]:
+        query = np.asarray(query_embedding, dtype=float)
+        allowed = set(evidence_ids) if evidence_ids is not None else None
+        matches: list[dict[str, Any]] = []
+        for item in self._chunks.get(run_id, {}).values():
+            chunk = item["chunk"]
+            if allowed is not None and chunk["evidence_id"] not in allowed:
+                continue
+            stored = np.asarray(item["embedding"], dtype=float)
+            denominator = float(np.linalg.norm(query) * np.linalg.norm(stored))
+            score = float(np.dot(query, stored) / denominator) if denominator else 0.0
+            matches.append({
+                "chunk_id": chunk["chunk_id"],
+                "text": chunk["text"],
+                "metadata": {
+                    key: value for key, value in {
+                        "evidence_id": chunk["evidence_id"],
+                        "run_id": chunk["run_id"],
+                        "filename": chunk["filename"],
+                        "page": chunk.get("page"),
+                        "section": chunk.get("section"),
+                    }.items() if value is not None
+                },
+                "distance": 1.0 - score,
+                "score": score,
+            })
+        return sorted(matches, key=lambda item: item["score"], reverse=True)[:top_k]
+
+    def delete_run(self, run_id: str) -> None:
+        self._chunks.pop(run_id, None)
+
+    def delete_evidence(self, run_id: str, evidence_id: str) -> None:
+        run_chunks = self._chunks.get(run_id, {})
+        for chunk_id in [
+            key for key, value in run_chunks.items()
+            if value["chunk"]["evidence_id"] == evidence_id
+        ]:
+            del run_chunks[chunk_id]
+
+    def get_chunk_count(self, run_id: str) -> int:
+        return len(self._chunks.get(run_id, {}))
+
+
 # Global instance
 _vector_store: Optional[VectorStore] = None
 
@@ -199,5 +272,11 @@ def get_vector_store() -> VectorStore:
     """Get the global vector store instance."""
     global _vector_store
     if _vector_store is None:
-        _vector_store = ChromaVectorStore()
+        if os.getenv("VERCEL"):
+            _vector_store = InMemoryVectorStore()
+        else:
+            try:
+                _vector_store = ChromaVectorStore()
+            except ImportError:
+                _vector_store = InMemoryVectorStore()
     return _vector_store

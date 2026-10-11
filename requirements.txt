@@ -9,10 +9,11 @@ numpy>=1.26,<3
 psutil>=6,<8
 pandas>=2.2,<4
 openpyxl>=3.1,<4
-pyarrow>=17,<25
 python-multipart>=0.0.20,<1
 pypdf>=5,<7
-chromadb>=0.5,<2
+# ChromaDB is intentionally excluded from the Vercel dependency set. Vercel
+# functions use the lightweight in-memory evidence index; Docker/local installs
+# use the full dependency declared in pyproject.toml.
 python-magic>=0.4.27; platform_system != "Windows"
 python-magic-bin>=0.4.14; platform_system == "Windows"
 # Install `pip install -e ".[econometrics,dev]"` for optional model tooling

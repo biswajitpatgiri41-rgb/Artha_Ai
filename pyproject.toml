@@ -19,10 +19,8 @@ dependencies = [
     "psutil>=6,<8",
     "pandas>=2.2,<4",
     "openpyxl>=3.1,<4",
-    "pyarrow>=17,<25",
     "python-multipart>=0.0.20,<1",
     "pypdf>=5,<7",
-    "chromadb>=0.5,<2",
     "python-magic>=0.4.27; platform_system != 'Windows'",
     "python-magic-bin>=0.4.14; platform_system == 'Windows'",
     # Security dependencies
@@ -50,6 +48,10 @@ dev = [
     "safety>=3.0,<4",
 ]
 evidence-local = ["sentence-transformers>=3,<6"]
+local-storage = [
+    "pyarrow>=17,<25",
+    "chromadb>=0.5,<2",
+]
 security = [
     "bandit>=1.7,<2",
     "pip-audit>=2.7,<3",

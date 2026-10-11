@@ -46,7 +46,7 @@ controls, threat model, and deployment blockers. The application does not yet
 implement user authentication or authorization and must not be exposed as a
 public multi-user service until those controls are added.
 
-Install the Python project with `python -m pip install -e ".[econometrics,evidence-local]"`
+Install the Python project with `python -m pip install -e ".[econometrics,evidence-local,local-storage]"`
 and frontend packages with `npm install` from `frontend`. The backend can also
 be installed with `python -m pip install -r requirements.txt`.
 

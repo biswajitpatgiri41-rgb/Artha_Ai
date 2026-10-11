@@ -16,6 +16,15 @@ pypdf>=5,<7
 # use the full dependency declared in pyproject.toml.
 python-magic>=0.4.27; platform_system != "Windows"
 python-magic-bin>=0.4.14; platform_system == "Windows"
+# Runtime authentication dependencies imported while the API routers start.
+argon2-cffi>=23.1,<24
+passlib>=1.7,<2
+python-jose>=3.3,<4
+pyotp>=2.9,<3
+qrcode>=7.4,<8
+slowapi>=0.1,<1
+cryptography>=42,<43
+email-validator>=2.2,<3
 # Install `pip install -e ".[econometrics,dev]"` for optional model tooling
 # and the project development test suite.
 pytest>=8,<9

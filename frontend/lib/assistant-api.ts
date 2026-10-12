@@ -68,7 +68,7 @@ export async function sendAssistantMessage(input: {
   documentEvidenceRunId?: string;
   documentEvidenceIds?: string[];
 }): Promise<AssistantChatResponse> {
-  const url = `${apiBaseUrl}/assistant/chat`;
+  const url = `${apiBaseUrl}/api/assistant/chat`;
   const isDevelopment = process.env.NODE_ENV === 'development';
 
   if (isDevelopment) {

@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Backend test for POST /assistant/chat endpoint.
+"""Backend test for POST /api/assistant/chat endpoint.
 
 Tests the assistant chat endpoint independently.
 Requires a valid NVIDIA_API_KEY in .env
@@ -21,22 +21,22 @@ client = TestClient(app)
 
 
 def test_route_exists():
-    """Verify POST /assistant/chat route is registered."""
+    """Verify POST /api/assistant/chat route is registered."""
     # Check OpenAPI schema
     response = client.get("/openapi.json")
     assert response.status_code == 200
     schema = response.json()
     paths = schema.get("paths", {})
-    assert "/assistant/chat" in paths, "Route /assistant/chat not in OpenAPI schema"
-    assert "post" in paths["/assistant/chat"], "POST method not on /assistant/chat"
-    print("✓ POST /assistant/chat exists in OpenAPI schema")
+    assert "/api/assistant/chat" in paths, "Route /api/assistant/chat not in OpenAPI schema"
+    assert "post" in paths["/api/assistant/chat"], "POST method not on /api/assistant/chat"
+    print("✓ POST /api/assistant/chat exists in OpenAPI schema")
     return True
 
 
 def test_cors_headers():
     """Verify CORS headers for localhost:3000."""
     response = client.options(
-        "/assistant/chat",
+        "/api/assistant/chat",
         headers={"Origin": "http://localhost:3000", "Access-Control-Request-Method": "POST"}
     )
     # FastAPI TestClient doesn't fully simulate CORS, but we can check config
@@ -47,7 +47,7 @@ def test_cors_headers():
 def test_request_validation():
     """Test request validation (422 for missing required fields)."""
     # Missing required 'message' field
-    response = client.post("/assistant/chat", json={
+    response = client.post("/api/assistant/chat", json={
         "page": "/analysis",
         "page_context": "Inflation Analysis",
         "conversation": []
@@ -59,7 +59,7 @@ def test_request_validation():
 
 def test_minimal_valid_request():
     """Test with minimal valid request (will fail at NVIDIA without real key)."""
-    response = client.post("/assistant/chat", json={
+    response = client.post("/api/assistant/chat", json={
         "message": "Explain core inflation briefly.",
         "page": "/analysis",
         "page_context": "Inflation Analysis",
@@ -85,7 +85,7 @@ def test_minimal_valid_request():
 
 def test_error_response_format():
     """Verify error responses have safe detail messages."""
-    response = client.post("/assistant/chat", json={
+    response = client.post("/api/assistant/chat", json={
         "message": "test",
         "page": "/analysis",
         "page_context": "Inflation Analysis",

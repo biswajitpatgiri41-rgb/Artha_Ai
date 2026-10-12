@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import hashlib
+import os
 import shutil
 import uuid
 from datetime import datetime, timezone
@@ -23,7 +24,12 @@ class EvidenceStorage:
     """Handles secure file storage for evidence uploads."""
 
     def __init__(self, base_dir: Optional[Path] = None):
-        self.base_dir = (base_dir or Path(__file__).resolve().parents[2] / "data" / "uploads").resolve()
+        if base_dir is None:
+            if os.getenv("VERCEL", "").lower() == "1":
+                base_dir = Path("/tmp/artha-ai-evidence")
+            else:
+                base_dir = Path(__file__).resolve().parents[2] / "data" / "uploads"
+        self.base_dir = base_dir.resolve()
         self.base_dir.mkdir(parents=True, exist_ok=True)
         self._limits = get_evidence_limits()
 

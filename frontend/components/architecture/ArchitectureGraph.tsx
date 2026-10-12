@@ -41,11 +41,51 @@ function ArchitectureCanvas() {
   };
 
   const run = () => {
-    if (mode === 'demo' && !stream.running) {
-      const token = executionToken.current + 1;
-      executionToken.current = token;
+    if (stream.running) return;
+    const token = executionToken.current + 1;
+    executionToken.current = token;
+    if (mode === 'demo') {
       void engine.start((nextState) => { if (executionToken.current === token) applyState(nextState); });
+      return;
     }
+
+    const apiBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL ?? 'http://localhost:8000';
+    const runLiveCheck = async () => {
+      const runId = `live-${Date.now()}`;
+      const startedAt = Date.now();
+      let state: DemoFlowState = {
+        ...initialState,
+        runId,
+        nodeStatuses: Object.fromEntries(architectureNodes.map((node) => [node.id, 'idle' as const])),
+      };
+      const emit = (type: ArchitectureEvent['type'], message: string, details: Partial<ArchitectureEvent> = {}) => {
+        if (executionToken.current !== token) return;
+        const event: ArchitectureEvent = { runId, timestamp: new Date().toISOString(), type, message, ...details };
+        state = reduceArchitectureEvent(state, event);
+        state.elapsedMs = Date.now() - startedAt;
+        applyState(state);
+      };
+
+      try {
+        emit('run_started', 'Live flow started; checking deployed API and data catalog.', { payload: { mode: 'live' } });
+        emit('node_started', 'Checking deployed API health.', { nodeId: 'orchestrator' });
+        const healthResponse = await fetch(`${apiBaseUrl}/health`, { cache: 'no-store' });
+        if (!healthResponse.ok) throw new Error(`API health check returned HTTP ${healthResponse.status}.`);
+        const health = await healthResponse.json() as { status?: string; llm?: string };
+        emit('node_completed', `API healthy; LLM ${health.llm === 'configured' ? 'configured' : 'not configured'}.`, { nodeId: 'orchestrator', payload: health });
+
+        emit('node_started', 'Loading the live series catalog.', { nodeId: 'source-rbi-retrieval' });
+        const seriesResponse = await fetch(`${apiBaseUrl}/series`, { cache: 'no-store' });
+        if (!seriesResponse.ok) throw new Error(`Series catalog returned HTTP ${seriesResponse.status}.`);
+        const catalog = await seriesResponse.json();
+        emit('node_completed', 'Live series catalog loaded.', { nodeId: 'source-rbi-retrieval', payload: { available: Array.isArray(catalog) ? catalog.length : undefined } });
+        emit('run_completed', 'Live flow completed using verified API health and series catalog data.', { payload: { mode: 'live' } });
+      } catch (error) {
+        emit('node_failed', error instanceof Error ? error.message : 'Live flow failed.', { nodeId: 'orchestrator' });
+        emit('run_completed', 'Live flow stopped because a backend check failed.', { payload: { mode: 'live', status: 'failed' } });
+      }
+    };
+    void runLiveCheck();
   };
 
   const reset = () => {
@@ -138,7 +178,7 @@ function ArchitectureCanvas() {
             </div>
             <div className="flex flex-wrap items-center gap-2">
               <div className="flex items-center gap-2 rounded-lg border border-white/[0.08] bg-white/[0.025] px-2 py-1.5 text-[9px] uppercase tracking-[0.08em]"><button type="button" onClick={() => setMode('demo')} className={mode === 'demo' ? 'font-semibold text-cyan-200' : 'text-slate-500'}>Demo</button><span className="text-slate-700">|</span><button type="button" onClick={() => setMode('live')} className={mode === 'live' ? 'font-semibold text-cyan-200' : 'text-slate-500'}>Live</button></div>
-              <button type="button" onClick={run} disabled={mode === 'live' || stream.running} className="inline-flex items-center gap-1.5 rounded-lg border border-cyan-300/20 bg-cyan-400/10 px-2.5 py-1.5 text-[10px] font-semibold text-cyan-100 disabled:cursor-not-allowed disabled:opacity-50"><Play size={12} /> Run Flow</button>
+              <button type="button" onClick={run} disabled={stream.running} className="inline-flex items-center gap-1.5 rounded-lg border border-cyan-300/20 bg-cyan-400/10 px-2.5 py-1.5 text-[10px] font-semibold text-cyan-100 disabled:cursor-not-allowed disabled:opacity-50"><Play size={12} /> Run Flow</button>
               <button type="button" onClick={reset} className="inline-flex items-center gap-1.5 rounded-lg border border-white/10 bg-white/[0.04] px-2.5 py-1.5 text-[10px] font-semibold text-slate-300"><RotateCcw size={12} /> Reset</button>
               <span className="inline-flex items-center gap-1 text-[10px] text-slate-500"><TimerReset size={12} />{(stream.elapsedMs / 1000).toFixed(1)}s</span>
             </div>

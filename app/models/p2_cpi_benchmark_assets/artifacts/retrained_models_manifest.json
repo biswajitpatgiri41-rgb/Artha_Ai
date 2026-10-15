@@ -1,0 +1,360 @@
+{
+  "source_commit": "ce8abb01d2ec0fd7524638995281e32a8142f1d1",
+  "dataset_sha256": "5ce2206c99358cc5816de7372fb6d1fe1952348834f5c4f273d03ed55135ae7f",
+  "retraining_method": "Expanding one-step walk-forward; ARIMAX uses standardized non-redundant lagged features, XGBoost uses the original 13-feature panel.",
+  "test_start": "2022-01",
+  "test_end": "2026-04",
+  "test_observations": 52,
+  "arimax": {
+    "order": [
+      3,
+      0,
+      0
+    ],
+    "optimizer": "lbfgs",
+    "max_iterations": 1000,
+    "converged_at_all_walk_forward_origins": true,
+    "walk_forward_convergence": [
+      {
+        "date": "2022-01",
+        "converged": true,
+        "iterations": 88
+      },
+      {
+        "date": "2022-02",
+        "converged": true,
+        "iterations": 95
+      },
+      {
+        "date": "2022-03",
+        "converged": true,
+        "iterations": 80
+      },
+      {
+        "date": "2022-04",
+        "converged": true,
+        "iterations": 78
+      },
+      {
+        "date": "2022-05",
+        "converged": true,
+        "iterations": 79
+      },
+      {
+        "date": "2022-06",
+        "converged": true,
+        "iterations": 90
+      },
+      {
+        "date": "2022-07",
+        "converged": true,
+        "iterations": 71
+      },
+      {
+        "date": "2022-08",
+        "converged": true,
+        "iterations": 82
+      },
+      {
+        "date": "2022-09",
+        "converged": true,
+        "iterations": 68
+      },
+      {
+        "date": "2022-10",
+        "converged": true,
+        "iterations": 62
+      },
+      {
+        "date": "2022-11",
+        "converged": true,
+        "iterations": 77
+      },
+      {
+        "date": "2022-12",
+        "converged": true,
+        "iterations": 93
+      },
+      {
+        "date": "2023-01",
+        "converged": true,
+        "iterations": 82
+      },
+      {
+        "date": "2023-02",
+        "converged": true,
+        "iterations": 80
+      },
+      {
+        "date": "2023-03",
+        "converged": true,
+        "iterations": 98
+      },
+      {
+        "date": "2023-04",
+        "converged": true,
+        "iterations": 78
+      },
+      {
+        "date": "2023-05",
+        "converged": true,
+        "iterations": 74
+      },
+      {
+        "date": "2023-06",
+        "converged": true,
+        "iterations": 86
+      },
+      {
+        "date": "2023-07",
+        "converged": true,
+        "iterations": 97
+      },
+      {
+        "date": "2023-08",
+        "converged": true,
+        "iterations": 81
+      },
+      {
+        "date": "2023-09",
+        "converged": true,
+        "iterations": 77
+      },
+      {
+        "date": "2023-10",
+        "converged": true,
+        "iterations": 101
+      },
+      {
+        "date": "2023-11",
+        "converged": true,
+        "iterations": 86
+      },
+      {
+        "date": "2023-12",
+        "converged": true,
+        "iterations": 89
+      },
+      {
+        "date": "2024-01",
+        "converged": true,
+        "iterations": 75
+      },
+      {
+        "date": "2024-02",
+        "converged": true,
+        "iterations": 85
+      },
+      {
+        "date": "2024-03",
+        "converged": true,
+        "iterations": 93
+      },
+      {
+        "date": "2024-04",
+        "converged": true,
+        "iterations": 76
+      },
+      {
+        "date": "2024-05",
+        "converged": true,
+        "iterations": 82
+      },
+      {
+        "date": "2024-06",
+        "converged": true,
+        "iterations": 86
+      },
+      {
+        "date": "2024-07",
+        "converged": true,
+        "iterations": 77
+      },
+      {
+        "date": "2024-08",
+        "converged": true,
+        "iterations": 88
+      },
+      {
+        "date": "2024-09",
+        "converged": true,
+        "iterations": 90
+      },
+      {
+        "date": "2024-10",
+        "converged": true,
+        "iterations": 77
+      },
+      {
+        "date": "2024-11",
+        "converged": true,
+        "iterations": 80
+      },
+      {
+        "date": "2024-12",
+        "converged": true,
+        "iterations": 81
+      },
+      {
+        "date": "2025-01",
+        "converged": true,
+        "iterations": 88
+      },
+      {
+        "date": "2025-02",
+        "converged": true,
+        "iterations": 77
+      },
+      {
+        "date": "2025-03",
+        "converged": true,
+        "iterations": 73
+      },
+      {
+        "date": "2025-04",
+        "converged": true,
+        "iterations": 74
+      },
+      {
+        "date": "2025-05",
+        "converged": true,
+        "iterations": 70
+      },
+      {
+        "date": "2025-06",
+        "converged": true,
+        "iterations": 82
+      },
+      {
+        "date": "2025-07",
+        "converged": true,
+        "iterations": 70
+      },
+      {
+        "date": "2025-08",
+        "converged": true,
+        "iterations": 77
+      },
+      {
+        "date": "2025-09",
+        "converged": true,
+        "iterations": 76
+      },
+      {
+        "date": "2025-10",
+        "converged": true,
+        "iterations": 82
+      },
+      {
+        "date": "2025-11",
+        "converged": true,
+        "iterations": 86
+      },
+      {
+        "date": "2025-12",
+        "converged": true,
+        "iterations": 86
+      },
+      {
+        "date": "2026-01",
+        "converged": true,
+        "iterations": 79
+      },
+      {
+        "date": "2026-02",
+        "converged": true,
+        "iterations": 82
+      },
+      {
+        "date": "2026-03",
+        "converged": true,
+        "iterations": 91
+      },
+      {
+        "date": "2026-04",
+        "converged": true,
+        "iterations": 80
+      }
+    ],
+    "final_fit_converged": true,
+    "final_fit_iterations": 85,
+    "feature_columns": [
+      "iip_lag1",
+      "m3_lag1",
+      "repo_rate_lag1",
+      "tbill_91d_lag1",
+      "gsec_10yr_lag1",
+      "inr_usd_lag1",
+      "fed_funds_rate_lag1",
+      "crude_oil_brent_lag1",
+      "cpi_lag1",
+      "cpi_lag2",
+      "cpi_lag3",
+      "m3_lag12"
+    ],
+    "removed_redundant_feature": "term_spread_lag1",
+    "removed_feature_reason": "term_spread_lag1 is exactly derived from gsec_10yr_lag1 minus tbill_91d_lag1, making the original design matrix rank deficient."
+  },
+  "xgboost": {
+    "artifact_format": "XGBoost native JSON",
+    "feature_columns": [
+      "iip_lag1",
+      "m3_lag1",
+      "repo_rate_lag1",
+      "tbill_91d_lag1",
+      "gsec_10yr_lag1",
+      "inr_usd_lag1",
+      "fed_funds_rate_lag1",
+      "crude_oil_brent_lag1",
+      "term_spread_lag1",
+      "cpi_lag1",
+      "cpi_lag2",
+      "cpi_lag3",
+      "m3_lag12"
+    ],
+    "parameters": {
+      "n_estimators": 100,
+      "max_depth": 2,
+      "learning_rate": 0.03,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_lambda": 10.0,
+      "random_state": 42
+    }
+  },
+  "metrics": [
+    {
+      "model": "ARIMAX(3,0,0)",
+      "test_start": "2022-01-01",
+      "test_end": "2026-04-01",
+      "n_test": 52,
+      "mae_percentage_points": 0.5456323617648116,
+      "rmse_percentage_points": 0.7398741481412533
+    },
+    {
+      "model": "XGBoost",
+      "test_start": "2022-01-01",
+      "test_end": "2026-04-01",
+      "n_test": 52,
+      "mae_percentage_points": 0.7714900992047004,
+      "rmse_percentage_points": 1.0247385729197236
+    }
+  ],
+  "versions": {
+    "python": "3.13.7",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "statsmodels": "0.15.0",
+    "scikit_learn": "1.6.1",
+    "xgboost": "3.2.0"
+  },
+  "smoke_test_predictions": {
+    "p2_arimax": 3.242197905895942,
+    "p2_xgboost": 3.714111328125
+  },
+  "artifact_checks": {
+    "arimax_reload_converged": true,
+    "xgboost_native_json_reload": true,
+    "walk_forward_origins": 52
+  }
+}

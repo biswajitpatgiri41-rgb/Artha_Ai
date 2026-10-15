@@ -16,6 +16,7 @@ from app.models.final_package import (
     final_model_forecast,
     final_model_registry,
 )
+from app.models.p2_cpi_benchmark import P2ModelNotReadyError, p2_forecast, p2_model_registry
 from app.tools.research import ROOT, catalog, load_series, rolling_backtest, seasonal_naive, simulate_scenario
 from app.agents.critic_agent import run_critic
 from app.evidence.schemas import SearchRequest
@@ -131,6 +132,37 @@ def get_final_forecast_models():
         raise HTTPException(status_code=503, detail={"message": str(exc), "status": "model_unavailable"}) from exc
     except (ModelPackageIntegrityError, OSError, ValueError, KeyError) as exc:
         raise HTTPException(status_code=503, detail={"message": str(exc), "status": "model_package_invalid"}) from exc
+
+
+@router.get("/forecast/p2/models")
+def get_p2_forecast_models():
+    """Expose the separately licensed P2 research benchmark and its provenance."""
+    try:
+        return p2_model_registry()
+    except (OSError, ValueError, KeyError, json.JSONDecodeError) as exc:
+        raise HTTPException(
+            status_code=503,
+            detail={"message": str(exc), "status": "model_package_invalid"},
+        ) from exc
+
+
+@router.get("/forecast/p2")
+def get_p2_forecast(model: str = "p2_arima", horizon: int = 1):
+    """Return an optional one-month forecast from an imported P2 model bundle."""
+    try:
+        return p2_forecast(model, horizon)
+    except P2ModelNotReadyError as exc:
+        raise HTTPException(
+            status_code=409,
+            detail={"message": str(exc), "status": "model_not_ready"},
+        ) from exc
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+    except FileNotFoundError as exc:
+        raise HTTPException(
+            status_code=503,
+            detail={"message": str(exc), "status": "model_unavailable"},
+        ) from exc
 
 
 @router.get("/forecast/final")

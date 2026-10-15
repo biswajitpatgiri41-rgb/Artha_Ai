@@ -80,6 +80,33 @@ seasonal-naive benchmark only. XGBoost and ARIMA require the optional
 The separate seasonal-naive backtest shown in the UI is not a backtest of the
 selected trained model.
 
+### Optional P2 CPI benchmark
+
+The project includes a separately labeled P2 CPI/macro dataset from the
+MIT-licensed `ketandeshmukh1920/p2-india-cpi-forecasting` repository, pinned to
+its source commit and dataset checksum. It is intentionally isolated from the
+MoSPI 2024-base package because the target series and data vintage differ.
+
+To install the models trained by `notebooks/train2.ipynb`, download that run's
+ZIP from Google Drive and import it from the project root:
+
+```powershell
+python scripts\import_p2_cpi_bundle.py --bundle "C:\path\to\p2_cpi_training_run.zip"
+```
+
+Install `python -m pip install -e ".[econometrics]"` before serving models.
+The optional API endpoints are `GET /forecast/p2/models` and
+`GET /forecast/p2?model=p2_arima`; forecasts are one month ahead and explicitly
+use the external P2 panel. The ARIMAX artifact from the checked training run
+did not converge. The artifacts in this workspace have been regenerated with
+`python scripts\retrain_p2_compat_models.py`: it removes an exactly redundant
+ARIMAX predictor, standardizes the remaining inputs, requires convergence
+across all evaluation origins, and saves XGBoost in native JSON format. Run
+that command after importing the bundle in a fresh checkout. These research
+models do not replace or alter the existing packaged forecast endpoints. See
+[`app/models/p2_cpi_benchmark_assets/README.md`](app/models/p2_cpi_benchmark_assets/README.md)
+for provenance, import, and trust guidance.
+
 PDF evidence uploads use the `/evidence/upload` endpoint. Text extraction uses
 `pypdf`; local semantic indexing uses the `evidence-local` extra, which installs
 Sentence Transformers and downloads its embedding model on first use. On

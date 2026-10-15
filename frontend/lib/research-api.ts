@@ -84,6 +84,44 @@ export async function getFinalModelRegistry(): Promise<PackagedModelRegistry> {
   return response.json() as Promise<PackagedModelRegistry>;
 }
 
+export interface P2BenchmarkRegistry {
+  status: string;
+  mode: string;
+  source_repository: string;
+  source_commit: string;
+  source_license: string;
+  dataset_sha256: string;
+  dataset_start: string;
+  dataset_end: string;
+  target: string;
+  training_observations: number;
+  supported_horizons_months: number[];
+  models: Record<string, string>;
+  training_versions: Record<string, string>;
+  metrics: Array<{
+    model: string;
+    test_start: string;
+    test_end: string;
+    test_observations: number;
+    mae_percentage_points: number;
+    rmse_percentage_points: number;
+  }>;
+  warnings: string[];
+}
+
+export async function getP2BenchmarkRegistry(): Promise<P2BenchmarkRegistry> {
+  const response = await fetch(`${apiBaseUrl}/forecast/p2/models`, { cache: 'no-store' });
+  if (!response.ok) throw new Error(`P2 benchmark registry returned ${response.status}`);
+  return response.json() as Promise<P2BenchmarkRegistry>;
+}
+
+export async function getP2BenchmarkForecast(model: string): Promise<ForecastResponse> {
+  const query = new URLSearchParams({ model, horizon: '1' });
+  const response = await fetch(`${apiBaseUrl}/forecast/p2?${query.toString()}`, { cache: 'no-store' });
+  if (!response.ok) throw new Error(`P2 benchmark forecast returned ${response.status}`);
+  return response.json() as Promise<ForecastResponse>;
+}
+
 export interface ProjectSeriesCatalogItem {
   id: string; source: string; unit: string; base_year: string | null;
   frequency: string; enabled: boolean; available: boolean; observation_count: number;

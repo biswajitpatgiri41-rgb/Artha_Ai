@@ -40,6 +40,7 @@ econometrics = [
     "statsmodels>=0.14,<1",
     "scikit-learn>=1.5,<2",
     "xgboost>=2,<4",
+    "joblib>=1.4,<2",
 ]
 dev = [
     "pytest>=8,<9",
@@ -67,6 +68,9 @@ include = ["app*"]
 "app.models" = [
     "Final_data_and_models/Final_model_sets/India_CPI_Model_Package/*",
     "Final_data_and_models/Final_model_sets/India_CPI_Model_Package/**/*",
+    "p2_cpi_benchmark_assets/*",
+    "p2_cpi_benchmark_assets/source/*",
+    "p2_cpi_benchmark_assets/artifacts/*",
 ]
 
 [tool.pytest.ini_options]

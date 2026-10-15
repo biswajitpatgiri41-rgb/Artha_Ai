@@ -4,7 +4,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { AlertTriangle, BarChart3 } from 'lucide-react';
 import { PageShell } from '@/components/layout';
 import { StatusState } from '@/components/ui';
-import { getFinalPackageForecast, getFinalModelExplanation, getFinalModelRegistry, type ForecastResponse, type PackagedModelRegistry } from '@/lib/research-api';
+import { getFinalPackageForecast, getFinalModelExplanation, getFinalModelRegistry, getP2BenchmarkForecast, getP2BenchmarkRegistry, type ForecastResponse, type P2BenchmarkRegistry, type PackagedModelRegistry } from '@/lib/research-api';
 import { ForecastCalibration, ForecastExplainability, ForecastVintageComparison, ModelEnsembleComparison, type ForecastExplanationOutput } from '@/components/ForecastIntelligence';
 import { AskWhyButton } from '@/components/assistant/AskWhyButton';
 
@@ -27,6 +27,12 @@ export default function ForecastsPage() {
   const [forecast, setForecast] = useState<ForecastResponse | null>(null);
   const [explanation, setExplanation] = useState<ForecastExplanationOutput | null>(null);
   const [registry, setRegistry] = useState<PackagedModelRegistry | null>(null);
+  const [p2Registry, setP2Registry] = useState<P2BenchmarkRegistry | null>(null);
+  const [p2RegistryError, setP2RegistryError] = useState<string | null>(null);
+  const [p2Model, setP2Model] = useState('p2_arima');
+  const [p2Forecast, setP2Forecast] = useState<ForecastResponse | null>(null);
+  const [p2ForecastError, setP2ForecastError] = useState<string | null>(null);
+  const [p2ForecastLoading, setP2ForecastLoading] = useState(false);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -49,6 +55,29 @@ export default function ForecastsPage() {
     }, 0);
     return () => { active = false; window.clearTimeout(timer); };
   }, [horizon, model, variant]);
+
+  useEffect(() => {
+    let active = true;
+    getP2BenchmarkRegistry()
+      .then((result) => { if (active) setP2Registry(result); })
+      .catch((reason: unknown) => {
+        if (active) setP2RegistryError(reason instanceof Error ? reason.message : 'Could not load the P2 benchmark registry.');
+      });
+    return () => { active = false; };
+  }, []);
+
+  const runP2Forecast = async () => {
+    setP2ForecastLoading(true);
+    setP2ForecastError(null);
+    try {
+      setP2Forecast(await getP2BenchmarkForecast(p2Model));
+    } catch (reason: unknown) {
+      setP2ForecastError(reason instanceof Error ? reason.message : 'Could not run the P2 benchmark forecast.');
+      setP2Forecast(null);
+    } finally {
+      setP2ForecastLoading(false);
+    }
+  };
 
   const comparison = useMemo(() => registry?.metrics.filter((item) =>
     item.horizon_months === horizon && item.variant === variant,
@@ -87,6 +116,52 @@ export default function ForecastsPage() {
 
         {forecast && !loading && <div className="mt-4 flex items-center gap-2 text-xs text-slate-400"><BarChart3 size={14} className="text-cyan-300" /> Numerical forecast from the deterministic model adapter · no LLM forecast generation</div>}
         {forecast?.warnings.map((warning) => <p key={warning} className="mt-2 text-xs leading-5 text-amber-100/70">{warning}</p>)}
+      </section>
+
+      <section className="rounded-[18px] border border-white/[0.08] bg-[rgba(15,23,42,0.62)] p-5 shadow-[0_20px_55px_rgba(0,0,0,0.22)] backdrop-blur-2xl">
+        <div className="flex flex-wrap items-start justify-between gap-4">
+          <div>
+            <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-violet-300">External research benchmark</p>
+            <h2 className="mt-1 text-base font-semibold text-slate-50">P2 India CPI models · one month ahead</h2>
+            <p className="mt-1 text-xs text-slate-400">Separate repository dataset: {p2Registry ? `${p2Registry.dataset_start} – ${p2Registry.dataset_end}` : 'loading source panel'}</p>
+          </div>
+          {p2Registry && <span className="rounded-full border border-white/10 px-3 py-1 text-xs text-slate-300">{p2Registry.status.replaceAll('_', ' ')}</span>}
+        </div>
+        {p2RegistryError && <p className="mt-3 text-sm text-rose-300">{p2RegistryError}</p>}
+        {p2Registry && <>
+          <p className="mt-3 text-xs leading-5 text-amber-100/70">{p2Registry.target}. This is not the MoSPI 2024-base target and must not be directly compared with the packaged CPI forecasts.</p>
+          {p2Registry.metrics.length > 0 && <div className="mt-4 overflow-x-auto">
+            <table className="w-full min-w-[520px] text-left text-xs">
+              <thead className="text-[10px] uppercase tracking-wider text-slate-500"><tr><th className="px-3 py-2">Model</th><th className="px-3 py-2">MAE (pp)</th><th className="px-3 py-2">RMSE (pp)</th><th className="px-3 py-2">Test months</th></tr></thead>
+              <tbody>{p2Registry.metrics.map((item) => <tr key={item.model} className="border-t border-white/[0.06] text-slate-300">
+                <td className="px-3 py-3 font-medium text-slate-100">{item.model}</td><td className="px-3 py-3">{item.mae_percentage_points.toFixed(3)}</td><td className="px-3 py-3">{item.rmse_percentage_points.toFixed(3)}</td><td className="px-3 py-3">{item.test_observations}</td>
+              </tr>)}</tbody>
+            </table>
+          </div>}
+          <div className="mt-4 flex flex-wrap items-center gap-2">
+            <label className="sr-only" htmlFor="p2-model">P2 benchmark model</label>
+            <select id="p2-model" className={selectClass} value={p2Model} onChange={(event) => { setP2Model(event.target.value); setP2Forecast(null); setP2ForecastError(null); }}>
+              <option value="p2_persistence">Persistence baseline</option>
+              <option value="p2_arima">ARIMA (3,0,0)</option>
+              <option value="p2_elasticnet">Elastic Net</option>
+              <option value="p2_xgboost">XGBoost</option>
+              <option value="p2_arimax">ARIMAX (not converged)</option>
+            </select>
+            <button type="button" className="rounded-xl border border-violet-300/20 bg-violet-300/[0.08] px-3 py-2 text-sm text-violet-100 disabled:cursor-not-allowed disabled:opacity-40" disabled={p2Registry.models[p2Model] !== 'available' || p2ForecastLoading} onClick={runP2Forecast}>
+              {p2ForecastLoading ? 'Forecasting…' : 'Run P2 forecast'}
+            </button>
+            <span className="text-xs text-slate-400">Model status: {p2Registry.models[p2Model]?.replaceAll('_', ' ') ?? 'unknown'}</span>
+          </div>
+          {p2Registry.status === 'dataset_available_models_not_imported' && <p className="mt-3 text-xs leading-5 text-slate-400">To enable forecasts, download the model ZIP from Colab/Drive and import it from the project root: <code className="text-slate-200">python scripts\import_p2_cpi_bundle.py --bundle &quot;C:\path\to\p2_cpi_training_run.zip&quot;</code></p>}
+          {p2Model === 'p2_arimax' && <p className="mt-2 text-xs text-amber-200/70">The saved ARIMAX fit did not converge and remains disabled.</p>}
+          {p2ForecastError && <p className="mt-3 text-sm text-rose-300">{p2ForecastError}</p>}
+          {p2Forecast && <div className="mt-4 rounded-xl border border-violet-300/15 bg-violet-300/[0.04] p-4">
+            <p className="text-[10px] uppercase tracking-wider text-slate-400">P2 CPI forecast · {p2Forecast.target_month}</p>
+            <p className="mt-1 text-2xl font-semibold text-violet-100">{p2Forecast.forecasts[0]?.value.toFixed(2)}%</p>
+            <p className="mt-1 text-xs text-slate-400">Panel origin {p2Forecast.origin}; {p2Forecast.source_observations} source observations.</p>
+          </div>}
+          {p2Registry.warnings.map((warning) => <p key={warning} className="mt-2 text-xs leading-5 text-slate-500">{warning}</p>)}
+        </>}
       </section>
 
       <section className="rounded-[18px] border border-white/[0.08] bg-[rgba(15,23,42,0.62)] p-5 shadow-[0_20px_55px_rgba(0,0,0,0.22)] backdrop-blur-2xl">

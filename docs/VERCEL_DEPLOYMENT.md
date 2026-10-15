@@ -67,6 +67,12 @@ EMBEDDING_PROVIDER=local
 CORS_ALLOWED_ORIGINS=["https://YOUR-FRONTEND-PROJECT.vercel.app","https://YOUR-ADMIN-PROJECT.vercel.app"]
 ```
 
+For the current production aliases, include
+`https://artha-ai-beta.vercel.app`, `https://artha-ai-frontend.vercel.app`, and
+`https://artha-ai-admin.vercel.app` in this JSON array. Keep the localhost
+origins if local frontend development should continue to call the deployed API.
+Redeploy the API after changing this setting.
+
 Generate an Argon2id password hash locally; never put the plaintext password
 in GitHub:
 

@@ -1,8 +1,8 @@
 {
-  "created_utc": "2026-10-09T06:58:43.238552+00:00",
+  "created_utc": "2026-10-16T07:25:01.121899+00:00",
   "series": "oecd_long_history_sensitivity",
   "target_definition": "OECD monthly India CPI inflation YoY series used as a separate sensitivity target; not blended with the MoSPI 2024-base series.",
-  "test_period_definition": "Rolling-origin comparison period, forecast targets >= 2024-01; the period was examined for feature-specification comparison and is not an untouched final production holdout.",
+  "test_period_definition": "Rolling-origin comparison period, forecast targets >= 2024-01; baseline and expanded feature specifications were compared on this same period, so it is not an untouched final production holdout.",
   "development_period_definition": "Forecast target months < 2024-01; used for ensemble weights and empirical interval calibration.",
   "horizons_months": [
     1,
@@ -80,11 +80,11 @@
     }
   },
   "known_limitations": [
-    "Only 152 monthly official 2024-base YoY targets; 2025 YoY is derived from same-base rounded index values.",
+    "Separate OECD sensitivity target has 440 monthly observations through 2026-08; it is not blended with MoSPI.",
     "No historical real-time release vintages; backtests use revised observed values and may overstate what was known at each origin.",
-    "Test forecasts are overlapping and correlated; test sample is modest, especially by regime.",
+    "The >=2024 comparison period was inspected to compare feature specifications and is not an independent final blind test.",
+    "Forecast origins overlap and are correlated; test sample is modest, especially by regime.",
     "Forecast intervals are empirical calibration, not guaranteed coverage.",
-    "No claim of production readiness without external prospective monitoring, point-in-time data, and retraining governance.",
-    "The >=2024 comparison period was inspected to compare feature specifications and is not an independent final blind test."
+    "No claim of production readiness without external prospective monitoring, point-in-time data, and retraining governance."
   ]
 }

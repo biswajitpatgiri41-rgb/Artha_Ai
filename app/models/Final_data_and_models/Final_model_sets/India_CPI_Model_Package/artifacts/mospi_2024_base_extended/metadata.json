@@ -1,8 +1,8 @@
 {
-  "created_utc": "2026-10-09T07:11:03.735869+00:00",
+  "created_utc": "2026-10-16T07:27:38.794998+00:00",
   "series": "mospi_2024_base_extended",
   "target_definition": "India CPI Combined General Group inflation, year-over-year percent; official MoSPI 2024-base back/current files; missing 2025 YoY derived from same-base index levels.",
-  "test_period_definition": "Rolling-origin comparison period, forecast targets >= 2024-01; the period was examined for feature-specification comparison and is not an untouched final production holdout.",
+  "test_period_definition": "Rolling-origin comparison period, forecast targets >= 2024-01; baseline and expanded feature specifications were compared on this same period, so it is not an untouched final production holdout.",
   "development_period_definition": "Forecast target months < 2024-01; used for ensemble weights and empirical interval calibration.",
   "horizons_months": [
     1,
@@ -13,9 +13,9 @@
   "min_train_months": 84,
   "data_quality": {
     "series": "mospi_2024_base_extended",
-    "n_observations": 152,
+    "n_observations": 153,
     "first_month": "2014-01",
-    "last_month": "2026-08",
+    "last_month": "2026-09",
     "duplicate_months": 0,
     "missing_months": 0,
     "missing_y": 0,
@@ -52,48 +52,48 @@
   },
   "weights": {
     "1": {
-      "SeasonalNaive": 0.05073623498289029,
+      "SeasonalNaive": 0.03428002557028255,
       "ETS": 0.0,
-      "ARIMA": 3.117893962863009e-17,
-      "SARIMA": 0.5317662393822191,
-      "SARIMAX": 0.3971263770215471,
-      "VAR": 0.02037114861334371,
-      "XGBoost": 1.245962772945162e-17
+      "ARIMA": 0.0,
+      "SARIMA": 0.3979790351770637,
+      "SARIMAX": 0.5677409392526539,
+      "VAR": 2.5477228615673918e-18,
+      "XGBoost": 0.0
     },
     "3": {
-      "SeasonalNaive": 0.21333096717877392,
-      "ETS": 7.568985559128469e-18,
-      "ARIMA": 0.0,
-      "SARIMA": 0.6412115886743327,
-      "SARIMAX": 0.1454574441468935,
-      "VAR": 1.951152348093356e-17,
+      "SeasonalNaive": 0.20347638541148885,
+      "ETS": 4.5218432064206726e-17,
+      "ARIMA": 6.32921859637817e-17,
+      "SARIMA": 0.6126936086089151,
+      "SARIMAX": 0.1838300059795959,
+      "VAR": 5.588506361146293e-18,
       "XGBoost": 0.0
     },
     "6": {
-      "SeasonalNaive": 0.19935499237200335,
-      "ETS": 2.24689781211629e-16,
-      "ARIMA": 1.8211370150694781e-16,
-      "SARIMA": 0.4590683558228879,
-      "SARIMAX": 0.3392135643497023,
-      "VAR": 0.0023630874554060426,
+      "SeasonalNaive": 0.20525704280704427,
+      "ETS": 0.0,
+      "ARIMA": 3.718758653881656e-17,
+      "SARIMA": 0.4537746134399394,
+      "SARIMAX": 0.33447626882993575,
+      "VAR": 0.006492074923081005,
       "XGBoost": 0.0
     },
     "12": {
       "SeasonalNaive": 0.0,
-      "ETS": 7.987521547663043e-17,
-      "ARIMA": 4.8496189699445136e-17,
-      "SARIMA": 0.10475462203344013,
-      "SARIMAX": 0.8952453779665598,
-      "VAR": 0.0,
-      "XGBoost": 2.0321683184689846e-18
+      "ETS": 2.140749677068433e-18,
+      "ARIMA": 0.0,
+      "SARIMA": 0.15355871668050963,
+      "SARIMAX": 0.8464412833194905,
+      "VAR": 2.599577760591781e-16,
+      "XGBoost": 0.0
     }
   },
   "known_limitations": [
-    "Only 152 monthly official 2024-base YoY targets; 2025 YoY is derived from same-base rounded index values.",
+    "Only 153 monthly official 2024-base YoY targets through 2026-09; 2025 YoY is derived from same-base rounded index values.",
     "No historical real-time release vintages; backtests use revised observed values and may overstate what was known at each origin.",
-    "Test forecasts are overlapping and correlated; test sample is modest, especially by regime.",
+    "The >=2024 comparison period was inspected to compare feature specifications and is not an independent final blind test.",
+    "Forecast origins overlap and are correlated; test sample is modest, especially by regime.",
     "Forecast intervals are empirical calibration, not guaranteed coverage.",
-    "No claim of production readiness without external prospective monitoring, point-in-time data, and retraining governance.",
-    "The >=2024 comparison period was inspected to compare feature specifications and is not an independent final blind test."
+    "No claim of production readiness without external prospective monitoring, point-in-time data, and retraining governance."
   ]
 }

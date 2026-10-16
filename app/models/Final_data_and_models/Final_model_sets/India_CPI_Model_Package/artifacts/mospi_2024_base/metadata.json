@@ -1,8 +1,8 @@
 {
-  "created_utc": "2026-10-09T06:47:34.593013+00:00",
+  "created_utc": "2026-10-16T07:13:38.355970+00:00",
   "series": "mospi_2024_base",
   "target_definition": "India CPI Combined General Group inflation, year-over-year percent; official MoSPI 2024-base back/current files; missing 2025 YoY derived from same-base index levels.",
-  "test_period_definition": "Rolling-origin comparison period, forecast targets >= 2024-01; the period was examined for feature-specification comparison and is not an untouched final production holdout.",
+  "test_period_definition": "Rolling-origin comparison period, forecast targets >= 2024-01; baseline and expanded feature specifications were compared on this same period, so it is not an untouched final production holdout.",
   "development_period_definition": "Forecast target months < 2024-01; used for ensemble weights and empirical interval calibration.",
   "horizons_months": [
     1,
@@ -13,9 +13,9 @@
   "min_train_months": 84,
   "data_quality": {
     "series": "mospi_2024_base",
-    "n_observations": 152,
+    "n_observations": 153,
     "first_month": "2014-01",
-    "last_month": "2026-08",
+    "last_month": "2026-09",
     "duplicate_months": 0,
     "missing_months": 0,
     "missing_y": 0,
@@ -80,11 +80,11 @@
     }
   },
   "known_limitations": [
-    "Only 152 monthly official 2024-base YoY targets; 2025 YoY is derived from same-base rounded index values.",
+    "Only 153 monthly official 2024-base YoY targets through 2026-09; 2025 YoY is derived from same-base rounded index values.",
     "No historical real-time release vintages; backtests use revised observed values and may overstate what was known at each origin.",
-    "Test forecasts are overlapping and correlated; test sample is modest, especially by regime.",
+    "The >=2024 comparison period was inspected to compare feature specifications and is not an independent final blind test.",
+    "Forecast origins overlap and are correlated; test sample is modest, especially by regime.",
     "Forecast intervals are empirical calibration, not guaranteed coverage.",
-    "No claim of production readiness without external prospective monitoring, point-in-time data, and retraining governance.",
-    "The >=2024 comparison period was inspected to compare feature specifications and is not an independent final blind test."
+    "No claim of production readiness without external prospective monitoring, point-in-time data, and retraining governance."
   ]
 }

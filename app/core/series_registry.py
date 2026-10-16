@@ -100,14 +100,14 @@ register(SeriesRegistryEntry(
 
 register(SeriesRegistryEntry(
     canonical_id="food_inflation",
-    description="Food and Beverages CPI Inflation - All India",
+    description="Food and Beverages CPI inflation - All India (CFPI 2012-base)",
     preferred_source=Source.MOSPI,
-    provider_series_id="TODO: Verify MoSPI Food CPI series ID",
+    provider_series_id="MoSPI CFPI 2012-base combined YoY",
     frequency=Frequency.MONTHLY,
-    unit="index_2024=100",
-    base_year="2024=100",
+    unit="percent",
+    base_year="2012=100",
     source_url="https://mospi.gov.in/",
-    enabled=False,
+    enabled=True,
 ))
 
 register(SeriesRegistryEntry(
@@ -397,8 +397,8 @@ register(SeriesRegistryEntry(
     description="Europe Brent Spot Price FOB (Dollars per Barrel)",
     preferred_source=Source.EIA,
     provider_series_id="RBRTE",
-    frequency=Frequency.MONTHLY,
-    unit="USD/barrel",
+    frequency=Frequency.DAILY,
+    unit="usd_per_barrel",
     source_url="https://api.eia.gov/v2/petroleum/pri/spt/data/",
     enabled=True,
     alternative_sources={

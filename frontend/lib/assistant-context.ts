@@ -22,14 +22,16 @@ export interface PageAssistantContext {
   run_id?: string;
 }
 
-const mockPageData = (page: string): PageAssistantContext => ({
+const livePageData = (page: string): PageAssistantContext => ({
   page,
-  mode: 'mock',
+  mode: 'live',
   visibleMetrics: [],
   selectedScenario: null,
   selectedSeries: null,
-  warnings: ['Economic data backend not connected; displayed values may be illustrative.'],
+  warnings: ['The Overview uses validated project observations and stored model forecasts. Unavailable indicators are not substituted with mock values.'],
 });
+
+const mockPageData = livePageData;
 
 const pageContexts: Record<string, AssistantPageContext> = {
   '/': {
@@ -37,7 +39,7 @@ const pageContexts: Record<string, AssistantPageContext> = {
     title: 'Monetary Policy Overview',
     guidance: ['dashboard indicators', 'monetary-policy concepts', 'what each application section represents'],
     suggestions: ['What does the repo rate affect?', 'How should I read this dashboard?', 'What is the inflation-growth tradeoff?'],
-    defaultPageData: mockPageData('/'),
+    defaultPageData: livePageData('/'),
   },
   '/analysis': {
     page: '/analysis',

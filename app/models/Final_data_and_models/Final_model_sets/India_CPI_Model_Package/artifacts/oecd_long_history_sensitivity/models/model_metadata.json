@@ -28,14 +28,5 @@
     "VAR",
     "XGBoost"
   ],
-  "future_points": [],
-  "target_definition": "OECD monthly India CPI inflation YoY series used as a separate sensitivity target; not blended with the MoSPI 2024-base series.",
-  "validation_note": "Targets >=2024-01 were used as a model-comparison period; feature specifications were compared on the same period, so it is not a final untouched holdout.",
-  "var_columns": [
-    "india_cpi_yoy",
-    "brent_yoy",
-    "inr_usd_yoy",
-    "us_cpi_yoy",
-    "fed_funds"
-  ]
+  "future_points": []
 }

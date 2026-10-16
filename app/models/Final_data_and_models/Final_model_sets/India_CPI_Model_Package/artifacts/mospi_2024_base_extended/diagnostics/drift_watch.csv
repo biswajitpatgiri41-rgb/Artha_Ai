@@ -1,5 +1,5 @@
 horizon_months,development_selected_model,recent_test_window_n,recent_mae_pp,development_rolling12_mae_p95,status,note
-1,Ensemble,12,0.37502532108061537,0.6852911937759592,no current trigger,low-power monitoring rule; review source vintages and input drift before action
-3,Ensemble,12,0.9205000609890815,1.1082332364516958,no current trigger,low-power monitoring rule; review source vintages and input drift before action
-6,Ensemble,12,1.204427075288652,1.143215637322483,WATCH,low-power monitoring rule; review source vintages and input drift before action
-12,Ensemble,12,1.8259072173844535,1.0752647022242425,WATCH,low-power monitoring rule; review source vintages and input drift before action
+1,Ensemble,12,0.4490636829766424,0.6382999128575475,no current trigger,low-power monitoring rule; review source vintages and input drift before action
+3,Ensemble,12,0.8982763773208825,1.1004331392041296,no current trigger,low-power monitoring rule; review source vintages and input drift before action
+6,Ensemble,12,1.1488256056043944,1.1605721815436298,no current trigger,low-power monitoring rule; review source vintages and input drift before action
+12,Ensemble,12,1.5545151411540428,1.2266989503775665,WATCH,low-power monitoring rule; review source vintages and input drift before action

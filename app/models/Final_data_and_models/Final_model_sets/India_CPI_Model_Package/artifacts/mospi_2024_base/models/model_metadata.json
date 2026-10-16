@@ -1,9 +1,9 @@
 {
   "series": "mospi_2024_base",
   "target_start": "2014-01",
-  "target_end": "2026-08",
-  "n_months": 152,
-  "forecast_origin": "2026-08",
+  "target_end": "2026-09",
+  "n_months": 153,
+  "forecast_origin": "2026-09",
   "forecast_origin_note": "latest source CPI observation; final release vintages are not available",
   "horizons": [
     1,
@@ -28,14 +28,5 @@
     "VAR",
     "XGBoost"
   ],
-  "future_points": [],
-  "target_definition": "India CPI Combined General Group inflation YoY; official MoSPI 2024-base back/current series; 2025 YoY derived from same-base index levels.",
-  "validation_note": "Targets >=2024-01 were used as a model-comparison period; feature specifications were compared on the same period, so it is not a final untouched holdout.",
-  "var_columns": [
-    "india_cpi_yoy",
-    "brent_yoy",
-    "inr_usd_yoy",
-    "us_cpi_yoy",
-    "fed_funds"
-  ]
+  "future_points": []
 }

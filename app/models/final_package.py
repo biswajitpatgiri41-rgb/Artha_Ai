@@ -309,7 +309,7 @@ def final_model_forecast(model: str, variant: str, horizon: int) -> dict[str, An
     start = (target_rows[0]["date"][:7] if target_rows else metadata.get("target_start"))
     end = (target_rows[-1]["date"][:7] if target_rows else metadata.get("target_end"))
     warnings = [
-        "Stored model forecast from the package's 2026-08 origin; it is not recomputed from current observations.",
+        f"Stored model forecast from the package's {row.get('forecast_origin', 'recorded')} origin; it is not recomputed from current observations.",
         "The comparison period was inspected during feature-specification selection and is not an independent final holdout.",
         "The target includes 2025 YoY values derived from rounded same-base CPI index levels.",
         "Empirical interval coverage is historical comparison-period coverage, not a guarantee of future coverage.",

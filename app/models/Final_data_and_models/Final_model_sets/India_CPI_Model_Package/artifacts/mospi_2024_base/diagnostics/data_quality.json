@@ -1,8 +1,8 @@
 {
   "series": "mospi_2024_base",
-  "n_observations": 152,
+  "n_observations": 153,
   "first_month": "2014-01",
-  "last_month": "2026-08",
+  "last_month": "2026-09",
   "duplicate_months": 0,
   "missing_months": 0,
   "missing_y": 0,

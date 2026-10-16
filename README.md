@@ -80,6 +80,42 @@ seasonal-naive benchmark only. XGBoost and ARIMA require the optional
 The separate seasonal-naive backtest shown in the UI is not a backtest of the
 selected trained model.
 
+### Supplied final dataset and model bundles
+
+The final training deliverables are imported with the content-aware importer
+below. The filenames are not used to decide their role: the importer verifies
+that the archives contain `Artha_AI_Datasets` and `Artha_AI_Models`.
+
+```powershell
+python scripts\import_final_packages.py `
+  "notebooks\new_trained_models.zip" `
+  "notebooks\new_datasets.zip"
+```
+
+The command preserves the complete dataset bundle under `data\external`,
+creates provenance-aware normalized snapshots for headline CPI, CFPI food
+inflation, Brent crude, INR/USD, IIP, and the repo rate under `data\interim`,
+and installs the checksum-verified runtime package under
+`app\models\Final_data_and_models\Final_model_sets\India_CPI_Model_Package`.
+The installed runtime variants are `mospi_2024_base`,
+`mospi_2024_base_extended`, and `oecd_long_history_sensitivity`. The CFPI
+food series remains explicitly labeled as a 2012-base series; it is not mixed
+with the 2024-base headline CPI index.
+
+To load the normalized observations into the connected Supabase project, run
+this from the repository root. The command reads the linked project reference,
+prompts for the server secret with hidden input, and replaces only the six
+supplied final macro series. The secret is not saved:
+
+```powershell
+python scripts\migrate_runtime_data_to_supabase.py --macro-only
+```
+
+After the import, the API's `research.py` loader checks Supabase first and
+falls back to the local snapshots only when Supabase is unavailable. Configure
+the same `SUPABASE_URL` and server secret in the API project's Vercel
+environment variables before deploying.
+
 ### Optional P2 CPI benchmark
 
 The project includes a separately labeled P2 CPI/macro dataset from the

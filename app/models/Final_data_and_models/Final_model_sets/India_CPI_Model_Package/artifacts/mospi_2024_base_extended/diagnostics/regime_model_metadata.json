@@ -2,17 +2,17 @@
   "method": "two-state Gaussian HMM",
   "states_labelled_by_fitted_mean_inflation": "exploratory descriptive patterns, not causal",
   "probability_type": "full-sample smoothed posteriors using the entire observed history",
-  "real_time_use": "not valid as a real-time regime probability; filter using information available at each date and validate out-of-sample first",
+  "real_time_use": "not valid as a real-time regime probability; fit/filter with only information available at each date and validate out-of-sample first",
   "state_means_original_units": [
     [
-      4.719135756745817,
-      1.0055877749398352
+      4.740275886330094,
+      1.0073509128077978
     ],
     [
-      4.746954198813978,
-      0.9999031609367751
+      4.728011761652479,
+      1.0099766529429326
     ]
   ],
   "converged": true,
-  "n_months": 147
+  "n_months": 148
 }

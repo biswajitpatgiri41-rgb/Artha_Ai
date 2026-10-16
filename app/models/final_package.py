@@ -16,12 +16,10 @@ from pathlib import Path
 from typing import Any
 
 
-DEFAULT_PACKAGE_ROOT = (
-    Path(__file__).resolve().parent
-    / "Final_data_and_models"
-    / "Final_model_sets"
-    / "India_CPI_Model_Package"
-)
+_MODEL_DIR = Path(__file__).resolve().parent
+_RUNTIME_PACKAGE_ROOT = _MODEL_DIR / "runtime_final_cpi_package"
+_TRACKED_PACKAGE_ROOT = _MODEL_DIR / "Final_data_and_models" / "Final_model_sets" / "India_CPI_Model_Package"
+DEFAULT_PACKAGE_ROOT = _RUNTIME_PACKAGE_ROOT if _RUNTIME_PACKAGE_ROOT.is_dir() else _TRACKED_PACKAGE_ROOT
 PACKAGE_ROOT = Path(os.environ.get("FINAL_MODEL_PACKAGE_DIR", DEFAULT_PACKAGE_ROOT)).expanduser().resolve()
 ARTIFACTS_ROOT = PACKAGE_ROOT / "artifacts"
 
@@ -258,6 +256,15 @@ def final_model_registry_records() -> list[dict[str, Any]]:
                 "created_at": created,
             })
     return records
+
+
+def final_regime_probabilities(variant: str = "mospi_2024_base_extended") -> tuple[list[dict[str, str]], dict[str, Any]]:
+    """Read checksum-verified exploratory HMM probabilities and their caveats."""
+    variant_dir = _variant_dir(variant)
+    base = f"artifacts/{variant_dir}/diagnostics"
+    rows = _read_csv(f"{base}/regime_probabilities.csv")
+    metadata = _read_json(f"{base}/regime_model_metadata.json")
+    return rows, metadata
 
 
 def final_model_forecast(model: str, variant: str, horizon: int) -> dict[str, Any]:

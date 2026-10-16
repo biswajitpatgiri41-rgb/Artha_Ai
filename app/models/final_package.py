@@ -17,9 +17,26 @@ from typing import Any
 
 
 _MODEL_DIR = Path(__file__).resolve().parent
-_RUNTIME_PACKAGE_ROOT = _MODEL_DIR / "runtime_final_cpi_package"
 _TRACKED_PACKAGE_ROOT = _MODEL_DIR / "Final_data_and_models" / "Final_model_sets" / "India_CPI_Model_Package"
-DEFAULT_PACKAGE_ROOT = _RUNTIME_PACKAGE_ROOT if _RUNTIME_PACKAGE_ROOT.is_dir() else _TRACKED_PACKAGE_ROOT
+
+
+def _select_default_package_root() -> Path:
+    """Choose an accessible package root, preferring the tracked deployment copy."""
+    candidates = [
+        _MODEL_DIR / "runtime_final_cpi_package",
+        _TRACKED_PACKAGE_ROOT,
+    ]
+    for candidate in candidates:
+        try:
+            if (candidate / "SHA256SUMS.txt").is_file():
+                with (candidate / "SHA256SUMS.txt").open(encoding="utf-8"):
+                    return candidate
+        except OSError:
+            continue
+    return _TRACKED_PACKAGE_ROOT
+
+
+DEFAULT_PACKAGE_ROOT = _select_default_package_root()
 PACKAGE_ROOT = Path(os.environ.get("FINAL_MODEL_PACKAGE_DIR", DEFAULT_PACKAGE_ROOT)).expanduser().resolve()
 ARTIFACTS_ROOT = PACKAGE_ROOT / "artifacts"
 

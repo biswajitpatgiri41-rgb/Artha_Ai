@@ -12,8 +12,9 @@ node_modules
 data/chroma
 data/uploads
 data/raw
-data/interim
 data/manifests
+app/models/runtime_final_cpi_package
+app/models/runtime_final_cpi_package/**
 notebooks
 tests
 *.zip

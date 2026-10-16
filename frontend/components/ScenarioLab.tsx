@@ -3,7 +3,6 @@
 import { ArrowRight, BarChart3, Flame, Globe2, Leaf, Loader2, Play, SlidersHorizontal } from 'lucide-react';
 import { useState } from 'react';
 import ReactECharts from 'echarts-for-react';
-import { mockCpiInflation } from '@/lib/mock-data';
 import { defaultSimulatorInputs } from '@/lib/simulator';
 import { simulateResearchScenario, type SimulationResponse } from '@/lib/research-api';
 import type { SimulatorInputs } from '@/lib/types';
@@ -18,10 +17,13 @@ interface ScenarioPathData {
 }
 
 function buildScenarioPath(result: SimulationResponse): ScenarioPathData {
+	const dates = ['Now', '+1M', '+3M', `+${result.horizon_months}M`];
+	const progress = [0, 1 / 6, 3 / 6, 1];
+	const difference = result.scenario_inflation - result.baseline_inflation;
 	return {
-		dates: ['Now', `+${result.horizon_months}M`],
-		baseline: [result.baseline_inflation, result.baseline_inflation],
-		shocked: [result.baseline_inflation, result.scenario_inflation],
+		dates,
+		baseline: dates.map(() => result.baseline_inflation),
+		shocked: progress.map((step) => result.baseline_inflation + difference * step),
 	};
 }
 
@@ -109,7 +111,7 @@ const controls: Array<{ field: 'oilPriceShock' | 'inrShock' | 'foodInflationShoc
 	{ field: 'foodInflationShock', label: 'Food Inflation', unit: 'pp', min: -3, max: 5, step: 0.1 },
 ];
 
-export function ScenarioLab() {
+export function ScenarioLab({ baselineInflation, baselineDate }: { baselineInflation?: number; baselineDate?: string }) {
 	const [inputs, setInputs] = useState<SimulatorInputs>({ ...defaultSimulatorInputs, oilPriceShock: 20, inrShock: -5, foodInflationShock: 1.5 });
 	const [result, setResult] = useState<SimulationResponse | null>(null);
 	const [hasRun, setHasRun] = useState(false);
@@ -123,7 +125,7 @@ export function ScenarioLab() {
 		setRunError(null);
 		try {
 			const response = await simulateResearchScenario({
-				base_inflation: mockCpiInflation.value,
+				base_inflation: baselineInflation ?? 0,
 				oil_change_pct: inputs.oilPriceShock,
 				inr_change_pct: inputs.inrShock,
 				food_shock_pp: inputs.foodInflationShock,
@@ -150,13 +152,13 @@ export function ScenarioLab() {
 	return (
 		<section className="relative h-full overflow-hidden rounded-[18px] border border-amber-300/15 bg-[rgba(15,23,42,0.66)] p-5 shadow-[0_20px_55px_rgba(0,0,0,0.25),0_0_30px_rgba(245,158,11,0.045)] backdrop-blur-2xl">
 			<span className="pointer-events-none absolute -bottom-20 -right-16 h-48 w-48 rounded-full bg-cyan-400/[0.08] blur-3xl" />
-			<div className="relative flex items-start justify-between gap-4"><div><div className="flex items-center gap-2"><SlidersHorizontal size={16} className="text-amber-300" /><h2 className="text-base font-semibold text-slate-50">Scenario Lab</h2></div><p className="mt-1 text-xs text-slate-400">Backend sensitivity calculation using the dashboard&apos;s mock CPI baseline ({mockCpiInflation.value.toFixed(1)}%). Not an estimated or causal model.</p></div><span className="rounded-full border border-amber-300/15 bg-amber-400/10 px-2.5 py-1 text-[10px] font-semibold text-amber-300">Illustrative</span></div>
+			<div className="relative flex items-start justify-between gap-4"><div><div className="flex items-center gap-2"><SlidersHorizontal size={16} className="text-amber-300" /><h2 className="text-base font-semibold text-slate-50">Scenario Lab</h2></div><p className="mt-1 text-xs text-slate-400">Backend sensitivity calculation using the latest validated CPI baseline ({baselineInflation?.toFixed(2) ?? 'Unavailable'}%{baselineDate ? ` · ${baselineDate.slice(0, 7)}` : ''}). Not an estimated or causal model.</p></div><span className="rounded-full border border-amber-300/15 bg-amber-400/10 px-2.5 py-1 text-[10px] font-semibold text-amber-300">Illustrative</span></div>
 			<div className="relative mt-5 grid gap-x-5 gap-y-4 md:grid-cols-3">{controls.map((control) => <label key={control.field} className="block"><div className="flex items-center justify-between gap-2 text-[11px]"><span className="font-medium text-slate-300">{control.label}</span><strong className="tabular-nums text-cyan-300">{inputs[control.field] > 0 ? '+' : ''}{inputs[control.field]} {control.unit}</strong></div><input aria-label={control.label} type="range" min={control.min} max={control.max} step={control.step} value={inputs[control.field]} onChange={(event) => update(control.field, Number(event.target.value))} className="mt-3 h-1.5 w-full cursor-pointer accent-cyan-400" /></label>)}</div>
-			<div className="relative mt-5 flex flex-wrap items-center gap-3"><button type="button" disabled={isRunning} onClick={runScenario} className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 px-4 py-2.5 text-xs font-semibold text-white shadow-[0_8px_22px_rgba(59,130,246,0.24)] transition duration-200 hover:-translate-y-0.5 hover:shadow-[0_10px_26px_rgba(34,211,238,0.2)] disabled:cursor-wait disabled:opacity-70">{isRunning ? <Loader2 size={14} className="animate-spin" /> : <Play size={14} fill="currentColor" />}{isRunning ? 'Running…' : 'Run Scenario'}</button><span role="status" className="text-[10px] text-slate-500">{isRunning ? 'Requesting backend sensitivity…' : runError ? 'Backend unavailable' : hasRun ? 'Backend responded · illustrative only' : 'Ready · illustrative backend'}</span></div>
+			<div className="relative mt-5 flex flex-wrap items-center gap-3"><button type="button" disabled={isRunning || baselineInflation == null} onClick={runScenario} className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 px-4 py-2.5 text-xs font-semibold text-white shadow-[0_8px_22px_rgba(59,130,246,0.24)] transition duration-200 hover:-translate-y-0.5 hover:shadow-[0_10px_26px_rgba(34,211,238,0.2)] disabled:cursor-wait disabled:opacity-70">{isRunning ? <Loader2 size={14} className="animate-spin" /> : <Play size={14} fill="currentColor" />}{isRunning ? 'Running…' : 'Run Scenario'}</button><span role="status" className="text-[10px] text-slate-500">{isRunning ? 'Requesting backend sensitivity…' : runError ? 'Backend unavailable' : hasRun ? 'Backend responded · illustrative only' : 'Ready · illustrative backend'}</span></div>
 			<div className="relative mt-5 border-t border-white/[0.07] pt-4"><p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-slate-500">Scenario impact</p><div className="mt-3 grid gap-2 sm:grid-cols-3"><div className="rounded-lg border border-rose-400/10 bg-rose-400/[0.06] px-3 py-2"><p className="text-[10px] text-slate-500">Inflation change</p><p className="mt-1 text-xs font-semibold text-rose-300">{hasRun ? `${inflationDelta > 0 ? '+' : ''}${inflationDelta.toFixed(2)} pp` : '—'}</p></div><div className="rounded-lg border border-amber-400/10 bg-amber-400/[0.06] px-3 py-2"><p className="text-[10px] text-slate-500">Growth impact</p><p className="mt-1 text-xs font-semibold text-amber-300">Not estimated</p></div><div className="rounded-lg border border-cyan-400/10 bg-cyan-400/[0.06] px-3 py-2"><p className="text-[10px] text-slate-500">FX pressure</p><p className="mt-1 text-xs font-semibold text-cyan-300">Not estimated</p></div></div></div>
 
 			<div className="relative mt-5 border-t border-white/[0.07] pt-4">
-				<div className="mb-3 flex flex-wrap items-end justify-between gap-2"><div><h3 className="text-xs font-semibold text-slate-200">Baseline vs Shocked CPI</h3><p className="mt-1 text-[10px] text-slate-500">Endpoint from the backend&apos;s illustrative sensitivity calculation; no intermediate forecast is estimated.</p></div><span className="rounded-full border border-amber-300/10 bg-amber-300/[0.06] px-2 py-1 text-[9px] font-medium text-amber-200">Illustrative backend result</span></div>
+				<div className="mb-3 flex flex-wrap items-end justify-between gap-2"><div><h3 className="text-xs font-semibold text-slate-200">Baseline vs Shocked CPI</h3><p className="mt-1 text-[10px] text-slate-500">Straight-line illustration between backend-calculated endpoints; not a forecast.</p></div><span className="rounded-full border border-amber-300/10 bg-amber-300/[0.06] px-2 py-1 text-[9px] font-medium text-amber-200">Illustrative backend result</span></div>
 				{runError && <p role="alert" className="mb-3 rounded-lg border border-rose-300/15 bg-rose-400/[0.06] px-3 py-2 text-[10px] text-rose-200">{runError}</p>}
 				<div className="grid gap-3 lg:grid-cols-[minmax(0,1.5fr)_minmax(150px,0.65fr)]">
 					<div className="min-w-0 rounded-xl border border-white/[0.07] bg-slate-950/20 p-2">{isRunning ? <div className="space-y-3 p-3" aria-label="Loading scenario chart"><Skeleton variant="rectangular" width="100%" height={132} /><div className="flex gap-3"><Skeleton width="35%" height={10} /><Skeleton width="28%" height={10} /></div></div> : !hasRun || !scenarioPath ? <div className="flex min-h-[164px] flex-col items-center justify-center gap-2 px-4 text-center"><BarChart3 size={23} className="text-cyan-300/70" /><p className="text-[11px] font-medium text-slate-300">Run a scenario to compare baseline and shocked endpoints</p><p className="text-[10px] text-slate-500">The API returns an illustrative sensitivity, not a forecast path.</p></div> : <div className="h-[164px] w-full"><ScenarioPathChart data={scenarioPath} /></div>}</div>

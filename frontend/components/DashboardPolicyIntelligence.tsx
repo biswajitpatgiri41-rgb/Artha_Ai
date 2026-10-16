@@ -11,6 +11,17 @@ interface DashboardPolicyIntelligenceProps {
 }
 
 export function DashboardPolicyIntelligence({ scorecard, signals }: DashboardPolicyIntelligenceProps) {
+  if (scorecard.length === 0) {
+    return (
+      <section className="relative overflow-hidden rounded-[18px] border border-violet-300/15 bg-[rgba(15,23,42,0.66)] p-5 shadow-[0_20px_55px_rgba(0,0,0,0.25)] backdrop-blur-2xl">
+        <p className="text-base font-semibold text-slate-50">Policy Intelligence</p>
+        <p className="mt-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-violet-300">Validated evidence required</p>
+        <p className="mt-6 rounded-xl border border-white/[0.07] bg-white/[0.025] p-4 text-xs leading-5 text-slate-400">
+          No evidence-weighted policy scorecard is available for the connected data yet. This panel will not display a fabricated recommendation.
+        </p>
+      </section>
+    );
+  }
   const confidence = Math.round(scorecard.reduce((sum, item) => sum + item.score, 0) / Math.max(scorecard.length, 1));
   const chips = signals.slice(0, 3);
 

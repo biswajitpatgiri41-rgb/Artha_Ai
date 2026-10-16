@@ -38,7 +38,7 @@ export default function HomePage() {
           <InflationDecomposition items={[]} isLoading={!data && !error} />
         </div>
         <div className="grid gap-6 lg:grid-cols-2">
-          <ScenarioLab />
+          <ScenarioLab baselineInflation={data?.headline?.value} baselineDate={data?.headline?.date} />
           <DashboardPolicyIntelligence scorecard={empty.scorecard} signals={empty.signals} />
         </div>
         <AgentTimeline events={[]} />

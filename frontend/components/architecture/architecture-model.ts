@@ -81,9 +81,12 @@ export const initialArchitectureNodes: ArchitectureNode[] = [
 ];
 
 export const initialArchitectureEdges: Edge[] = [
+  ...sourceNodes.map((source) => edge(`${source.id}-adapter`, source.id, 'adapter', 'source')),
   edge('adapter-raw', 'adapter', 'raw-snapshots', 'engineering'), edge('raw-validation', 'raw-snapshots', 'validation', 'engineering'), edge('validation-canonical', 'validation', 'canonical-store', 'engineering'), edge('canonical-feature', 'canonical-store', 'feature-engine', 'engineering'),
+  edge('feature-seasonal-naive', 'feature-engine', 'seasonal-naive', 'model'),
   // Current runtime exposes seasonal-naive and frozen CPI research forecasts; other model/evaluation boxes are not runtime-connected.
-  ...['rolling-backtest', 'forecast-metrics'].map((id) => edge(`seasonal-naive-${id}`, 'seasonal-naive', id, 'evaluation')),
+  edge('seasonal-naive-backtest', 'seasonal-naive', 'rolling-backtest', 'evaluation'),
+  edge('seasonal-naive-metrics', 'seasonal-naive', 'forecast-metrics', 'evaluation'),
   edge('seasonal-naive-baseline', 'seasonal-naive', 'baseline-forecast', 'model'), edge('shock-result', 'shock-engine', 'shocked-forecast', 'scenario'),
   ...['shock-oil', 'shock-fx', 'shock-food', 'shock-rate'].map((id) => edge(`shock-input-${id}`, id, 'shock-engine', 'scenario')),
   edge('upload-router', 'upload', 'format-router', 'evidence'), edge('router-pdf', 'format-router', 'pdf-parser', 'evidence'), edge('router-text', 'format-router', 'text-parser', 'evidence'), edge('router-table', 'format-router', 'table-parser', 'evidence'), edge('router-json', 'format-router', 'json-parser', 'evidence'),

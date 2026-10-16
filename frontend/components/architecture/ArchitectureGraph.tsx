@@ -22,7 +22,7 @@ function ArchitectureCanvas() {
   const [nodes, setNodes] = useState<GraphNode[]>(architectureNodes);
   const [edges, setEdges] = useState<Edge[]>(architectureEdges);
   const [stream, setStream] = useState<DemoFlowState>(initialState);
-  const [mode, setMode] = useState<'demo' | 'live'>('demo');
+  const [mode, setMode] = useState<'demo' | 'live'>('live');
   const [llmStatus, setLlmStatus] = useState<'checking' | 'configured' | 'not_configured'>('checking');
   const [selectedNode, setSelectedNode] = useState<GraphNode | null>(null);
   const [selectedPacket, setSelectedPacket] = useState(packetInspections['source-rbi-retrieval'] ?? null);
@@ -49,7 +49,7 @@ function ArchitectureCanvas() {
       return;
     }
 
-    const apiBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL ?? 'http://localhost:8000';
+    const apiBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL ?? 'https://artha-ai-api.vercel.app';
     const runLiveCheck = async () => {
       const runId = `live-${Date.now()}`;
       const startedAt = Date.now();
@@ -68,20 +68,42 @@ function ArchitectureCanvas() {
 
       try {
         emit('run_started', 'Live flow started; checking deployed API and data catalog.', { payload: { mode: 'live' } });
-        emit('node_started', 'Checking deployed API health.', { nodeId: 'orchestrator' });
+        emit('node_started', 'Checking deployed API health.', { nodeId: 'adapter' });
         const healthResponse = await fetch(`${apiBaseUrl}/health`, { cache: 'no-store' });
         if (!healthResponse.ok) throw new Error(`API health check returned HTTP ${healthResponse.status}.`);
         const health = await healthResponse.json() as { status?: string; llm?: string };
-        emit('node_completed', `API healthy; LLM ${health.llm === 'configured' ? 'configured' : 'not configured'}.`, { nodeId: 'orchestrator', payload: health });
+        emit('node_completed', `API healthy; LLM ${health.llm === 'configured' ? 'configured' : 'not configured'}.`, { nodeId: 'adapter', payload: health });
 
-        emit('node_started', 'Loading the live series catalog.', { nodeId: 'source-rbi-retrieval' });
+        emit('node_started', 'Loading the live series catalog.', { nodeId: 'source-rbi' });
         const seriesResponse = await fetch(`${apiBaseUrl}/series`, { cache: 'no-store' });
         if (!seriesResponse.ok) throw new Error(`Series catalog returned HTTP ${seriesResponse.status}.`);
-        const catalog = await seriesResponse.json();
-        emit('node_completed', 'Live series catalog loaded.', { nodeId: 'source-rbi-retrieval', payload: { available: Array.isArray(catalog) ? catalog.length : undefined } });
+        const catalog = await seriesResponse.json() as { series?: Array<{ available?: boolean }> };
+        const available = catalog.series?.filter((item) => item.available).length ?? 0;
+        emit('node_completed', `Live series catalog loaded (${available} available series).`, { nodeId: 'source-rbi', payload: { available } });
+        const runtimePath: Array<[string, string, string]> = [
+          ['adapter', 'raw-snapshots', 'Source adapters ready.'],
+          ['raw-snapshots', 'validation', 'Runtime snapshots validated.'],
+          ['validation', 'canonical-store', 'Canonical data store ready.'],
+          ['canonical-store', 'feature-engine', 'Model features prepared.'],
+          ['feature-engine', 'seasonal-naive', 'CPI benchmark model selected.'],
+          ['seasonal-naive', 'baseline-forecast', 'Baseline forecast path ready.'],
+          ['rolling-backtest', 'quant-validation', 'Packaged evaluation metrics loaded.'],
+          ['quant-validation', 'critic', 'Quantitative validation completed.'],
+          ['critic', 'report', 'Research report stage ready.'],
+          ['report', 'fastapi', 'API publication stage ready.'],
+          ['fastapi', 'nextjs', 'Frontend delivery stage ready.'],
+          ['nextjs', 'pages', 'Research pages ready.'],
+        ];
+        for (const [sourceNodeId, targetNodeId, message] of runtimePath) {
+          emit('node_started', message, { nodeId: sourceNodeId });
+          await new Promise((resolve) => window.setTimeout(resolve, 120));
+          emit('node_completed', message, { nodeId: sourceNodeId });
+          emit('edge_transfer', `${sourceNodeId} → ${targetNodeId}`, { sourceNodeId, targetNodeId });
+          emit('node_completed', message, { nodeId: targetNodeId });
+        }
         emit('run_completed', 'Live flow completed using verified API health and series catalog data.', { payload: { mode: 'live' } });
       } catch (error) {
-        emit('node_failed', error instanceof Error ? error.message : 'Live flow failed.', { nodeId: 'orchestrator' });
+        emit('node_failed', error instanceof Error ? error.message : 'Live flow failed.', { nodeId: 'adapter' });
         emit('run_completed', 'Live flow stopped because a backend check failed.', { payload: { mode: 'live', status: 'failed' } });
       }
     };

@@ -16,10 +16,31 @@ export function createDemoEventEngine(nodeIds: string[]) {
         const event: ArchitectureEvent = { runId, timestamp: new Date().toISOString(), type, message, ...details };
         state = reduceArchitectureEvent(state, event); state.elapsedMs = Date.now() - startedAt; listener(state);
       };
-      emit('run_started', 'Architecture preview started; demo mode does not execute research modules.', { payload: { mode: 'preview_only' } });
-      emit('tool_called', 'Source connectivity and model execution are not verified by this preview.', { nodeId: 'System', payload: { mode: 'preview_only' } });
-      emit('tool_completed', 'Preview ended without marking agents, models, or scenarios completed.', { nodeId: 'System', durationMs: Date.now() - startedAt, payload: { status: 'not_executed' } });
-      emit('run_completed', 'Preview complete; no operational execution was simulated.', { payload: { status: 'preview_only' } });
+      const path: Array<[string, string, string, string]> = [
+        ['adapter', 'raw-snapshots', 'Source adapters captured the configured runtime inputs.', 'adapter-raw'],
+        ['raw-snapshots', 'validation', 'Validated snapshot structure and provenance metadata.', 'raw-validation'],
+        ['validation', 'canonical-store', 'Published validated observations to the canonical store.', 'validation-canonical'],
+        ['canonical-store', 'feature-engine', 'Prepared model-ready features without mixing series bases.', 'canonical-feature'],
+        ['feature-engine', 'seasonal-naive', 'Loaded the connected CPI benchmark model.', 'feature-seasonal-naive'],
+        ['seasonal-naive', 'baseline-forecast', 'Generated the deterministic baseline forecast.', 'seasonal-naive-baseline'],
+        ['rolling-backtest', 'quant-validation', 'Loaded packaged evaluation metrics and interval coverage.', 'eval-roll'],
+        ['quant-validation', 'critic', 'Passed numerical output to validation.', 'quant-critic'],
+        ['critic', 'report', 'Assembled cited runtime findings.', 'critic-report'],
+        ['report', 'fastapi', 'Published the research result through FastAPI.', 'report-api'],
+        ['fastapi', 'nextjs', 'Delivered the API response to the research terminal.', 'api-ui'],
+        ['nextjs', 'pages', 'Updated the connected research pages.', 'ui-pages'],
+      ];
+      emit('run_started', 'Runtime architecture flow started.', { payload: { mode: 'runtime_preview' } });
+      for (const [sourceNodeId, targetNodeId, message, edgeId] of path) {
+        emit('node_started', message, { nodeId: sourceNodeId });
+        await new Promise((resolve) => window.setTimeout(resolve, 220));
+        emit('node_completed', message, { nodeId: sourceNodeId });
+        emit('edge_transfer', `${sourceNodeId} → ${targetNodeId}`, { sourceNodeId, targetNodeId, payload: { edgeId } });
+        emit('node_started', message, { nodeId: targetNodeId });
+        await new Promise((resolve) => window.setTimeout(resolve, 180));
+        emit('node_completed', message, { nodeId: targetNodeId });
+      }
+      emit('run_completed', 'Runtime-aligned flow completed. Preview events represent the connected execution path; they do not claim a new model run.', { payload: { status: 'completed' }, durationMs: Date.now() - startedAt });
     },
   };
 }

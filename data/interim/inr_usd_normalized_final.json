@@ -1,0 +1,1216 @@
+{
+  "mode": "replace",
+  "source": "supplied final dataset",
+  "observations": [
+    {
+      "obs_date": "2013-01-01",
+      "value": 54.31679545454545,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2013-02-01",
+      "value": 53.77371578947368,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2013-03-01",
+      "value": 54.40461578947368,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2013-04-01",
+      "value": 54.37570555555556,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2013-05-01",
+      "value": 55.010809090909085,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2013-06-01",
+      "value": 58.397295,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2013-07-01",
+      "value": 59.775417391304345,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2013-08-01",
+      "value": 63.208845,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2013-09-01",
+      "value": 63.75214,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2013-10-01",
+      "value": 61.61555714285714,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2013-11-01",
+      "value": 62.63295789473684,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2013-12-01",
+      "value": 61.910314285714286,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2014-01-01",
+      "value": 62.07597272727273,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2014-02-01",
+      "value": 62.25401111111111,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2014-03-01",
+      "value": 61.01398947368422,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2014-04-01",
+      "value": 60.35662352941176,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2014-05-01",
+      "value": 59.305015,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2014-06-01",
+      "value": 59.730700000000006,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2014-07-01",
+      "value": 60.058568181818174,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2014-08-01",
+      "value": 60.89517222222222,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2014-09-01",
+      "value": 60.86492272727273,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2014-10-01",
+      "value": 61.34199411764706,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2014-11-01",
+      "value": 61.70417777777777,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2014-12-01",
+      "value": 62.752950000000006,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2015-01-01",
+      "value": 62.225928571428575,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2015-02-01",
+      "value": 62.037611111111104,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2015-03-01",
+      "value": 62.44983809523809,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2015-04-01",
+      "value": 62.75316111111111,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2015-05-01",
+      "value": 63.80032631578948,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2015-06-01",
+      "value": 63.86073636363636,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2015-07-01",
+      "value": 63.63497826086956,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2015-08-01",
+      "value": 65.07233,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2015-09-01",
+      "value": 66.21781,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2015-10-01",
+      "value": 65.05800500000001,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2015-11-01",
+      "value": 66.11709444444445,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2015-12-01",
+      "value": 66.59551428571429,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2016-01-01",
+      "value": 67.25233,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2016-02-01",
+      "value": 68.237665,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2016-03-01",
+      "value": 67.02185,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2016-04-01",
+      "value": 66.46953125,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2016-05-01",
+      "value": 66.90673181818183,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2016-06-01",
+      "value": 67.29686363636364,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2016-07-01",
+      "value": 67.207625,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2016-08-01",
+      "value": 66.93964285714286,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2016-09-01",
+      "value": 66.73773,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2016-10-01",
+      "value": 66.74768888888889,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2016-11-01",
+      "value": 67.6256619047619,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2016-12-01",
+      "value": 67.90043333333334,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2017-01-01",
+      "value": 68.08036666666666,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2017-02-01",
+      "value": 67.07544999999999,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2017-03-01",
+      "value": 65.87665714285716,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2017-04-01",
+      "value": 64.50708888888889,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2017-05-01",
+      "value": 64.42483809523809,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2017-06-01",
+      "value": 64.44299047619047,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2017-07-01",
+      "value": 64.45588095238095,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2017-08-01",
+      "value": 63.968385,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2017-09-01",
+      "value": 64.44094761904762,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2017-10-01",
+      "value": 65.08128421052632,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2017-11-01",
+      "value": 64.86261363636363,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2017-12-01",
+      "value": 64.24232105263158,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2018-01-01",
+      "value": 63.63689545454545,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2018-02-01",
+      "value": 64.37383888888888,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2018-03-01",
+      "value": 65.02133157894737,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2018-04-01",
+      "value": 65.63634736842106,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2018-05-01",
+      "value": 67.53935909090909,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2018-06-01",
+      "value": 67.79306666666666,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2018-07-01",
+      "value": 68.74112857142858,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2022-04-01",
+      "value": 76.41052499999999,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2022-05-01",
+      "value": 77.319275,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2022-06-01",
+      "value": 78.07457727272727,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2022-07-01",
+      "value": 79.60155238095237,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2022-08-01",
+      "value": 79.54693333333333,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2022-09-01",
+      "value": 80.23155454545454,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2022-10-01",
+      "value": 82.34011666666667,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2022-11-01",
+      "value": 81.81051904761905,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2022-12-01",
+      "value": 82.46421363636364,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2023-01-01",
+      "value": 81.89959047619047,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2023-02-01",
+      "value": 82.608545,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2023-03-01",
+      "value": 82.28857,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2023-04-01",
+      "value": 82.02078235294118,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2023-05-01",
+      "value": 82.34332380952381,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2023-06-01",
+      "value": 82.23365714285714,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2023-07-01",
+      "value": 82.15194285714286,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2023-08-01",
+      "value": 82.78538571428571,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2023-09-01",
+      "value": 83.04746,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2023-10-01",
+      "value": 83.23533499999999,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2023-11-01",
+      "value": 83.298005,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2023-12-01",
+      "value": 83.27871999999999,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2024-01-01",
+      "value": 83.12098095238096,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2024-02-01",
+      "value": 82.96364,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2024-03-01",
+      "value": 82.99762777777778,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2024-04-01",
+      "value": 83.40601111111111,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2024-05-01",
+      "value": 83.39294,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2024-06-01",
+      "value": 83.47091578947368,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2024-07-01",
+      "value": 83.59465454545455,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2024-08-01",
+      "value": 83.89629047619049,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2024-09-01",
+      "value": 83.80821499999999,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2024-10-01",
+      "value": 84.02951363636363,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2024-11-01",
+      "value": 84.36436111111112,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2024-12-01",
+      "value": 84.98622857142857,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2025-01-01",
+      "value": 86.26574782608695,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2025-02-01",
+      "value": 87.05475,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2025-03-01",
+      "value": 86.63766315789474,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2025-04-01",
+      "value": 85.56121666666667,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2025-05-01",
+      "value": 85.189685,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2025-06-01",
+      "value": 85.90343333333333,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2025-07-01",
+      "value": 86.11462173913044,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2025-08-01",
+      "value": 87.51838947368421,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2025-09-01",
+      "value": 88.32259047619047,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2025-10-01",
+      "value": 88.4164,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2025-11-01",
+      "value": 88.8256052631579,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2025-12-01",
+      "value": 90.09127727272728,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2026-01-01",
+      "value": 90.799085,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2026-02-01",
+      "value": 90.73084736842104,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2026-03-01",
+      "value": 92.7608,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2026-04-01",
+      "value": 93.55024210526317,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2026-05-01",
+      "value": 95.5975,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2026-06-01",
+      "value": 94.96954761904762,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2026-07-01",
+      "value": 95.8209695652174,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2026-08-01",
+      "value": 95.47411,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    },
+    {
+      "obs_date": "2026-09-01",
+      "value": 95.4641238095238,
+      "source": "RBI Reference Rate Archive",
+      "source_url": "https://www.rbi.org.in/scripts/referenceratearchive.aspx",
+      "release_date": null,
+      "retrieved_at": "2026-10-05T10:06:08.127450+00:00",
+      "unit": "inr_per_usd",
+      "base_year": null
+    }
+  ]
+}

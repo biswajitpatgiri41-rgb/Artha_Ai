@@ -1,0 +1,1230 @@
+{
+  "mode": "replace",
+  "source": "supplied MoSPI 2024-base target",
+  "observations": [
+    {
+      "obs_date": "2014-01-01",
+      "value": 8.6,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2014-02-01",
+      "value": 7.88,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2014-03-01",
+      "value": 8.25,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2014-04-01",
+      "value": 8.48,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2014-05-01",
+      "value": 8.33,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2014-06-01",
+      "value": 6.77,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2014-07-01",
+      "value": 7.39,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2014-08-01",
+      "value": 7.03,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2014-09-01",
+      "value": 5.63,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2014-10-01",
+      "value": 4.62,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2014-11-01",
+      "value": 3.27,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2014-12-01",
+      "value": 4.28,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2015-01-01",
+      "value": 5.19,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2015-02-01",
+      "value": 5.37,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2015-03-01",
+      "value": 5.25,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2015-04-01",
+      "value": 4.87,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2015-05-01",
+      "value": 5.01,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2015-06-01",
+      "value": 5.4,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2015-07-01",
+      "value": 3.69,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2015-08-01",
+      "value": 3.74,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2015-09-01",
+      "value": 4.41,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2015-10-01",
+      "value": 5.0,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2015-11-01",
+      "value": 5.41,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2015-12-01",
+      "value": 5.61,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2016-01-01",
+      "value": 5.69,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2016-02-01",
+      "value": 5.26,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2016-03-01",
+      "value": 4.83,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2016-04-01",
+      "value": 5.47,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2016-05-01",
+      "value": 5.76,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2016-06-01",
+      "value": 5.77,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2016-07-01",
+      "value": 6.07,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2016-08-01",
+      "value": 5.05,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2016-09-01",
+      "value": 4.39,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2016-10-01",
+      "value": 4.2,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2016-11-01",
+      "value": 3.63,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2016-12-01",
+      "value": 3.41,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2017-01-01",
+      "value": 3.17,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2017-02-01",
+      "value": 3.65,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2017-03-01",
+      "value": 3.89,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2017-04-01",
+      "value": 2.99,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2017-05-01",
+      "value": 2.18,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2017-06-01",
+      "value": 1.46,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2017-07-01",
+      "value": 2.36,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2017-08-01",
+      "value": 3.28,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2017-09-01",
+      "value": 3.28,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2017-10-01",
+      "value": 3.58,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2017-11-01",
+      "value": 4.88,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2017-12-01",
+      "value": 5.21,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2018-01-01",
+      "value": 5.07,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2018-02-01",
+      "value": 4.44,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2018-03-01",
+      "value": 4.28,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2018-04-01",
+      "value": 4.58,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2018-05-01",
+      "value": 4.87,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2018-06-01",
+      "value": 4.92,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2018-07-01",
+      "value": 4.17,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2018-08-01",
+      "value": 3.69,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2018-09-01",
+      "value": 3.7,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2018-10-01",
+      "value": 3.38,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2018-11-01",
+      "value": 2.33,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2018-12-01",
+      "value": 2.11,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2019-01-01",
+      "value": 1.97,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2019-02-01",
+      "value": 2.57,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2019-03-01",
+      "value": 2.86,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2019-04-01",
+      "value": 2.99,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2019-05-01",
+      "value": 3.05,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2019-06-01",
+      "value": 3.18,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2019-07-01",
+      "value": 3.15,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2019-08-01",
+      "value": 3.28,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2019-09-01",
+      "value": 3.99,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2019-10-01",
+      "value": 4.62,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2019-11-01",
+      "value": 5.54,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2019-12-01",
+      "value": 7.35,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2020-01-01",
+      "value": 7.59,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2020-02-01",
+      "value": 6.58,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2020-03-01",
+      "value": 5.84,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2020-04-01",
+      "value": 7.22,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2020-05-01",
+      "value": 6.27,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2020-06-01",
+      "value": 6.23,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2020-07-01",
+      "value": 6.73,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2020-08-01",
+      "value": 6.69,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2020-09-01",
+      "value": 7.27,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2020-10-01",
+      "value": 7.61,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2020-11-01",
+      "value": 6.93,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2020-12-01",
+      "value": 4.59,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2021-01-01",
+      "value": 4.06,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2021-02-01",
+      "value": 5.03,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2021-03-01",
+      "value": 5.52,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2021-04-01",
+      "value": 4.23,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2021-05-01",
+      "value": 6.3,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2021-06-01",
+      "value": 6.26,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2021-07-01",
+      "value": 5.59,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2021-08-01",
+      "value": 5.3,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2021-09-01",
+      "value": 4.35,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2021-10-01",
+      "value": 4.48,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2021-11-01",
+      "value": 4.91,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2021-12-01",
+      "value": 5.66,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2022-01-01",
+      "value": 6.01,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2022-02-01",
+      "value": 6.07,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2022-03-01",
+      "value": 6.95,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2022-04-01",
+      "value": 7.79,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2022-05-01",
+      "value": 7.04,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2022-06-01",
+      "value": 7.01,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2022-07-01",
+      "value": 6.71,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2022-08-01",
+      "value": 7.0,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2022-09-01",
+      "value": 7.41,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2022-10-01",
+      "value": 6.77,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2022-11-01",
+      "value": 5.88,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2022-12-01",
+      "value": 5.72,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2023-01-01",
+      "value": 6.52,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2023-02-01",
+      "value": 6.44,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2023-03-01",
+      "value": 5.66,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2023-04-01",
+      "value": 4.7,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2023-05-01",
+      "value": 4.31,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2023-06-01",
+      "value": 4.87,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2023-07-01",
+      "value": 7.44,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2023-08-01",
+      "value": 6.83,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2023-09-01",
+      "value": 5.02,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2023-10-01",
+      "value": 4.87,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2023-11-01",
+      "value": 5.55,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2023-12-01",
+      "value": 5.69,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2024-01-01",
+      "value": 5.1,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2024-02-01",
+      "value": 5.09,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2024-03-01",
+      "value": 4.85,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2024-04-01",
+      "value": 4.83,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2024-05-01",
+      "value": 4.8,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2024-06-01",
+      "value": 5.08,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2024-07-01",
+      "value": 3.6,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2024-08-01",
+      "value": 3.65,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2024-09-01",
+      "value": 5.49,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2024-10-01",
+      "value": 6.21,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2024-11-01",
+      "value": 5.48,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2024-12-01",
+      "value": 5.22,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2025-01-01",
+      "value": 4.063459570112582,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2025-02-01",
+      "value": 3.4933605720122385,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2025-03-01",
+      "value": 3.564862104187938,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2025-04-01",
+      "value": 3.3367243133265445,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2025-05-01",
+      "value": 3.0333670374115274,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2025-06-01",
+      "value": 2.305389221556897,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2025-07-01",
+      "value": 1.6224188790560312,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2025-08-01",
+      "value": 2.0058997050147465,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2025-09-01",
+      "value": 1.4076246334310927,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2025-10-01",
+      "value": 0.038572806171632834,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2025-11-01",
+      "value": 0.4927536231884133,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2025-12-01",
+      "value": 1.1661807580174877,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2026-01-01",
+      "value": 2.74,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2026-02-01",
+      "value": 3.21,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2026-03-01",
+      "value": 3.4,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2026-04-01",
+      "value": 3.48,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2026-05-01",
+      "value": 3.93,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2026-06-01",
+      "value": 4.38,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2026-07-01",
+      "value": 4.45,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2026-08-01",
+      "value": 4.83,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2026-09-01",
+      "value": 5.54,
+      "source": "MoSPI supplied 2024-base target",
+      "source_url": "https://mospi.gov.in/",
+      "unit": "percent",
+      "base_year": "2024=100"
+    }
+  ]
+}

@@ -1,0 +1,1646 @@
+{
+  "mode": "replace",
+  "source": "supplied final dataset",
+  "observations": [
+    {
+      "obs_date": "2013-01-01",
+      "value": 55.1,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2013-02-01",
+      "value": 55.5,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2013-03-01",
+      "value": 55.6,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2013-04-01",
+      "value": 55.9,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2013-05-01",
+      "value": 56.3,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2013-06-01",
+      "value": 57.6,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2013-07-01",
+      "value": 58.5,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2013-08-01",
+      "value": 59.2,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2013-09-01",
+      "value": 59.9,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2013-10-01",
+      "value": 60.5,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2013-11-01",
+      "value": 61.3,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2013-12-01",
+      "value": 60.3,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2014-01-01",
+      "value": 59.8,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2014-02-01",
+      "value": 59.8,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2014-03-01",
+      "value": 60.1,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2014-04-01",
+      "value": 60.6,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2014-05-01",
+      "value": 61.0,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2014-06-01",
+      "value": 61.5,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2014-07-01",
+      "value": 62.8,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2014-08-01",
+      "value": 63.4,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2014-09-01",
+      "value": 63.3,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2014-10-01",
+      "value": 63.3,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2014-11-01",
+      "value": 63.3,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2014-12-01",
+      "value": 62.9,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2015-01-01",
+      "value": 62.9,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2015-02-01",
+      "value": 63.0,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2015-03-01",
+      "value": 63.3,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2015-04-01",
+      "value": 63.6,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2015-05-01",
+      "value": 64.0,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2015-06-01",
+      "value": 64.8,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2015-07-01",
+      "value": 65.1,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2015-08-01",
+      "value": 65.7,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2015-09-01",
+      "value": 66.0,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2015-10-01",
+      "value": 66.4,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2015-11-01",
+      "value": 66.7,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2015-12-01",
+      "value": 66.4,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2016-01-01",
+      "value": 66.5,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2016-02-01",
+      "value": 66.4,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2016-03-01",
+      "value": 66.4,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2016-04-01",
+      "value": 67.0,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2016-05-01",
+      "value": 67.7,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2016-06-01",
+      "value": 68.5,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2016-07-01",
+      "value": 69.1,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2016-08-01",
+      "value": 69.1,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2016-09-01",
+      "value": 68.9,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2016-10-01",
+      "value": 69.2,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2016-11-01",
+      "value": 69.1,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2016-12-01",
+      "value": 68.7,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2017-01-01",
+      "value": 68.6,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2017-02-01",
+      "value": 68.8,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2017-03-01",
+      "value": 68.9,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2017-04-01",
+      "value": 69.1,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2017-05-01",
+      "value": 69.2,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2017-06-01",
+      "value": 69.5,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2017-07-01",
+      "value": 70.7,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2017-08-01",
+      "value": 71.3,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2017-09-01",
+      "value": 71.2,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2017-10-01",
+      "value": 71.7,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2017-11-01",
+      "value": 72.5,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2017-12-01",
+      "value": 72.3,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2018-01-01",
+      "value": 72.1,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2018-02-01",
+      "value": 71.8,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2018-03-01",
+      "value": 71.9,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2018-04-01",
+      "value": 72.2,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2018-05-01",
+      "value": 72.6,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2018-06-01",
+      "value": 72.9,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2018-07-01",
+      "value": 73.6,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2018-08-01",
+      "value": 73.9,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2018-09-01",
+      "value": 73.8,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2018-10-01",
+      "value": 74.1,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2018-11-01",
+      "value": 74.2,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2018-12-01",
+      "value": 73.8,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2019-01-01",
+      "value": 73.5,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2019-02-01",
+      "value": 73.7,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2019-03-01",
+      "value": 73.9,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2019-04-01",
+      "value": 74.4,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2019-05-01",
+      "value": 74.8,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2019-06-01",
+      "value": 75.3,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2019-07-01",
+      "value": 76.0,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2019-08-01",
+      "value": 76.4,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2019-09-01",
+      "value": 76.8,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2019-10-01",
+      "value": 77.5,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2019-11-01",
+      "value": 78.3,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2019-12-01",
+      "value": 79.2,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2020-01-01",
+      "value": 79.1,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2020-02-01",
+      "value": 78.5,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2020-03-01",
+      "value": 78.3,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2020-04-01",
+      "value": 79.7,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2020-05-01",
+      "value": 79.5,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2020-06-01",
+      "value": 80.0,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2020-07-01",
+      "value": 81.1,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2020-08-01",
+      "value": 81.5,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2020-09-01",
+      "value": 82.4,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2020-10-01",
+      "value": 83.4,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2020-11-01",
+      "value": 83.7,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2020-12-01",
+      "value": 82.8,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2021-01-01",
+      "value": 82.3,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2021-02-01",
+      "value": 82.5,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2021-03-01",
+      "value": 82.6,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2021-04-01",
+      "value": 83.1,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2021-05-01",
+      "value": 84.5,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2021-06-01",
+      "value": 85.0,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2021-07-01",
+      "value": 85.6,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2021-08-01",
+      "value": 85.8,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2021-09-01",
+      "value": 86.0,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2021-10-01",
+      "value": 87.2,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2021-11-01",
+      "value": 87.8,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2021-12-01",
+      "value": 87.5,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2022-01-01",
+      "value": 87.3,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2022-02-01",
+      "value": 87.5,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2022-03-01",
+      "value": 88.3,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2022-04-01",
+      "value": 89.6,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2022-05-01",
+      "value": 90.4,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2022-06-01",
+      "value": 90.9,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2022-07-01",
+      "value": 91.3,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2022-08-01",
+      "value": 91.8,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2022-09-01",
+      "value": 92.3,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2022-10-01",
+      "value": 93.1,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2022-11-01",
+      "value": 93.0,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2022-12-01",
+      "value": 92.5,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2023-01-01",
+      "value": 93.0,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2023-02-01",
+      "value": 93.1,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2023-03-01",
+      "value": 93.3,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2023-04-01",
+      "value": 93.8,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2023-05-01",
+      "value": 94.3,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2023-06-01",
+      "value": 95.3,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2023-07-01",
+      "value": 98.1,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2023-08-01",
+      "value": 98.1,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2023-09-01",
+      "value": 97.0,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2023-10-01",
+      "value": 97.6,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2023-11-01",
+      "value": 98.1,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2023-12-01",
+      "value": 97.8,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2024-01-01",
+      "value": 97.7,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2024-02-01",
+      "value": 97.9,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2024-03-01",
+      "value": 97.9,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2024-04-01",
+      "value": 98.3,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2024-05-01",
+      "value": 98.9,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2024-06-01",
+      "value": 100.2,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2024-07-01",
+      "value": 101.7,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2024-08-01",
+      "value": 101.7,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2024-09-01",
+      "value": 102.3,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2024-10-01",
+      "value": 103.7,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2024-11-01",
+      "value": 103.5,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2024-12-01",
+      "value": 102.9,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/macroindicators?product=cpi",
+      "release_date": "2026-02-12",
+      "retrieved_at": "2026-10-05T10:00:51.484Z",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2025-01-01",
+      "value": 101.67,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/catalogue-main/catalogue?product=CPI",
+      "release_date": "2026-09-14",
+      "retrieved_at": "2026-10-05T10:32:37.953760+00:00",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2025-02-01",
+      "value": 101.32,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/catalogue-main/catalogue?product=CPI",
+      "release_date": "2026-09-14",
+      "retrieved_at": "2026-10-05T10:32:37.953760+00:00",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2025-03-01",
+      "value": 101.39,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/catalogue-main/catalogue?product=CPI",
+      "release_date": "2026-09-14",
+      "retrieved_at": "2026-10-05T10:32:37.953760+00:00",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2025-04-01",
+      "value": 101.58,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/catalogue-main/catalogue?product=CPI",
+      "release_date": "2026-09-14",
+      "retrieved_at": "2026-10-05T10:32:37.953760+00:00",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2025-05-01",
+      "value": 101.9,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/catalogue-main/catalogue?product=CPI",
+      "release_date": "2026-09-14",
+      "retrieved_at": "2026-10-05T10:32:37.953760+00:00",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2025-06-01",
+      "value": 102.51,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/catalogue-main/catalogue?product=CPI",
+      "release_date": "2026-09-14",
+      "retrieved_at": "2026-10-05T10:32:37.953760+00:00",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2025-07-01",
+      "value": 103.35,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/catalogue-main/catalogue?product=CPI",
+      "release_date": "2026-09-14",
+      "retrieved_at": "2026-10-05T10:32:37.953760+00:00",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2025-08-01",
+      "value": 103.74,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/catalogue-main/catalogue?product=CPI",
+      "release_date": "2026-09-14",
+      "retrieved_at": "2026-10-05T10:32:37.953760+00:00",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2025-09-01",
+      "value": 103.74,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/catalogue-main/catalogue?product=CPI",
+      "release_date": "2026-09-14",
+      "retrieved_at": "2026-10-05T10:32:37.953760+00:00",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2025-10-01",
+      "value": 103.74,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/catalogue-main/catalogue?product=CPI",
+      "release_date": "2026-09-14",
+      "retrieved_at": "2026-10-05T10:32:37.953760+00:00",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2025-11-01",
+      "value": 104.01,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/catalogue-main/catalogue?product=CPI",
+      "release_date": "2026-09-14",
+      "retrieved_at": "2026-10-05T10:32:37.953760+00:00",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2025-12-01",
+      "value": 104.1,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/catalogue-main/catalogue?product=CPI",
+      "release_date": "2026-09-14",
+      "retrieved_at": "2026-10-05T10:32:37.953760+00:00",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2026-01-01",
+      "value": 104.45,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/catalogue-main/catalogue?product=CPI",
+      "release_date": "2026-09-14",
+      "retrieved_at": "2026-10-05T10:32:37.953760+00:00",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2026-02-01",
+      "value": 104.57,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/catalogue-main/catalogue?product=CPI",
+      "release_date": "2026-09-14",
+      "retrieved_at": "2026-10-05T10:32:37.953760+00:00",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2026-03-01",
+      "value": 104.84,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/catalogue-main/catalogue?product=CPI",
+      "release_date": "2026-09-14",
+      "retrieved_at": "2026-10-05T10:32:37.953760+00:00",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2026-04-01",
+      "value": 105.12,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/catalogue-main/catalogue?product=CPI",
+      "release_date": "2026-09-14",
+      "retrieved_at": "2026-10-05T10:32:37.953760+00:00",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2026-05-01",
+      "value": 105.91,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/catalogue-main/catalogue?product=CPI",
+      "release_date": "2026-09-14",
+      "retrieved_at": "2026-10-05T10:32:37.953760+00:00",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2026-06-01",
+      "value": 107.0,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/catalogue-main/catalogue?product=CPI",
+      "release_date": "2026-09-14",
+      "retrieved_at": "2026-10-05T10:32:37.953760+00:00",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2026-07-01",
+      "value": 107.95,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/catalogue-main/catalogue?product=CPI",
+      "release_date": "2026-09-14",
+      "retrieved_at": "2026-10-05T10:32:37.953760+00:00",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    },
+    {
+      "obs_date": "2026-08-01",
+      "value": 108.74,
+      "source": "MoSPI",
+      "source_url": "https://esankhyiki.mospi.gov.in/catalogue-main/catalogue?product=CPI",
+      "release_date": "2026-09-14",
+      "retrieved_at": "2026-10-05T10:32:37.953760+00:00",
+      "unit": "index_2024=100",
+      "base_year": "2024=100"
+    }
+  ]
+}

@@ -24,9 +24,9 @@ export function SimulatorControls({ inputs, onChange, onPolicyAlternativeChange 
       <div className="flex items-start justify-between gap-4">
         <div>
           <div className="flex items-center gap-2"><SlidersHorizontal size={16} className="text-blue-600" /><h2 className="text-base font-semibold text-slate-950">Shock configuration</h2></div>
-          <p className="mt-1 text-xs text-slate-500">Adjust demo inputs and inspect the deterministic response.</p>
+          <p className="mt-1 text-xs text-slate-500">Adjust observed-data sensitivity inputs and inspect the API response.</p>
         </div>
-        <span className="rounded-md bg-amber-50 px-2 py-1 text-[10px] font-semibold uppercase tracking-[0.1em] text-amber-700">Demo only</span>
+        <span className="rounded-md bg-amber-50 px-2 py-1 text-[10px] font-semibold uppercase tracking-[0.1em] text-amber-700">Sensitivity only</span>
       </div>
 
       <div className="mt-6 space-y-6">

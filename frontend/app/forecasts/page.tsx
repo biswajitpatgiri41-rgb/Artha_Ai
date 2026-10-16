@@ -172,7 +172,7 @@ export default function ForecastsPage() {
       <section aria-labelledby="forecast-intelligence-heading" className="space-y-4">
         <div><p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-amber-300">Advanced forecast tools</p><h2 id="forecast-intelligence-heading" className="mt-1 text-lg font-semibold text-slate-50">Forecast Intelligence</h2><p className="mt-1 text-xs text-slate-400">Extensions use existing model records where available and explicitly identify pending artifacts.</p></div>
         <ModelEnsembleComparison registry={registry} horizon={horizon} variant={variant} />
-        <div className="grid gap-4 xl:grid-cols-2"><ForecastExplainability explanation={explanation} /><ForecastCalibration calibration={forecast?.calibration ?? null} /></div>
+        <div className="grid gap-4 xl:grid-cols-2">        <ForecastExplainability explanation={explanation} forecast={forecast} /><ForecastCalibration calibration={forecast?.calibration ?? null} /></div>
         <ForecastVintageComparison />
       </section>
     </div>

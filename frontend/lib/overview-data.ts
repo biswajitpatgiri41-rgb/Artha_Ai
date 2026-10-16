@@ -59,7 +59,7 @@ function formatValue(value: number, digits: number): string {
 }
 
 export async function loadOverviewData(): Promise<OverviewData> {
-  const seriesIds = ['cpi_yoy', 'food_inflation', 'repo_rate', 'inr_usd'];
+  const seriesIds = ['cpi_yoy', 'food_inflation', 'repo_rate', 'india_gdp_growth_annual_wb', 'inr_usd'];
   const series = await Promise.all(seriesIds.map(async (id): Promise<readonly [string, SeriesResponse]> => {
     try { return [id, await getJson<SeriesResponse>(`/series/${id}?limit=500`)] as const; }
     catch { return [id, { observations: [] }] as const; }
@@ -125,7 +125,7 @@ export async function loadOverviewData(): Promise<OverviewData> {
       makeKpi('Headline CPI', 'cpi_yoy', 2),
       makeKpi('Food Inflation', 'food_inflation', 2),
       makeKpi('Repo Rate', 'repo_rate', 2),
-      { label: 'GDP Growth', value: 'Unavailable', change: 'No data', trend: 'flat' },
+      makeKpi('GDP Growth (annual)', 'india_gdp_growth_annual_wb', 2),
       makeKpi('INR/USD', 'inr_usd', 2),
     ],
     historical,

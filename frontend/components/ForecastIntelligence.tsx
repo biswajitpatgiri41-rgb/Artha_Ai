@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import type { PackagedModelMetric, PackagedModelRegistry, ResearchRunResponse } from '@/lib/research-api';
+import type { ForecastResponse, PackagedModelMetric, PackagedModelRegistry, ResearchRunResponse } from '@/lib/research-api';
 import { getResearchRuns } from '@/lib/research-api';
 
 const panel = 'rounded-[18px] border border-white/[0.08] bg-[rgba(15,23,42,0.62)] p-5 shadow-[0_20px_55px_rgba(0,0,0,0.18)] backdrop-blur-2xl';
@@ -36,9 +36,12 @@ export function ModelEnsembleComparison({ registry, horizon, variant }: { regist
   </Section>;
 }
 
-export function ForecastExplainability({ explanation }: { explanation?: ForecastExplanationOutput | null }) {
+export function ForecastExplainability({ explanation, forecast }: { explanation?: ForecastExplanationOutput | null; forecast?: ForecastResponse | null }) {
+  const componentFacts = forecast?.component_forecasts ? Object.entries(forecast.component_forecasts) : [];
   return <Section title="Forecast explainability" subtitle="Feature contributions are supplied by validated model artifacts; this page does not calculate SHAP.">
-    {explanation?.contributions?.length ? <div className="space-y-3">{explanation.contributions.map((item) => <div key={item.feature} className="grid grid-cols-[160px_1fr_auto] items-center gap-3 text-xs"><span className="text-slate-300">{item.feature}</span><div className="h-2 rounded-full bg-white/[0.06]"><div className="h-2 rounded-full bg-cyan-400" style={{ width: `${Math.min(100, Math.abs(item.contribution) * 10)}%` }} /></div><span className="text-slate-400">{item.contribution.toFixed(3)} {item.unit ?? ''}</span></div>)}</div> : <div className="rounded-xl border border-cyan-300/10 bg-cyan-300/[0.035] p-4"><p className="text-sm font-medium text-cyan-100">Explainability artifact not available</p><p className="mt-1 text-xs text-slate-400">No SHAP values, feature-importance artifact, or coefficients are exposed for the selected forecast.</p></div>}
+    {explanation?.contributions?.length ? <div className="space-y-3">{explanation.contributions.map((item) => <div key={item.feature} className="grid grid-cols-[160px_1fr_auto] items-center gap-3 text-xs"><span className="text-slate-300">{item.feature}</span><div className="h-2 rounded-full bg-white/[0.06]"><div className="h-2 rounded-full bg-cyan-400" style={{ width: `${Math.min(100, Math.abs(item.contribution) * 10)}%` }} /></div><span className="text-slate-400">{item.contribution.toFixed(3)} {item.unit ?? ''}</span></div>)}</div>
+      : componentFacts.length ? <div><p className="mb-3 text-xs leading-5 text-slate-400">The package exposes component forecasts, not feature-level causal contributions. These values explain how the stored ensemble was formed.</p><div className="grid gap-2 sm:grid-cols-2">{componentFacts.map(([name, value]) => <div key={name} className="flex items-center justify-between rounded-lg border border-white/[0.07] bg-white/[0.025] px-3 py-2 text-xs"><span className="text-slate-300">{name}</span><strong className="text-cyan-200">{value.toFixed(2)}%</strong></div>)}</div></div>
+      : <div className="rounded-xl border border-cyan-300/10 bg-cyan-300/[0.035] p-4"><p className="text-sm font-medium text-cyan-100">Forecast facts unavailable</p><p className="mt-1 text-xs text-slate-400">The selected response does not expose feature contributions or component forecasts.</p></div>}
   </Section>;
 }
 

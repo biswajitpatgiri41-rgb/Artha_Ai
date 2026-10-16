@@ -2,6 +2,21 @@
 // each frontend deployment when using a different API domain.
 export const apiBaseUrl = (process.env.NEXT_PUBLIC_API_BASE_URL ?? 'https://artha-ai-api.vercel.app').replace(/\/$/, '');
 
+export interface ApiHealth {
+  status: string;
+  llm: 'configured' | 'not_configured';
+  data: string;
+  available_series: number;
+  econometrics: string;
+  final_model_package: string;
+}
+
+export async function getApiHealth(): Promise<ApiHealth> {
+  const response = await fetch(`${apiBaseUrl}/health`, { cache: 'no-store' });
+  if (!response.ok) throw new Error(`Health API returned ${response.status}`);
+  return response.json() as Promise<ApiHealth>;
+}
+
 export interface SimulationResponse {
   mode: 'illustrative_sensitivity';
   baseline_inflation: number;

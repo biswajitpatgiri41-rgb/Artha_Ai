@@ -14,7 +14,7 @@ export default function HomePage() {
   useEffect(() => { loadOverviewData().then(setData).catch((reason: unknown) => setError(reason instanceof Error ? reason.message : 'Live data is unavailable')); }, []);
   const tabs = [
     { label: 'Inflation', icon: BarChart3, value: data?.kpis[0]?.value ?? 'Loading' },
-    { label: 'Growth', icon: TrendingUp, value: 'Unavailable' },
+    { label: 'Growth', icon: TrendingUp, value: data?.kpis[3]?.value ?? 'Loading' },
     { label: 'Rates', icon: Landmark, value: data?.kpis[2]?.value ?? 'Loading' },
     { label: 'External Sector', icon: Globe2, value: data?.kpis[4]?.value ?? 'Loading' },
   ];

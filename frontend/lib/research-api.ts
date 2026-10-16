@@ -1,4 +1,6 @@
-const apiBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL ?? 'http://localhost:8000';
+// Browser requests must target the deployed FastAPI service. Override this in
+// each frontend deployment when using a different API domain.
+export const apiBaseUrl = (process.env.NEXT_PUBLIC_API_BASE_URL ?? 'https://artha-ai-api.vercel.app').replace(/\/$/, '');
 
 export interface SimulationResponse {
   mode: 'illustrative_sensitivity';
@@ -123,7 +125,7 @@ export async function getP2BenchmarkForecast(model: string): Promise<ForecastRes
 }
 
 export interface ProjectSeriesCatalogItem {
-  id: string; source: string; unit: string; base_year: string | null;
+  id: string; description: string; source: string; unit: string; base_year: string | null;
   frequency: string; enabled: boolean; available: boolean; observation_count: number;
   latest: { date: string; value: number; source: string; source_url?: string | null } | null;
 }

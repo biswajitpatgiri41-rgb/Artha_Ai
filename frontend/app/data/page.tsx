@@ -1,94 +1,52 @@
 'use client';
 
-import { Download, FileSearch, Search } from 'lucide-react';
 import { useEffect, useMemo, useState } from 'react';
-import { SourceBadge } from '@/components';
+import { Download, Search } from 'lucide-react';
 import { PageShell } from '@/components/layout';
-import { MOCK_DATA_NOTICE, mockSeriesCatalog } from '@/lib/mock-data';
-import type { MacroSeries } from '@/lib/types';
-import { getProjectSeriesCatalog, getProjectSeriesObservations } from '@/lib/research-api';
+import { getProjectSeriesCatalog, getProjectSeriesObservations, type ProjectSeriesCatalogItem } from '@/lib/research-api';
 
-function csvCell(value: string | number | null) {
-	const text = value === null ? '' : String(value);
-	return /[",\n]/.test(text) ? `"${text.replaceAll('"', '""')}"` : text;
-}
-
-function downloadSeries(series: MacroSeries) {
-	const header = ['date', 'value', 'unit', 'source', 'status'];
-	const rows = series.observations.map((observation) => [observation.date, observation.value, series.unit, series.source, series.isMock ? 'mock' : 'archived_package']);
-	const csv = [header, ...rows].map((row) => row.map(csvCell).join(',')).join('\n');
-	const url = URL.createObjectURL(new Blob([csv], { type: 'text/csv;charset=utf-8' }));
-	const anchor = document.createElement('a');
-	anchor.href = url;
-	anchor.download = `${series.id}.csv`;
-	anchor.click();
-	URL.revokeObjectURL(url);
-}
+type Observation = { date: string; value: number; source: string; unit: string };
+const sourceUrl: Record<string, string> = { MOSPI: 'https://mospi.gov.in/', RBI: 'https://data.rbi.org.in/', FRED: 'https://fred.stlouisfed.org/', EIA: 'https://www.eia.gov/' };
+const frequencyName: Record<string, string> = { D: 'Daily', W: 'Weekly', M: 'Monthly', Q: 'Quarterly', A: 'Annual' };
+const displayName = (id: string) => id.replaceAll('_', ' ').replace(/\b\w/g, (letter) => letter.toUpperCase());
 
 export default function DataPage() {
-	const [seriesCatalog, setSeriesCatalog] = useState<MacroSeries[]>(mockSeriesCatalog);
-	const [dataMode, setDataMode] = useState<'loading' | 'package' | 'mock'>('loading');
-	const [query, setQuery] = useState('');
-	const [sourceFilter, setSourceFilter] = useState('All sources');
-	const [selectedId, setSelectedId] = useState(mockSeriesCatalog[0]?.id ?? '');
-	useEffect(() => {
-		let active = true;
-		Promise.all([getProjectSeriesCatalog(), getProjectSeriesObservations('cpi_yoy', 500)])
-			.then(([catalog, observations]) => {
-				if (!active) return;
-				const available = catalog.find((series) => series.id === 'cpi_yoy' && series.available);
-				if (!available || observations.length === 0) {
-					setDataMode('mock');
-					return;
-				}
-				const template = mockSeriesCatalog.find((series) => series.id === 'india-cpi-headline');
-				if (!template) {
-					setDataMode('mock');
-					return;
-				}
-				const latest = observations[observations.length - 1];
-				const packageSeries: MacroSeries = {
-					...template,
-					id: 'cpi_yoy',
-					name: 'India headline CPI inflation (2024 base)',
-					description: 'Observed MoSPI 2024-base CPI year-over-year target from the versioned final model package. The bundle is a static data vintage.',
-					latestValue: latest.value,
-					unit: '% year-over-year',
-					source: 'MoSPI',
-					baseYear: '2024',
-					latestObservation: latest.date,
-					status: 'archived',
-					retrievedDate: 'Not refreshed; bundled package snapshot',
-					observations: observations.map(({ date, value }) => ({ date, value })),
-					isMock: false,
-				};
-				setSeriesCatalog([packageSeries, ...mockSeriesCatalog.filter((series) => series.id !== 'india-cpi-headline')]);
-				setSelectedId((current) => current === 'india-cpi-headline' ? 'cpi_yoy' : current);
-				setDataMode('package');
-			})
-			.catch(() => { if (active) setDataMode('mock'); });
-		return () => { active = false; };
-	}, []);
-	const sources = ['All sources', ...new Set(seriesCatalog.map((series) => series.source))];
-	const filteredSeries = useMemo(() => seriesCatalog.filter((series) => {
-		const matchesQuery = `${series.name} ${series.id} ${series.description}`.toLowerCase().includes(query.toLowerCase());
-		return matchesQuery && (sourceFilter === 'All sources' || series.source === sourceFilter);
-	}), [seriesCatalog, query, sourceFilter]);
-	const selected = seriesCatalog.find((series) => series.id === selectedId) ?? filteredSeries[0] ?? seriesCatalog[0];
+  const [catalog, setCatalog] = useState<ProjectSeriesCatalogItem[]>([]);
+  const [selectedId, setSelectedId] = useState('');
+  const [observations, setObservations] = useState<Observation[]>([]);
+  const [query, setQuery] = useState('');
+  const [error, setError] = useState<string | null>(null);
+  const [loadingRows, setLoadingRows] = useState(false);
 
-	return (
-		<PageShell title="Data Explorer" description="Inspect the bundled CPI dataset and mock fallback series used by the research workspace.">
-			<div className="space-y-6">
-				<div className="flex items-start gap-3 rounded-2xl border border-amber-300/15 bg-amber-400/[0.07] px-4 py-3 text-xs text-amber-100"><FileSearch size={17} className="mt-0.5 shrink-0 text-amber-300" /><span><strong>{dataMode === 'package' ? 'BUNDLED CPI DATA + MOCK FALLBACK' : dataMode === 'loading' ? 'LOADING PROJECT DATA' : 'MOCK DATA CATALOG'}</strong><span className="ml-2 text-amber-200/70">{dataMode === 'package' ? 'MoSPI CPI observations are loaded from the checksum-verified package. Other unavailable series stay mock.' : MOCK_DATA_NOTICE}</span></span></div>
+  useEffect(() => { getProjectSeriesCatalog().then((items) => { setCatalog(items); setSelectedId(items.find((item) => item.available)?.id ?? items[0]?.id ?? ''); }).catch((reason: unknown) => setError(reason instanceof Error ? reason.message : 'Could not load the series catalog.')); }, []);
+  useEffect(() => {
+    if (!selectedId) return;
+    let active = true;
+    const timer = window.setTimeout(() => {
+      setLoadingRows(true);
+      getProjectSeriesObservations(selectedId, 500).then((rows) => { if (active) setObservations(rows); }).catch((reason: unknown) => { if (active) { setObservations([]); setError(reason instanceof Error ? reason.message : 'Could not load observations.'); } }).finally(() => { if (active) setLoadingRows(false); });
+    }, 0);
+    return () => { active = false; window.clearTimeout(timer); };
+  }, [selectedId]);
 
-				<section className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm shadow-slate-200/40"><div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between"><div><p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-blue-700">Series registry</p><h2 className="mt-1 text-lg font-semibold text-slate-950">Macroeconomic series</h2><p className="mt-1 text-xs text-slate-500">Search, filter, inspect, and export the current demo catalog.</p></div><div className="flex flex-col gap-2 sm:flex-row"><label className="relative"><span className="sr-only">Search series</span><Search size={15} className="pointer-events-none absolute left-3 top-2.5 text-slate-400" /><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search series or ID" className="w-full rounded-lg border border-slate-200 py-2 pl-9 pr-3 text-xs outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100 sm:w-56" /></label><label><span className="sr-only">Filter by source</span><select value={sourceFilter} onChange={(event) => setSourceFilter(event.target.value)} className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs text-slate-700 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100"><option>All sources</option>{sources.slice(1).map((source) => <option key={source}>{source}</option>)}</select></label></div></div></section>
+  const filtered = useMemo(() => catalog.filter((item) => `${item.id} ${item.description} ${item.source}`.toLowerCase().includes(query.toLowerCase())), [catalog, query]);
+  const selected = catalog.find((item) => item.id === selectedId);
+  const download = () => {
+    if (!selected) return;
+    const csv = [['date', 'value', 'unit', 'source'], ...observations.map((row) => [row.date, row.value, row.unit, row.source])].map((row) => row.join(',')).join('\n');
+    const url = URL.createObjectURL(new Blob([csv], { type: 'text/csv;charset=utf-8' }));
+    const anchor = document.createElement('a'); anchor.href = url; anchor.download = `${selected.id}.csv`; anchor.click(); URL.revokeObjectURL(url);
+  };
 
-				<div className="grid gap-5 xl:grid-cols-[1.55fr_1fr]">
-					<section className="min-w-0 rounded-xl border border-slate-200 bg-white p-5 shadow-sm shadow-slate-200/40"><div className="mb-4 flex items-center justify-between"><p className="text-xs font-semibold text-slate-700">{filteredSeries.length} series shown</p><span className="text-[10px] uppercase tracking-[0.1em] text-slate-400">{seriesCatalog.filter((series) => !series.isMock).length} bundled ? {seriesCatalog.filter((series) => series.isMock).length} mock</span></div><div className="overflow-x-auto"><table className="w-full min-w-[820px] text-left text-xs"><thead className="border-b border-slate-200 text-[10px] uppercase tracking-[0.12em] text-slate-400"><tr><th className="pb-3 font-semibold">Series</th><th className="pb-3 font-semibold">Latest value</th><th className="pb-3 font-semibold">Unit</th><th className="pb-3 font-semibold">Frequency</th><th className="pb-3 font-semibold">Source</th><th className="pb-3 font-semibold">Base year</th><th className="pb-3 font-semibold">Latest observation</th><th className="pb-3 font-semibold">Status</th></tr></thead><tbody className="divide-y divide-slate-100">{filteredSeries.map((series) => <tr key={series.id} onClick={() => setSelectedId(series.id)} className={`cursor-pointer transition hover:bg-blue-50/50 ${selected?.id === series.id ? 'bg-blue-50/70' : ''}`}><td className="py-3 pr-3"><p className="font-semibold text-slate-800">{series.name}</p><p className="mt-1 text-[10px] text-slate-400">{series.id}</p></td><td className="py-3 font-semibold text-slate-900">{series.latestValue}</td><td className="py-3 text-slate-500">{series.unit}</td><td className="py-3 text-slate-500">{series.frequency}</td><td className="py-3"><SourceBadge source={series.source} /></td><td className="py-3 text-slate-500">{series.baseYear ?? '—'}</td><td className="py-3 text-slate-500">{series.latestObservation}</td><td className="py-3"><span className={`rounded-md px-2 py-1 text-[10px] font-semibold ${series.isMock ? 'bg-amber-50 text-amber-700' : 'bg-blue-50 text-blue-700'}`}>{series.isMock ? 'Mock' : 'Archived package'}</span></td></tr>)}</tbody></table>{filteredSeries.length === 0 && <div className="py-14 text-center text-xs text-slate-400">No series match the current filters.</div>}</div></section>
-
-					{selected && <aside className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm shadow-slate-200/40"><div className="flex items-start justify-between gap-3"><div><p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-blue-700">Series details</p><h2 className="mt-1 text-lg font-semibold text-slate-950">{selected.name}</h2></div><button type="button" onClick={() => downloadSeries(selected)} className="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-3 py-2 text-xs font-semibold text-white shadow-sm transition hover:bg-blue-700"><Download size={14} />Download CSV</button></div><p className="mt-4 text-xs leading-5 text-slate-600">{selected.description}</p><dl className="mt-5 divide-y divide-slate-100 border-y border-slate-100">{[['Series ID', selected.id], ['Source', selected.source], ['Frequency', selected.frequency], ['Unit', selected.unit], ['Base year', selected.baseYear ?? 'Not applicable'], ['Seasonal adjustment', selected.seasonalAdjustment], ['Latest observation', selected.latestObservation], ['Retrieved date', selected.retrievedDate], ['Status', selected.isMock ? 'Mock demo' : 'Archived package snapshot']].map(([label, value]) => <div key={label} className="flex items-start justify-between gap-4 py-3 text-xs"><dt className="text-slate-400">{label}</dt><dd className="max-w-[60%] text-right font-medium text-slate-700">{label === 'Source' ? <a href={selected.sourceUrl} target="_blank" rel="noreferrer" className="text-blue-700 hover:underline">{value}</a> : value}</dd></div>)}</dl><div className="mt-5"><p className="text-[10px] font-semibold uppercase tracking-[0.12em] text-slate-400">Observation preview</p><div className="mt-3 space-y-2">{selected.observations.map((observation) => <div key={observation.date} className="flex items-center justify-between rounded-md bg-slate-50 px-3 py-2 text-xs"><span className="text-slate-500">{observation.date}</span><strong className="text-slate-800">{observation.value} {selected.unit}</strong></div>)}</div></div></aside>}
-				</div>
-			</div>
-		</PageShell>
-	);
+  return <PageShell title="Data Explorer" description="Browse the project series registry and the observations returned by the API.">
+    <div className="space-y-5">
+      <div className="rounded-xl border border-cyan-300/15 bg-cyan-400/[0.05] p-4 text-xs text-slate-300">Catalog and observations are loaded live from the project API. Only series with stored observations are marked available; this page does not fill gaps with demo data.</div>
+      {error && <p className="rounded-xl border border-rose-300/20 bg-rose-400/10 px-4 py-3 text-xs text-rose-200">{error} Check the API URL and deployment access settings.</p>}
+      <section className="rounded-xl border border-white/[0.08] bg-slate-900/60 p-5"><div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end"><div><h2 className="text-lg font-semibold">Project series</h2><p className="mt-1 text-xs text-slate-400">{catalog.filter((item) => item.available).length} with observations · {catalog.length} registered</p></div><label className="relative"><Search size={15} className="absolute left-3 top-2.5 text-slate-400"/><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search series, ID, source" className="w-full rounded-lg border border-white/10 bg-slate-950 py-2 pl-9 pr-3 text-xs sm:w-64"/></label></div></section>
+      <div className="grid gap-5 xl:grid-cols-[1.4fr_1fr]">
+        <section className="overflow-x-auto rounded-xl border border-white/[0.08] bg-slate-900/60 p-5"><table className="w-full min-w-[650px] text-left text-xs"><thead className="text-[10px] uppercase tracking-wider text-slate-500"><tr><th className="pb-3">Series</th><th className="pb-3">Latest</th><th className="pb-3">Frequency</th><th className="pb-3">Rows</th><th className="pb-3">Status</th></tr></thead><tbody>{filtered.map((item) => <tr key={item.id} onClick={() => setSelectedId(item.id)} className={`cursor-pointer border-t border-white/[0.06] hover:bg-white/[0.04] ${selectedId === item.id ? 'bg-cyan-300/[0.06]' : ''}`}><td className="py-3 pr-3"><strong>{displayName(item.id)}</strong><p className="mt-1 text-[10px] text-slate-500">{item.id} · {item.source}</p></td><td className="py-3">{item.latest ? `${item.latest.value} ${item.unit}` : '—'}<p className="mt-1 text-[10px] text-slate-500">{item.latest?.date ?? 'No observations'}</p></td><td className="py-3 text-slate-400">{frequencyName[item.frequency] ?? item.frequency}</td><td className="py-3 text-slate-400">{item.observation_count}</td><td className="py-3"><span className={item.available ? 'text-emerald-300' : 'text-slate-500'}>{item.available ? 'Available' : 'No data'}</span></td></tr>)}</tbody></table>{filtered.length === 0 && <p className="py-8 text-center text-xs text-slate-500">No registered series match.</p>}</section>
+        {selected && <aside className="rounded-xl border border-white/[0.08] bg-slate-900/60 p-5"><div className="flex items-start justify-between gap-3"><div><p className="text-[10px] uppercase tracking-wider text-cyan-300">Series details</p><h2 className="mt-1 text-lg font-semibold">{displayName(selected.id)}</h2></div><button disabled={!observations.length} onClick={download} className="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-3 py-2 text-xs font-semibold disabled:opacity-40"><Download size={14}/>CSV</button></div><p className="mt-3 text-xs leading-5 text-slate-400">{selected.description}</p><dl className="mt-4 space-y-2 border-y border-white/[0.07] py-3 text-xs"><div className="flex justify-between"><dt className="text-slate-500">Source</dt><dd><a href={sourceUrl[selected.source] ?? '#'} target="_blank" rel="noreferrer">{selected.source}</a></dd></div><div className="flex justify-between"><dt className="text-slate-500">Unit / base</dt><dd>{selected.unit} · {selected.base_year ?? 'not specified'}</dd></div><div className="flex justify-between"><dt className="text-slate-500">Latest observation</dt><dd>{selected.latest?.date ?? '—'}</dd></div><div className="flex justify-between"><dt className="text-slate-500">Observation count</dt><dd>{selected.observation_count}</dd></div></dl><h3 className="mt-4 text-xs font-semibold">Latest observations</h3><div className="mt-2 max-h-80 space-y-1 overflow-auto">{loadingRows ? <p className="text-xs text-slate-500">Loading observations…</p> : observations.slice(-30).reverse().map((row) => <div key={row.date} className="flex justify-between rounded bg-white/[0.03] px-3 py-2 text-xs"><span className="text-slate-400">{row.date}</span><strong>{row.value} {row.unit}</strong></div>)}</div></aside>}
+      </div>
+    </div>
+  </PageShell>;
 }

@@ -1,6 +1,6 @@
 import type { EconomicObservation, ForecastPoint, Kpi, TimeSeriesPoint } from './types';
 
-const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL ?? 'http://localhost:8000';
+const API_BASE = (process.env.NEXT_PUBLIC_API_BASE_URL ?? 'https://artha-ai-api.vercel.app').replace(/\/$/, '');
 
 interface ApiObservation {
   date: string;
@@ -16,6 +16,7 @@ interface SeriesResponse {
 }
 
 interface ForecastResponse {
+  origin?: string;
   target_month?: string;
   forecasts: Array<{ step: number; value: number }>;
   intervals?: Record<string, { lower?: number; upper?: number }>;
@@ -59,7 +60,10 @@ function formatValue(value: number, digits: number): string {
 
 export async function loadOverviewData(): Promise<OverviewData> {
   const seriesIds = ['cpi_yoy', 'food_inflation', 'repo_rate', 'inr_usd'];
-  const series = await Promise.all(seriesIds.map(async (id) => [id, await getJson<SeriesResponse>(`/series/${id}?limit=500`)] as const));
+  const series = await Promise.all(seriesIds.map(async (id): Promise<readonly [string, SeriesResponse]> => {
+    try { return [id, await getJson<SeriesResponse>(`/series/${id}?limit=500`)] as const; }
+    catch { return [id, { observations: [] }] as const; }
+  }));
   const byId = new Map(series);
   const cpiRows = byId.get('cpi_yoy')?.observations ?? [];
   const latestCpi = cpiRows.at(-1);
@@ -77,26 +81,27 @@ export async function loadOverviewData(): Promise<OverviewData> {
     confidence: 1,
     isMock: false,
   }));
-  const forecastResponses = await Promise.all([1, 3, 6, 12].map((horizon) =>
-    getJson<ForecastResponse>(`/forecast/final?model=ensemble&variant=mospi_2024_base&horizon=${horizon}`),
-  ));
-  const forecast = forecastResponses.map((response) => {
-    const item = response.forecasts[0];
-    const interval = response.intervals?.['80'];
-    const date = response.target_month ? `${response.target_month}-01` : '';
+  let forecastResponse: ForecastResponse | null = null;
+  if (cpiRows.length) {
+    try { forecastResponse = await getJson<ForecastResponse>('/forecast?series_id=cpi_yoy&model=seasonal_naive&horizon=12'); }
+    catch { forecastResponse = null; }
+  }
+  const forecastOrigin = forecastResponse?.origin ? new Date(`${forecastResponse.origin.slice(0, 7)}-01T00:00:00Z`) : null;
+  const forecast = (forecastResponse?.forecasts ?? []).map((item) => {
+    const date = forecastOrigin ? new Date(Date.UTC(forecastOrigin.getUTCFullYear(), forecastOrigin.getUTCMonth() + item.step, 1)).toISOString().slice(0, 10) : '';
     return {
       id: `forecast-${item.step}`,
       label: 'Headline CPI forecast',
       period: date.slice(0, 7),
       date,
       value: item.value,
-      lowerBound: interval?.lower ?? item.value,
-      upperBound: interval?.upper ?? item.value,
-      unit: response.unit,
-      source: response.source,
+      lowerBound: item.value,
+      upperBound: item.value,
+      unit: forecastResponse?.unit ?? 'percent',
+      source: forecastResponse?.source ?? 'project API',
       sourceUrl: '#',
       status: 'validated' as const,
-      confidence: 1,
+      confidence: 0,
       isMock: false,
       isForecast: true as const,
     };

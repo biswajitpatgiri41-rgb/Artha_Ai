@@ -164,9 +164,9 @@ export function AppShell({ children }: Readonly<{ children: React.ReactNode }>) 
             </div>
             <div className="mt-3 flex items-center gap-2 text-[10px] font-medium text-emerald-400">
               <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
-              System Ready
+              API-backed research
             </div>
-            <p className="mt-2 text-[10px] text-slate-500">Mock Data Mode</p>
+            <p className="mt-2 text-[10px] text-slate-500">Page status reflects configured capabilities</p>
           </div>
           <p className="mt-4 px-1 text-[10px] text-slate-600">v0.1 · RBI policy lab</p>
         </div>
@@ -177,12 +177,11 @@ export function AppShell({ children }: Readonly<{ children: React.ReactNode }>) 
           <div className="flex items-center gap-3 text-right">
             <div className="hidden items-center gap-2 sm:flex">
               <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 shadow-[0_0_10px_rgba(16,185,129,0.55)]" />
-              <span className="rounded-full border border-emerald-400/15 bg-emerald-400/10 px-2.5 py-1 text-[10px] font-semibold text-emerald-300">System Ready</span>
-              <span className="rounded-full border border-white/[0.08] bg-white/[0.035] px-2.5 py-1 text-[10px] text-slate-400">Mock Environment</span>
+              <span className="rounded-full border border-cyan-400/15 bg-cyan-400/10 px-2.5 py-1 text-[10px] font-semibold text-cyan-200">Research workspace</span>
             </div>
             <div>
               <p className="text-[9px] uppercase tracking-[0.16em] text-slate-600">Last updated</p>
-              <p className="mt-0.5 text-[11px] font-medium text-slate-300">Demo</p>
+              <p className="mt-0.5 text-[11px] font-medium text-slate-300">Live API</p>
             </div>
           </div>
         </div>

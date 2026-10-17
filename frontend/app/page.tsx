@@ -6,20 +6,61 @@ import { DashboardPolicyIntelligence, KPIGrid, MacroChart, ScenarioLab } from '@
 import { AgentTimeline, InflationDecomposition } from '@/components';
 import { PageShell } from '@/components/layout';
 import { loadOverviewData, type OverviewData } from '@/lib/overview-data';
+import { getResearchRuns } from '@/lib/research-api';
+import type { AgentExecutionEvent } from '@/lib/types';
 
 export default function HomePage() {
   const [activeDomain, setActiveDomain] = useState('Inflation');
   const [data, setData] = useState<OverviewData | null>(null);
   const [error, setError] = useState<string | null>(null);
-  useEffect(() => { loadOverviewData().then(setData).catch((reason: unknown) => setError(reason instanceof Error ? reason.message : 'Live data is unavailable')); }, []);
+  const [activity, setActivity] = useState<AgentExecutionEvent[]>([]);
+  useEffect(() => {
+    loadOverviewData().then((overview) => {
+      setData(overview);
+      const timestamp = new Date().toISOString();
+      const observedCount = overview.kpis.filter((item) => item.observation).length;
+      const loadedEvents: AgentExecutionEvent[] = [{
+        id: `homepage-data-${timestamp}`,
+        timestamp,
+        agent: 'Data API',
+        event: 'Macro observations loaded',
+        status: observedCount ? 'completed' : 'warning',
+        details: `${observedCount} of ${overview.kpis.length} dashboard indicators returned a dated observation${overview.latestDate ? `; latest CPI observation is ${overview.latestDate}` : ''}.`,
+        toolCalls: ['/series/{series_id}'],
+      }];
+      if (overview.forecast.length) loadedEvents.push({
+        id: `homepage-forecast-${timestamp}`,
+        timestamp,
+        agent: 'Forecast API',
+        event: 'CPI forecast retrieved',
+        status: 'completed',
+        details: `Retrieved ${overview.forecast.length} stored forecast points from the project API.`,
+        toolCalls: ['/forecast?series_id=cpi_yoy'],
+      });
+      setActivity(loadedEvents);
+    }).catch((reason: unknown) => setError(reason instanceof Error ? reason.message : 'Live data is unavailable'));
+
+    getResearchRuns().then((runs) => {
+      const runEvents: AgentExecutionEvent[] = runs.flatMap((run) => run.events.map((event, index) => ({
+        id: `${run.run_id}-${event.node_id}-${index}`,
+        timestamp: event.timestamp || run.created_at,
+        agent: `Research run ${run.run_id.slice(0, 8)}`,
+        event: event.node_id,
+        status: event.status === 'completed' || event.status === 'warning' || event.status === 'failed' || event.status === 'running' || event.status === 'queued' ? event.status : 'pending',
+        details: event.message,
+        toolCalls: [],
+      })));
+      if (runEvents.length) setActivity((current) => [...runEvents, ...current].sort((a, b) => Date.parse(b.timestamp) - Date.parse(a.timestamp)).slice(0, 8));
+    }).catch(() => {
+      // The API health and homepage data activity remain visible when run history is unavailable.
+    });
+  }, []);
   const tabs = [
     { label: 'Inflation', icon: BarChart3, value: data?.kpis[0]?.value ?? 'Loading' },
     { label: 'Growth', icon: TrendingUp, value: data?.kpis[3]?.value ?? 'Loading' },
     { label: 'Rates', icon: Landmark, value: data?.kpis[2]?.value ?? 'Loading' },
     { label: 'External Sector', icon: Globe2, value: data?.kpis[4]?.value ?? 'Loading' },
   ];
-  const empty = { scorecard: [], signals: [] };
-
   return (
     <PageShell
       title="Monetary policy overview"
@@ -37,11 +78,11 @@ export default function HomePage() {
           <MacroChart observations={[]} historical={data?.historical ?? []} forecast={data?.forecast ?? []} isLoading={!data && !error} />
           <InflationDecomposition items={[]} isLoading={!data && !error} />
         </div>
-        <div className="grid gap-6 lg:grid-cols-2">
+        <div className="grid items-start gap-6 lg:grid-cols-2">
           <ScenarioLab baselineInflation={data?.headline?.value} baselineDate={data?.headline?.date} />
-          <DashboardPolicyIntelligence scorecard={empty.scorecard} signals={empty.signals} />
+          <DashboardPolicyIntelligence indicators={data?.kpis ?? []} forecast={data?.forecast ?? []} />
         </div>
-        <AgentTimeline events={[]} />
+        <AgentTimeline events={activity} />
       </div>
     </PageShell>
   );

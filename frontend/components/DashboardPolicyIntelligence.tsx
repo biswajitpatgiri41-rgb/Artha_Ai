@@ -1,43 +1,62 @@
 'use client';
 
-import { ArrowRight, CheckCircle2 } from 'lucide-react';
-import { ConfidenceMeter } from './ConfidenceMeter';
-import { PolicyScorecard } from './PolicyScorecard';
-import type { MacroSignal, PolicyScorecardItem } from '@/lib/types';
+import { Activity, ArrowUpRight, Database, Gauge } from 'lucide-react';
+import type { EconomicObservation, ForecastPoint, Kpi } from '@/lib/types';
 
 interface DashboardPolicyIntelligenceProps {
-  scorecard: PolicyScorecardItem[];
-  signals: MacroSignal[];
+  indicators: Kpi[];
+  forecast: ForecastPoint[];
 }
 
-export function DashboardPolicyIntelligence({ scorecard, signals }: DashboardPolicyIntelligenceProps) {
-  if (scorecard.length === 0) {
-    return (
-      <section className="relative overflow-hidden rounded-[18px] border border-violet-300/15 bg-[rgba(15,23,42,0.66)] p-5 shadow-[0_20px_55px_rgba(0,0,0,0.25)] backdrop-blur-2xl">
-        <p className="text-base font-semibold text-slate-50">Policy Intelligence</p>
-        <p className="mt-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-violet-300">Validated evidence required</p>
-        <p className="mt-6 rounded-xl border border-white/[0.07] bg-white/[0.025] p-4 text-xs leading-5 text-slate-400">
-          No evidence-weighted policy scorecard is available for the connected data yet. This panel will not display a fabricated recommendation.
-        </p>
-      </section>
-    );
-  }
-  const confidence = Math.round(scorecard.reduce((sum, item) => sum + item.score, 0) / Math.max(scorecard.length, 1));
-  const chips = signals.slice(0, 3);
+function formatDate(value: string) {
+  const date = new Date(`${value.slice(0, 10)}T00:00:00`);
+  return Number.isNaN(date.valueOf()) ? value : new Intl.DateTimeFormat(undefined, { year: 'numeric', month: 'short' }).format(date);
+}
+
+function formatObservation(observation: EconomicObservation) {
+  const suffix = observation.unit === '%' || observation.unit.toLowerCase().includes('percent') ? '%' : '';
+  return `${observation.value.toLocaleString(undefined, { maximumFractionDigits: 2 })}${suffix}`;
+}
+
+export function DashboardPolicyIntelligence({ indicators, forecast }: DashboardPolicyIntelligenceProps) {
+  const available = indicators.flatMap((item) => item.observation ? [{ label: item.label, observation: item.observation }] : []);
+  const forecastStart = forecast[0];
+  const forecastEnd = forecast.at(-1);
 
   return (
-    <section className="relative overflow-hidden rounded-[18px] border border-violet-300/15 bg-[rgba(15,23,42,0.66)] p-5 shadow-[0_20px_55px_rgba(0,0,0,0.25),0_0_30px_rgba(139,92,246,0.06)] backdrop-blur-2xl">
-      <span className="pointer-events-none absolute -right-16 -top-20 h-48 w-48 rounded-full bg-violet-500/10 blur-3xl" />
-      <span className="pointer-events-none absolute bottom-0 left-1/3 h-32 w-48 rounded-full bg-blue-500/[0.07] blur-3xl" />
-      <div className="relative flex items-start justify-between gap-4">
-        <div><p className="text-base font-semibold text-slate-50">Policy Intelligence</p><p className="mt-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-violet-300">Research prototype</p></div>
-        <CheckCircle2 size={17} className="text-violet-300" />
+    <section className="relative overflow-hidden rounded-[18px] border border-violet-300/15 bg-[rgba(15,23,42,0.66)] p-5 shadow-[0_20px_55px_rgba(0,0,0,0.25)] backdrop-blur-2xl">
+      <div className="flex items-start justify-between gap-3">
+        <div>
+          <p className="text-base font-semibold text-slate-50">Policy Intelligence</p>
+          <p className="mt-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-violet-300">Live evidence monitor</p>
+        </div>
+        <Activity size={17} className="text-violet-300" />
       </div>
-      <div className="relative mt-6"><p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-slate-500">Mock recommendation</p><h3 className="mt-2 text-xl font-bold tracking-tight text-slate-50">Maintain current stance</h3><div className="mt-4 max-w-xs"><div className="mb-2 flex items-center justify-between text-xs"><span className="text-slate-400">Confidence</span><strong className="tabular-nums text-slate-100">{confidence}%</strong></div><ConfidenceMeter value={confidence} /></div></div>
-      <div className="relative mt-5 flex flex-wrap gap-2">{chips.map((signal) => <span key={signal.id} className="rounded-full border border-white/[0.08] bg-white/[0.045] px-2.5 py-1.5 text-[10px] font-medium text-slate-300">{signal.direction === 'up' ? '↑' : signal.direction === 'down' ? '↓' : '●'} {signal.label}</span>)}</div>
-      <div className="relative mt-5 rounded-xl border border-white/[0.07] bg-white/[0.025] p-3"><PolicyScorecard items={scorecard} overallScore={confidence} /></div>
-      <button type="button" className="relative mt-4 inline-flex items-center gap-1.5 text-xs font-semibold text-violet-300 transition hover:text-violet-200">View Policy Analysis <ArrowRight size={13} /></button>
-      <p className="relative mt-5 border-t border-white/[0.07] pt-3 text-[10px] leading-4 text-amber-300/80">Prototype scenario analysis.<br />Not an official RBI policy recommendation.</p>
+
+      {available.length ? (
+        <>
+          <div className="mt-5 grid grid-cols-2 gap-2">
+            {available.map(({ label, observation }) => (
+              <div key={observation.id} className="min-w-0 rounded-xl border border-white/[0.07] bg-white/[0.025] p-3">
+                <p className="truncate text-[10px] font-medium text-slate-400">{label}</p>
+                <p className="mt-1 text-lg font-semibold tabular-nums text-slate-100">{formatObservation(observation)}</p>
+                <p className="mt-1 truncate text-[10px] text-slate-500">{formatDate(observation.date)} · {observation.source}</p>
+              </div>
+            ))}
+          </div>
+
+          {forecastStart && forecastEnd ? (
+            <div className="mt-3 flex items-center justify-between gap-3 rounded-xl border border-cyan-300/10 bg-cyan-400/[0.04] p-3">
+              <div className="flex min-w-0 items-center gap-2"><Gauge size={15} className="shrink-0 text-cyan-300" /><div><p className="text-[10px] font-semibold uppercase tracking-wider text-cyan-200">Stored CPI model path</p><p className="mt-0.5 text-[10px] text-slate-400">{formatDate(forecastStart.date)} to {formatDate(forecastEnd.date)}</p></div></div>
+              <p className="shrink-0 text-sm font-semibold tabular-nums text-slate-100">{forecastStart.value.toFixed(2)}% <ArrowUpRight size={12} className="inline text-slate-500" /> {forecastEnd.value.toFixed(2)}%</p>
+            </div>
+          ) : null}
+
+          <p className="mt-4 flex items-start gap-2 border-t border-white/[0.07] pt-3 text-[10px] leading-4 text-slate-400"><Database size={13} className="mt-0.5 shrink-0 text-slate-500" />Latest observations and the stored CPI forecast are shown as evidence. They do not constitute a policy recommendation or causal estimate.</p>
+        </>
+      ) : (
+        <p className="mt-5 rounded-xl border border-amber-300/15 bg-amber-400/[0.05] p-4 text-xs leading-5 text-amber-100">The API returned no observed macro indicators. Check the data API connection and series availability.</p>
+      )}
     </section>
   );
 }

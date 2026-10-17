@@ -1,0 +1,17 @@
+# Local dependencies and generated Next.js output must be rebuilt by Vercel.
+node_modules
+.next
+.vercel
+
+# Local environment and editor files.
+.env*
+!.env.example
+.vscode
+
+# Local test artifacts and helper scripts are not part of the production app.
+tests
+test-results
+playwright-report
+coverage
+*.tsbuildinfo
+*.py
